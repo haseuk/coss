@@ -1,0 +1,62 @@
+@import "asset";
+@use-vw: true;
+@vw: 375;
+
+html { font-family: Pretendard, sans-serif; }
+.btn { .ib; .pointer; }
+h3 { .fs(18,28); .bold; }
+
+.container { .fs(0); .tc;
+  .wrap {
+    header { .wh(100%,65); .lh(65); .rel; .z(10);
+      h1 { .ib; .pt(20); .-box;
+        .logo { .wh(177,26); .contain('../images/mo/LOGO_White.png'); }
+      }
+      .menu { .wh(30,30); .contain('../images/mo/menu.png'); .abs; .rt(18,16); }
+    }
+    .wrap-swiper { .f;
+      .swiper-wrapper {
+        > .swiper-slide { .wh(100%,100vh);
+          &.slide1 {
+            .swiper-inner1 { .rel;
+              .swiper-slide { .rel;
+                &.inner1-slide1 { background: url('../images/mo/home-vis1.png') center top;  .h(100vh); .cover; }
+                &.inner1-slide2 { background: url('../images/mo/home-vis2.png') center top;  .h(100vh); .cover; }
+                .content { .pt(105); .-box;
+                  p { .c(#fff);
+                    &.txt { .fs(13,20); .regular; }
+                    &.tit { .fs(20,32); .bold; .mt(9); }
+                  }
+                }
+              }
+              .swiper-btn-inner1 { .wh(40,40); .lt(50%,233); .z(2);
+                &.inner1-prev { .contain('../images/mo/inner1-prev.png'); .ml(-65); }
+                &.inner1-next { .contain('../images/mo/inner1-next.png'); .ml(25); }
+              }
+              .inner1-pagination { .fs(16,25); .c(#fff); .regular; .abs; .lt(0,241); .wf; .tc; .z(1); }
+              .play { .wh(40,40); .contain('../images/mo/play.png'); .abs; .lt(50%,233); .ml(75); .z(2); }
+            }
+          }
+          &.slide2 {
+            .swiper-inner2 {
+              .swiper-slide { .tc;
+                ul { .wh(343,204); .p(16,15,10); .-box; box-shadow: 0 2px 10px rgba(40, 40, 40, 0.15); .br(10); .ib;
+                  li { .rel; .tl;
+                    p { .ellipsis; }
+                    &.emergency { .fs(16,25); .c(#fff); .bold; .h(49); .lh(49); background: linear-gradient(90deg, #8F6CF4 1.64%, #04B0E2 100%); .br(10); .p(0,15,0,16); .-box;
+                      i { .wh(28,28); .contain('../images/mo/bell.png'); .ib; .vam; .mr(5); }
+                      p { .ib; .vam; .w(245); }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .swiper-btn { .wh(35,35); .abs; .o(1); .mt(0);
+      &:after { .hide; }
+    }
+  }
+}

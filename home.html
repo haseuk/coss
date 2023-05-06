@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>바이오헬스</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+</head>
+<body>
+<div class="container">
+  <div class="wrap">
+
+    <div class="swiper wrap-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide1">
+
+          <header>
+            <h1><a href="/" class="logo btn">바이오 헬스</a></h1>
+            <a class="menu btn">메뉴</a>
+          </header>
+
+          <nav>x</nav>
+
+          <!-- s: 메인 -->
+          <div class="inner swiper swiper-inner1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide inner1-slide1">
+                <div class="content">
+                  <p class="txt">BIOHEALTH CONVERGENCE<br> OPEN SHARING UNIVERSITY</p>
+                  <p class="tit">미래인재를 양성하는<br> 바이오헬스 디지털 혁신융합대학</p>
+                </div>
+              </div>
+              <div class="swiper-slide inner1-slide2">
+                <div class="content">
+                  <p class="txt">BIOHEALTH CONVERGENCE<br> OPEN SHARING UNIVERSITY</p>
+                  <p class="tit">미래인재를 양성하는<br> 바이오헬스 디지털 혁신융합대학</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-btn swiper-btn-inner1 inner1-prev"></div>
+            <div class="swiper-btn swiper-btn-inner1 inner1-next"></div>
+            <div class="inner1-pagination"></div>
+            <a class="play"></a>
+          </div>
+        </div>
+        <!-- e: 메인 -->
+
+        <!-- s: 공지사항 -->
+        <div class="swiper-slide slide2">
+          <h3>공지사항</h3>
+          <div class="inner swiper swiper-inner2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide inner2-slide1">
+                <ul>
+                  <!--s: emergency 긴급공지 리스트 영역-->
+                  <li class="emergency">
+                    <i class="bell"></i>
+                    <p>긴급 공지사항이 이곳에 들어갑니다 긴급 공지사항이 이곳에 들어갑니다</p>
+                  </li>
+                  <!--e: emergency 긴급공지 리스트 영역-->
+
+
+                  <li>
+                    <p class="txt">바이오헬스 혁신융합대학 사전평가 / 이수실적 통계입니다바</p>
+                    <p class="date">2023.09.23</p>
+                  </li>
+                  <li>
+                    <p class="txt">바이오헬스 혁신융합대학 사전평가 / 이수실적 통계입니다바</p>
+                    <p class="date">2023.09.23</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide inner2-slide2">
+                <ul>
+                  <!--s: emergency 긴급공지 리스트 영역-->
+                  <li class="emergency">
+                    <i class="bell"></i>
+                    <p>긴급 공지사항이 이곳에 들어갑니다. 긴급</p>
+                  </li>
+                  <!--e: emergency 긴급공지 리스트 영역-->
+
+
+                  <li>
+                    <p class="txt">바이오헬스 혁신융합대학 사전평가 / 이수실적 통계입니다바</p>
+                    <p class="date">2023.09.23</p>
+                  </li>
+                  <li>
+                    <p class="txt">바이오헬스 혁신융합대학 사전평가 / 이수실적 통계입니다바</p>
+                    <p class="date">2023.09.23</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-btn swiper-btn-inner2 inner2-prev"></div>
+            <div class="swiper-btn swiper-btn-inner2 inner2-next"></div>
+          </div>
+        </div>
+        <!-- e: 공지사항 -->
+
+
+        <div class="swiper-slide slide3">Slide 3</div>
+        <div class="swiper-slide slide4">Slide 4</div>
+        <div class="swiper-slide slide5">Slide 5</div>
+        <div class="swiper-slide slide6">Slide 6</div>
+        <div class="swiper-slide slide7">Slide 7</div>
+        <div class="swiper-slide slide8">Slide 8</div>
+        <div class="swiper-slide slide9">Slide 9</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script>
+  var wrapSwiper = new Swiper(".wrap-swiper", {
+    direction: "vertical",
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+  });
+
+  var swiperInner1 = new Swiper(".swiper-inner1", {
+    pagination: {
+      el: ".inner1-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".inner1-next",
+      prevEl: ".inner1-prev",
+    },
+  });
+  var swiperInner2 = new Swiper(".swiper-inner2", {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".inner2-next",
+      prevEl: ".inner2-prev",
+    },
+  });
+</script>
+</body>
+</html>
