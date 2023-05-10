@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/style-mo.css">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style-pc.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body>
 <div class="container">
@@ -16,27 +17,89 @@
 
     <div class="swiper wrap-swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide slide1">
+        <div class="swiper-slide wrap-slide slide1">
 
           <header>
-            <h1><a href="/" class="logo btn">바이오 헬스</a></h1>
-            <a class="menu btn">메뉴</a>
+            <div class="sns-dir web">
+              <ul>
+                <li class="sns1"><a href="">LMS</a></li>
+                <li class="sns2"><a href="">NAVER BLOG</a></li>
+                <li class="sns3"><a href="">INSTAGRAM</a></li>
+                <li class="sns4"><a href="">YOUTUBE</a></li>
+              </ul>
+            </div>
+            <div class="h-inner">
+              <h1><a href="/" class="logo btn">COSS 바이오 헬스</a></h1>
+              <a class="menu btn">메뉴</a>
+            </div>
           </header>
 
-          <nav>x</nav>
+          <nav>
+            <div class="dim"></div>
+            <ul>
+              <li class="depth1">
+                <a class="btn dep1-btn">사업소개</a>
+                <div class="depth2"><!-- active 클래스 추가되면 오픈됨-->
+                  <a href="" class="btn dep2-btn">사업소개</a>
+                  <a href="" class="btn dep2-btn">비전 및 목표</a>
+                  <a href="" class="btn dep2-btn">핵심역량</a>
+                  <a href="" class="btn dep2-btn">바이오플래닛</a>
+                  <a href="" class="btn dep2-btn">참여대학</a>
+                </div>
+              </li>
+
+              <li class="depth1">
+                <a class="btn dep1-btn">교육과정</a>
+                <div class="depth2">
+                  <a href="" class="btn dep2-btn">교육과정 소개</a>
+                  <a href="" class="btn dep2-btn">개설과목</a>
+                  <a href="" class="btn dep2-btn">교육대상</a>
+                  <a href="" class="btn dep2-btn">이수안내</a>
+                </div>
+              </li>
+              <li class="depth1">
+                <a class="btn dep1-btn">학생지원</a>
+                <div class="depth2">
+                  <a href="" class="btn dep2-btn">지원 소개</a>
+                  <a href="" class="btn dep2-btn">서포터즈</a>
+                  <a href="" class="btn dep2-btn">비교과활동</a>
+                </div>
+              </li>
+              <li class="depth1">
+                <a class="btn dep1-btn">성과공유</a>
+                <div class="depth2">
+                  <a href="" class="btn dep2-btn">우수성과</a>
+                  <a href="" class="btn dep2-btn">K-MOOC</a>
+                  <a href="" class="btn dep2-btn">자료실</a>
+                </div>
+              </li>
+              <li class="depth1">
+                <a class="btn dep1-btn">정보광장</a>
+                <div class="depth2">
+                  <a href="" class="btn dep2-btn">자료실</a>
+                  <a href="" class="btn dep2-btn">보도자료</a>
+                  <a href="" class="btn dep2-btn">취업정보</a>
+                  <a href="" class="btn dep2-btn">FAQ</a>
+                </div>
+              </li>
+            </ul>
+            <a class="btn gnb-close">닫기</a>
+          </nav>
 
           <!-- s: 메인 -->
           <div class="inner swiper swiper-inner1">
             <div class="swiper-wrapper">
               <div class="swiper-slide inner1-slide1">
+                <div class="banner-vis"></div>
                 <div class="content">
-                  <p class="txt">BIOHEALTH CONVERGENCE<br> OPEN SHARING UNIVERSITY</p>
+                  <p class="txt">BIOHEALTH CONVERGENCE<br class="mo"> OPEN SHARING UNIVERSITY</p>
                   <p class="tit">미래인재를 양성하는<br> 바이오헬스 디지털 혁신융합대학</p>
                 </div>
               </div>
               <div class="swiper-slide inner1-slide2">
+                <div class="banner-vis"></div>
                 <div class="content">
-                  <p class="txt">BIOHEALTH CONVERGENCE<br> OPEN SHARING UNIVERSITY</p>
+                  <p class="txt">BIOHEALTH CONVERGENCE<br class="mo"> OPEN SHARING UNIVERSITY</p>
                   <p class="tit">미래인재를 양성하는<br> 바이오헬스 디지털 혁신융합대학</p>
                 </div>
               </div>
@@ -44,86 +107,686 @@
             <div class="swiper-btn swiper-btn-inner1 inner1-prev"></div>
             <div class="swiper-btn swiper-btn-inner1 inner1-next"></div>
             <div class="inner1-pagination"></div>
-            <a class="play"></a>
+            <a class="btn slide-auto-btn pause"></a>
+            <div class="scr web">scroll</div>
+          </div>
+          <!-- e: 메인 -->
+
+          <!-- s: 보도자료 pc에서만 노출-->
+          <div class="news web">
+            <h3>보도자료</h3>
+            <div class="inner swiper swiper-inner2-1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide inner21-slide1">
+                  <div class="img">
+                    <img src="images/pc/news-dummy.png" alt="">
+                  </div>
+                  <div class="news-content">
+                    <p class="tit">대전대-바이오헬스케어협회 업무협약 체결</p>
+                    <p class="date">2022. 09. 13</p>
+                  </div>
+                </div>
+                <div class="swiper-slide inner21-slide2">
+                  <div class="img">
+                    <img src="images/pc/news-dummy.png" alt="">
+                  </div>
+                  <div class="news-content">
+                    <p class="tit">대전대-바이오헬스케어협회 업무협약 체결</p>
+                    <p class="date">2022. 09. 13</p>
+                  </div>
+                </div>
+                <div class="swiper-slide inner21-slide3">
+                  <div class="img">
+                    <img src="images/pc/news-dummy.png" alt="">
+                  </div>
+                  <div class="news-content">
+                    <p class="tit">대전대-바이오헬스케어협회 업무협약 체결</p>
+                    <p class="date">2022. 09. 13</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-btn swiper-btn-inner2 inner21-prev"></div>
+              <div class="swiper-btn swiper-btn-inner2 inner21-next"></div>
+            </div>
+          </div>
+          <!-- e: 보도자료 -->
+
+
+          <!-- s: 공지사항 -->
+          <div class="noti">
+            <h3>공지사항</h3>
+
+            <div class="noti-wrap">
+              <!--s: emergency 긴급공지 리스트 영역-->
+              <div class="emergency">
+                <i class="bell"></i>
+                <p>긴급 공지사항이 이곳에 들어갑니다 긴급 공지사항이 이곳에 들어갑니다</p>
+              </div>
+              <!--e: emergency 긴급공지 리스트 영역-->
+
+              <div class="inner swiper swiper-inner2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide inner2-slide1">
+                    <ul>
+                      <li>
+                        <p class="txt">바이오헬스 혁신융합대학 사전평가 / 이수실적 통계입니다바</p>
+                        <p class="txt date">2023.09.23</p>
+                      </li>
+                      <li>
+                        <p class="txt">바이오헬스 혁신융합대학 사전평가 / 이수실적 통계입니다바</p>
+                        <p class="txt date">2023.09.23</p>
+                      </li>
+                      <li class="web"><!--pc에서만 노출-->
+                        <p class="txt">바이오헬스 혁신융합대학 사전평가 / 이수실적 통계입니다바</p>
+                        <p class="txt date">2023.09.23</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="swiper-slide inner2-slide2">
+                    <ul>
+                      <li>
+                        <p class="txt">바이오헬스 혁신융합대학 사전평가 / 이수실적 통계입니다바</p>
+                        <p class="txt date">2023.09.23</p>
+                      </li>
+                      <li>
+                        <p class="txt">바이오헬스 혁신융합대학 사전평가 / 이수실적 통계입니다바</p>
+                        <p class="txt date">2023.09.23</p>
+                      </li>
+                      <li class="web"><!--pc에서만 노출-->
+                        <p class="txt">바이오헬스 혁신융합대학 사전평가 / 이수실적 통계입니다바</p>
+                        <p class="txt date">2023.09.23</p>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+                <div class="swiper-btn swiper-btn-inner2 inner2-prev"></div>
+                <div class="swiper-btn swiper-btn-inner2 inner2-next"></div>
+              </div>
+
+              <div class="noti-more btn web">더보기</div><!--pc에서만 노출-->
+            </div>
           </div>
         </div>
-        <!-- e: 메인 -->
 
-        <!-- s: 공지사항 -->
-        <div class="swiper-slide slide2">
-          <h3>공지사항</h3>
-          <div class="inner swiper swiper-inner2">
+
+        <!-- s: 혁신융합대학 -->
+        <div class="swiper-slide wrap-slide slide3">
+          <h3>바이오헬스 혁신융합대학</h3>
+          <p class="txt">
+            바이오헬스 혁신융합대학은 <b>여러 대학에 흩어져 있는<br>
+            신기술 분야 교육 자원을 공동 활용</b>하고<br>
+            산업체·연구기관·학회·민간기관 등이 참여해<br>
+            국가 수준의 핵심인재를 양성하는 <b>협력체계를 구축</b>하여<br>
+            새로운 미래 인재를 양성합니다.
+          </p>
+          <div class="talent"></div>
+          <div class="partners">
+            <p class="txt">바이오헬스 혁신융합대학 파트너사</p>
+            <div class="logo-wrap">
+              <div class="logos"></div>
+            </div>
+          </div>
+        </div>
+        <!-- e: 혁신융합대학 -->
+
+        <!-- s: 진출분야 -->
+        <div class="swiper-slide wrap-slide slide4">
+          <h3>바이오헬스 혁신융합대학을<br> 통한 <b>진출분야</b></h3>
+          <p class="txt">
+            바이오메디컬아티스트, 바이오빅데이터전문가,<br>
+            바이오RA전문가 이 외에도 개인용 헬스케어 기기,<br>
+            현장진단 휴대형 기기, 지능형 건강관리 서비스 등에 대한<br>
+            이해를 갖춘 구매 · 영업 · 시장조사 등<br>
+            여러 직무 영역에 진출할 수 있습니다.
+          </p>
+          <div class="inner swiper swiper-inner4">
             <div class="swiper-wrapper">
-              <div class="swiper-slide inner2-slide1">
-                <ul>
-                  <!--s: emergency 긴급공지 리스트 영역-->
-                  <li class="emergency">
-                    <i class="bell"></i>
-                    <p>긴급 공지사항이 이곳에 들어갑니다 긴급 공지사항이 이곳에 들어갑니다</p>
-                  </li>
-                  <!--e: emergency 긴급공지 리스트 영역-->
-
-
-                  <li>
-                    <p class="txt">바이오헬스 혁신융합대학 사전평가 / 이수실적 통계입니다바</p>
-                    <p class="date">2023.09.23</p>
-                  </li>
-                  <li>
-                    <p class="txt">바이오헬스 혁신융합대학 사전평가 / 이수실적 통계입니다바</p>
-                    <p class="date">2023.09.23</p>
-                  </li>
-                </ul>
+              <div class="swiper-slide inner4-slide1">
+                <div class="slide-inner">
+                  <div class="vid"><!-- 유툽실행되면 played 클래스 추가됨 -->
+                    <div class="poster"></div>
+                    <a class="vid-play"></a>
+                    <div class="youtube" data-url="PCZaQ9hlwWg"></div>
+                  </div>
+                  <p class="tit">바이오메디컬아티스트</p>
+                  <p class="txt en ">Bio Medical Art</p>
+                  <p class="txt">
+                    생물 의학적 지식을 그림이나 영상으로 제작해서<br>
+                    전달하는 역할을 하는 직업 즉, <b>미술적인 표현능력과<br>
+                    의학적 지식을 포괄하는 전문가</b>
+                  </p>
+                </div>
               </div>
-              <div class="swiper-slide inner2-slide2">
-                <ul>
-                  <!--s: emergency 긴급공지 리스트 영역-->
-                  <li class="emergency">
-                    <i class="bell"></i>
-                    <p>긴급 공지사항이 이곳에 들어갑니다. 긴급</p>
-                  </li>
-                  <!--e: emergency 긴급공지 리스트 영역-->
-
-
-                  <li>
-                    <p class="txt">바이오헬스 혁신융합대학 사전평가 / 이수실적 통계입니다바</p>
-                    <p class="date">2023.09.23</p>
-                  </li>
-                  <li>
-                    <p class="txt">바이오헬스 혁신융합대학 사전평가 / 이수실적 통계입니다바</p>
-                    <p class="date">2023.09.23</p>
-                  </li>
-                </ul>
+              <div class="swiper-slide inner4-slide2">
+                <div class="slide-inner">
+                  <div class="vid">
+                    <div class="poster"></div>
+                    <a class="vid-play"></a><!-- 비디오 시작되면 display:none -->
+                    <div class="youtube" data-url="DJWYIs-rT2Y"></div>
+                  </div>
+                  <p class="tit">바이오빅데이터전문가</p>
+                  <p class="txt en ">Bio Bigdata Expert</p>
+                  <p class="txt">
+                    기본적인 개인 신체, 운동량 데이터부터 임상정보,<br>
+                    유전체 데이터, 미생물 정보까지 헬스케어 분야를<br>
+                    포괄하는 바이오 빅데이터를 다루는 전문가
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide inner4-slide3">
+                <div class="slide-inner">
+                  <div class="vid">
+                    <div class="poster"></div>
+                    <a class="vid-play"></a><!-- 비디오 시작되면 display:none -->
+                    <div class="youtube" data-url="8iixjYBSOUI"></div>
+                  </div>
+                  <p class="tit">바이오RA전문가</p>
+                  <p class="txt en ">Bio RA Expert</p>
+                  <p class="txt">
+                    의약품, 의료기기 등 바이오산업과 관련한<br>
+                    각국의 관련 규제와 규정을 바탕으로<br>
+                    인허가를 담당하는 전문인력
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="swiper-btn swiper-btn-inner2 inner2-prev"></div>
-            <div class="swiper-btn swiper-btn-inner2 inner2-next"></div>
+            <div class="swiper-btn swiper-btn-inner4 inner4-prev"></div>
+            <div class="swiper-btn swiper-btn-inner4 inner4-next"></div>
+            <p class="paging-name">바이오메디컬아티스트</p>
           </div>
         </div>
-        <!-- e: 공지사항 -->
+        <!-- e: 진출분야 -->
+
+        <!-- s: 진출분야 -->
+        <!-- data-step="1" 디노베이션 과정 / data-step="1" 3D 전문교육과정 -->
+        <div class="swiper-slide wrap-slide slide5" data-step="1">
+          <h3>교육과정</h3>
+          <p class="txt">
+            보건, 간호, 인문사회, 예술, 공학, 예비창업가 등<br>
+            다양한 전공들과 연계하여 누구나 참여할 수 있는<br>
+            열린 교육기회를 제공합니다.<br>
+            바이오헬스 혁신융합대학은 새롭게 구성된 3단계의<br>
+            현장 실무형 교육과정이 준비되어 있습니다.
+          </p>
+          <a href="" class="btn txt arrow">교육플랫폼 바로가기 <i></i></a>
+          <div class="tab-wrap">
+            <a class="btn tab" data-tab="1">디노베이션 과정</a>
+            <a class="btn tab" data-tab="2">3D 전문교육과정</a>
+          </div>
+          <p class="txt txt2">
+            디노베이션과정을 모두 마친 학생들은 3가지 전공 중 하나를
+            선택하여 구체화된 진로 목표를 토대로 디자인, 디바이스,
+            데이터 중 자유롭게 선택하여 심화 교과목 수강을 통해
+            전문성을 향상합니다.
+          </p>
+
+          <!-- s: 디노베니션과정-->
+          <div class="inner swiper swiper-inner5-1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide inner51-slide1">
+                <div class="vis">
+                  <img src="images/mo/step1.png" alt="" class="mo">
+                </div>
+                <p class="tit">01 디자인 바이오헬스 개설과목</p>
+                <a href="" class="btn txt arrow">바로가기 <i></i></a>
+              </div>
+            </div>
+            <div class="swiper-btn swiper-btn-inner5 inner51-prev"></div>
+            <div class="swiper-btn swiper-btn-inner5 inner51-next"></div>
+          </div>
+          <!-- e: 디노베니션과정-->
+
+          <!-- s: 3D 전문교육과정-->
+          <div class="inner swiper swiper-inner5-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide inner52-slide1">
+                <div class="vis">
+                  <img src="images/mo/step2-1.png" alt="" class="mo">
+                </div>
+                <p class="tit">01 디자인 바이오헬스 개설과목</p>
+                <a href="" class="btn txt arrow">바로가기 <i></i></a>
+              </div>
+              <div class="swiper-slide inner52-slide2">
+                <div class="vis">
+                  <img src="images/mo/step2-2.png" alt="" class="mo">
+                </div>
+                <p class="tit">02 디바이스 바이오헬스 개설과목목</p>
+                <a href="" class="btn txt arrow">바로가기 <i></i></a>
+              </div>
+              <div class="swiper-slide inner52-slide3">
+                <div class="vis">
+                  <img src="images/mo/step2-3.png" alt="" class="mo">
+                </div>
+                <p class="tit">03 데이터 바이오헬스 개설과목목</p>
+                <a href="" class="btn txt arrow">바로가기 <i></i></a>
+              </div>
+            </div>
+            <div class="swiper-btn swiper-btn-inner5 inner52-prev"></div>
+            <div class="swiper-btn swiper-btn-inner5 inner52-next"></div>
+          </div>
+          <!-- e: 3D 전문교육과정-->
+        </div>
+        <!-- e: 진출분야 -->
+
+        <!-- s: planet -->
+        <div class="swiper-slide wrap-slide slide6">
+          <h3>BIOHEALTH PLANET?</h3>
+          <p class="txt">
+            최첨단 촬영장비와 압도적인 디지털체험이 가능한
+            인간과 메타버스 세계가 공존하는 새로운 공간입니다.
+          </p>
+          <div class="planet-vis"></div>
+          <div class="inner swiper swiper-inner6">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide inner6-slide1">
+                <!-- btn 클릭시 팝업 오픈 -->
+                <a class="txt btn"><span>01</span>텔레프레즌스 강의실1</a>
+                <a class="txt btn"><span>02</span>기자재실</a>
+                <a class="txt btn"><span>03</span>메이커스페이스</a>
+                <a class="txt btn"><span>04</span>모션캡쳐스튜디오</a>
+                <a class="txt btn"><span>05</span>LOBBY</a>
+              </div>
+              <div class="swiper-slide inner6-slide2">
+                <a class="txt btn"><span>06</span>실감형 콘텐츠 실습실</a>
+                <a class="txt btn"><span>07</span>텔레프레즌스 강의실2</a>
+                <a class="txt btn"><span>08</span>텔레프레즌스 스튜디오2</a>
+                <a class="txt btn"><span>09</span>상담실/준비실</a>
+                <a class="txt btn"><span>10</span>텔레프레즌스 스튜디오1</a>
+              </div>
+            </div>
+            <div class="swiper-btn swiper-btn-inner6 inner6-prev"></div>
+            <div class="swiper-btn swiper-btn-inner6 inner6-next"></div>
+          </div>
+        </div>
+        <!-- e: planet -->
+
+        <!-- s: faq -->
+        <div class="swiper-slide wrap-slide slide7" data-faq="1">
+          <div class="faq-top">
+            <h3>FAQ</h3>
+            <p class="txt">궁금한 내용은 자주 묻는 질문을 통해 확인 가능합니다.</p>
+            <a class="btn txt faq-btn">문의하기</a>
+            <span class="character char1"></span>
+            <span class="character char2"></span>
+          </div>
+          <div class="faq-cont">
+            <div class="faq-tab">
+              <a class="tab tab1" data-tab="1"><i></i><span class="txt">혁신융합대학</span></a>
+              <a class="tab tab2" data-tab="2"><i></i><span class="txt">바이오헬스<br> 전공 안내</span></a>
+              <a class="tab tab3" data-tab="3"><i></i><span class="txt">수강신청/<br> 학점제한</span></a>
+            </div>
+            <ul class="list list1">
+              <li><a href="" class="btn txt">Q. 집중 이수제란?</a></li>
+              <li><a href="" class="btn txt">Q. 학위명이 궁금해요.</a></li>
+              <li><a href="" class="btn txt">Q. 혁신융합대학의 마이크로 전공, 부전공/<br> 복수전공을 이수할 경우 대학의 학위로<br> 취득할 수 있나요?</a></li>
+            </ul>
+            <ul class="list list2">
+              <li><a href="" class="btn txt">Q. 혁신융합대학 전공과 이수영역은 어떻게<br> 구성되어 있나요?</a></li>
+              <li><a href="" class="btn txt">Q. 1학년 학생도 혁신융합대학에서 부전공/<br> 복수전공을 신청할 수 있나요?</a></li>
+              <li><a href="" class="btn txt">Q. 3학년 학생도 부전공이 가능할까요?</a></li>
+            </ul>
+            <ul class="list list3">
+              <li><a href="" class="btn txt">Q. 수강신청 학점 제한이 있나요?</a></li>
+              <li><a href="" class="btn txt">Q. 2021학년도 2학기 수강신청 기간은<br> 어떻게 되나요?</a></li>
+              <li><a href="" class="btn txt">Q. 혁신융합대학의 마이크로 전공,부전공/<br> 복수전공을 희망할 경우 수강신청을 어떻게<br> 하면 좋을까요?</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- e: faq -->
+
+        <!-- s: footer -->
+        <div class="swiper-slide wrap-slide slide8">
+          <footer>
+            <a class="btn link"></a><!-- close 클래스 추가되면 닫힘모양으로 변경 -->
+            <div class="link-wrap"><!-- open 클래스 추가되면 열림 -->
+              <a href="https://lms.biocoss.ac.kr/" target="_blank" class="btn txt on">바이오헬스 LMS <i></i></a>
+              <a href="" class="btn txt">페이지명 <i></i></a>
+              <a href="" class="btn txt">페이지명 <i></i></a>
+              <a href="" class="btn txt">페이지명 <i></i></a>
+            </div>
+            <a class="btn top">맨위로 이동</a>
+            <a class="btn consortium">컨소시엄 리스트 <i></i></a>
+
+            <div class="sponsors">
+              <p class="txt">SPONSORS</p>
+              <div class="inner swiper swiper-inner8">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide inner8-slide1"></div>
+                  <div class="swiper-slide inner8-slide2"></div>
+                  <div class="swiper-slide inner8-slide3"></div>
+                  <div class="swiper-slide inner8-slide4"></div>
+                  <div class="swiper-slide inner8-slide5"></div>
+                </div>
+              </div>
+              <div class="swiper-btn swiper-btn-inner8 inner8-prev"></div>
+              <div class="swiper-btn swiper-btn-inner8 inner8-next"></div>
+            </div>
+            <div class="policy">
+              <a href="https://lms.biocoss.ac.kr/" target="_blank" class="btn">교육플랫폼</a>
+              <a href="" class="btn">개인정보처리방침</a>
+            </div>
+            <div class="ft-inner">
+              <h1><a href="/" class="btn">COSS 바이오 헬스</a></h1>
+              <p>바이오헬스 혁신공유사업단</p>
+              <p>COPYRIGHT(c) BIOCOSS UNIVERSITY. ALL RIGHT RESERVED.</p>
+              <a href="https://www.moe.go.kr/main.do?s=moe" target="_blank" class="partner par1">한국연구재단</a>
+              <a href="https://www.nrf.re.kr/index" target="_blank" class="partner par2">교육부</a>
+            </div>
+          </footer>
+        </div>
+        <!-- e: footer -->
+      </div>
+    </div>
 
 
-        <div class="swiper-slide slide3">Slide 3</div>
-        <div class="swiper-slide slide4">Slide 4</div>
-        <div class="swiper-slide slide5">Slide 5</div>
-        <div class="swiper-slide slide6">Slide 6</div>
-        <div class="swiper-slide slide7">Slide 7</div>
-        <div class="swiper-slide slide8">Slide 8</div>
-        <div class="swiper-slide slide9">Slide 9</div>
+
+
+    <!-- open 클랙스 추가시 팝업 오픈 -->
+    <div class="popup">
+      <div class="dim"></div>
+
+
+      <!-- inner에 planet-inner 클래스 추가시 : biohealth palnet popop 오픈 -->
+      <!-- inner에 faq-inner 클래스 추가시 : 문의하기 오픈 -->
+      <div class="inner">
+        <span class="line"></span>
+
+        <!-- biohealth palnet popop -->
+        <div class="planet-pop">
+          <p class="tit"></p><!-- 텔레프레즌스 강의실1 -->
+          <p class="txt"></p><!-- 홀로그램 기반 텔레프레즌스 장비가 설비된 실감형 콘텐츠 강의실 -->
+          <p class="area"></p><!--· 면적: 149.52㎡/42-25py -->
+          <p class="person"></p><!--· 수용인원: 30명-->
+          <div class="map"></div>
+          <div class="vis"></div>
+        </div>
+
+        <!-- s: 문의하기 -->
+        <div class="faq-pop">
+          <p class="tit">문의하기</p>
+          <p class="txt">
+            개인정보 수집·이용에 관한 사항(필수)
+            문의 상담을 위해 아래와 같은 개인정보를 수집하고 있습니다.
+            1. 수집항목(필수) : 이름, 휴대전화, 이메일
+            2- 이용 목적 : 상담서비스 진행 및 관련 정보 제공을 위한 안내와 문자(SMS) 발송
+            3. 보유 기간 : 이용 목적 달성시까지 (최대 3년 보관)
+            * 위의 개인정보 수집, 이용에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부하실 경우 상담 서비스 신청이 불가합니다.
+          </p>
+          <label>
+            <input type="radio" name="agree">
+            <i></i>
+            <s>동의합니다</s>
+          </label>
+          <label>
+            <input type="radio" name="agree">
+            <i></i>
+            <s>동의하지 않습니다</s>
+          </label>
+          <ul>
+            <li>
+              <p>대학<span>*</span></p>
+              <div class="custom-select">
+                <select name="" id="">
+                  <option value="">대학 선택</option>
+                  <option value="">단국대학교</option>
+                  <option value="">대전대학교</option>
+                  <option value="">동의대학교</option>
+                  <option value="">상명대학교</option>
+                  <option value="">우송대학교</option>
+                  <option value="">원광보건대학교</option>
+                  <option value="">홍익대학교</option>
+                </select>
+              </div>
+            </li>
+            <!-- 에러메세지 출력시 err 클래스 추가-->
+            <li class="err">
+              <p>이름<span>*</span></p>
+              <input type="text" placeholder="이름을 입력하세요">
+              <span class="err-msg">내용을 입력해 주세요.</span>
+            </li>
+            <li class="email">
+              <p>이메일<span>*</span></p>
+              <div class="form-inner">
+                <input type="text">
+                <span class="at">@</span>
+                <div class="custom-select">
+                  <select name="" id="">
+                    <option value="" >도메인</option>
+                    <option value="">naver.com</option>
+                    <option value="">nate.com</option>
+                    <option value="">hanmail.net</option>
+                    <option value="">hotmail.com</option>
+                    <option value="">yahoo.co.kr</option>
+                    <option value="">korea.com</option>
+                    <option value="">gmail.com</option>
+                    <option value="direct">직접입력</option>
+                  </select>
+                </div>
+                <input type="text" class="directly">
+              </div>
+            </li>
+            <li class="contact">
+              <p>연락처<span>*</span></p>
+              <div class="form-inner">
+                <input type="number">
+                <span class="hyphen">-</span>
+                <input type="number">
+                <span class="hyphen">-</span>
+                <input type="number">
+              </div>
+            </li>
+            <li>
+              <p>내용<span>*</span></p>
+              <textarea>
+내용을 입력하세요.
+              </textarea>
+            </li>
+            <li>
+              <p>첨부파일<span>*</span></p>
+              <div class="file-box">
+                <label for="file">파일선택</label>
+                <input type="file" id="file" class="input-file">
+                <div class="file-name">
+                  <p class="upload-name"></p>
+                  <a class="del-btn"></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!--캡챠-->
+          <div class="captcha" >
+            <img src="images/mo/captcha.png" alt="" style="display:block;margin: 0 auto">
+          </div>
+          <a class="btn submit">문의하기</a>
+        </div>
+        <!-- e: 문의하기 -->
+
+
+        <!-- s: 컨소시엄리스트 -->
+        <div class="consortium-pop">
+          <p class="tit">컨소시엄 리스트</p>
+          <p class="sub-tit">컨소시엄 리스트</p>
+          <ul>
+            <li class="list1">
+              <div class="lg"></div>
+              <div class="info">
+                <p>단국대학교<br> 041-550-1674~5</p>
+              </div>
+            </li>
+            <li class="list2">
+              <div class="lg"></div>
+              <div class="info">
+                <p>동의대학교<br> 051-890-3015</p>
+              </div>
+            </li>
+            <li class="list3">
+              <div class="lg"></div>
+              <div class="info">
+                <p>대전대학교<br> 042-280-4061</p>
+              </div>
+            </li>
+            <li class="list4">
+              <div class="lg"></div>
+              <div class="info">
+                <p>상명대학교<br> 02-2287-7107/6449</p>
+              </div>
+            </li>
+            <li class="list5">
+              <div class="lg"></div>
+              <div class="info">
+               <p>원광보건대학교<br> 063-840-1487</p>
+              </div>
+            </li>
+            <li class="list6">
+              <div class="lg"></div>
+              <div class="info">
+                <p>우송대학교<br> 042-630-4617</p>
+              </div>
+            </li>
+            <li class="list7">
+              <div class="lg"></div>
+              <div class="info">
+                <p>홍익대학교<br> 02-2098-2845</p>
+              </div>
+            </li>
+          </ul>
+
+          <p class="sub-tit">타 컨소시엄</p>
+          <ul>
+            <li class="list8">
+              <div class="lg"></div>
+              <div class="info">
+                <p>미래자동차 컨소시엄</p>
+              </div>
+            </li>
+            <li class="list9">
+              <div class="lg"></div>
+              <div class="info">
+                <p>빅데이터 컨소시엄<br> 차세대반도체 컨소시엄</p>
+              </div>
+            </li>
+            <li class="list10">
+              <div class="lg"></div>
+              <div class="info">
+                <p>실감미디어 컨소시엄</p>
+              </div>
+            </li>
+            <li class="list11">
+              <div class="lg"></div>
+              <div class="info">
+                <p>인공지능 컨소시엄</p>
+              </div>
+            </li>
+            <li class="list12">
+              <div class="lg"></div>
+              <div class="info">
+                <p>에너지산업 컨소시엄</p>
+              </div>
+            </li>
+            <li class="list13">
+              <div class="lg"></div>
+              <div class="info">
+                <p>지능형로봇 컨소시엄</p>
+              </div>
+            </li>
+            <li class="list14">
+              <div class="lg"></div>
+              <div class="info">
+                <p>공동활용대학(추가예정)</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- e: 컨소시엄리스트 -->
+
+
+        <a class="btn close">닫기</a>
       </div>
     </div>
   </div>
 </div>
 
+<script src="js/innerHeight.js"></script><!--모바일에서 innerHeight 계산/적용 역할임-->
+<script src="js/jquery.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/select.js"></script><!--select custom -->
+<script src="https://www.youtube.com/iframe_api"></script>
 <script>
+  //gnb
+  let dep1Btn = document.querySelectorAll('.dep1-btn');
+  Array.prototype.forEach.call(dep1Btn, function(e) {
+    e.addEventListener('click', function() {
+      if(e.parentNode.classList.contains('active')) {
+        e.parentNode.classList.remove('active');
+      } else {
+        menuListClose();
+        e.parentNode.classList.add('active');
+      }
+    })
+  });
+  //열린 메뉴리스트 전체 닫기
+  function menuListClose() {
+    for (let k = 0; k < dep1Btn.length; k++) {
+      dep1Btn[k].parentNode.classList.remove('active');
+    }
+  }
+
+  let menu = document.querySelector('.menu');
+  let nav = document.querySelector('nav');
+  menu.addEventListener('click', function() {
+    nav.classList.add('open');
+    swiperDisable();
+  });
+  let gnbClose = document.querySelector('.gnb-close');
+  gnbClose.addEventListener('click', function() {
+    nav.classList.remove('open');
+    menuListClose();
+    swiperEnable();
+  });
+
+  //gnb 오픈시 스와이프 중지
+  function swiperDisable() {
+    wrapSwiper.params.mousewheel = false;
+    wrapSwiper.params.noSwiping = true;
+    wrapSwiper.params.noSwipingClass = 'wrap-swiper';
+  }
+  //gnb 닫히면 스와이프 재시작
+  function swiperEnable() {
+    wrapSwiper.params.mousewheel = true;
+    wrapSwiper.params.noSwiping = false;
+    wrapSwiper.params.noSwipingClass = '';
+  }
+
+
+  let footerH = document.querySelector('footer').getBoundingClientRect().height;
   var wrapSwiper = new Swiper(".wrap-swiper", {
     direction: "vertical",
+    speed: 800,
+    autoHeight: true,
     slidesPerView: 1,
-    spaceBetween: 30,
     mousewheel: true,
+
+    //마지막 슬라이드 높이 조절부분입니다.
+    on: {
+      transitionStart: function() {
+        if(wrapSwiper.realIndex === 6) {
+          let y = (window.innerHeight * 5) + footerH; //푸터 슬라이드 제외된 전체 높이 + 푸터 높이
+          document.querySelector('.wrap-swiper .swiper-wrapper').style.transform = 'translate3d(0,-'+ y +'px,0)';
+        }
+      }
+    }
   });
 
   var swiperInner1 = new Swiper(".swiper-inner1", {
+    effect: 'fade',
+    speed: 1500,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    loop: true,
     pagination: {
       el: ".inner1-pagination",
       type: "fraction",
@@ -133,12 +796,266 @@
       prevEl: ".inner1-prev",
     },
   });
+
+  //home banner 시작, 정지
+  let slideAutoBtn = document.querySelector('.slide-auto-btn');
+  slideAutoBtn.addEventListener('click', function() {
+    if(slideAutoBtn.classList.contains('play')) {
+      slideAutoBtn.classList.remove('play');
+      slideAutoBtn.classList.add('pause');
+      swiperInner1.autoplay.start();
+    } else {
+      slideAutoBtn.classList.remove('pause');
+      slideAutoBtn.classList.add('play');
+      swiperInner1.autoplay.stop();
+    }
+  });
+
+  //바이오헬스 혁신융합대학 파트너사
+  let scrollSpeed = 10;
+  let current = 0;
+  let direction = 'h';
+  function rolling(){
+    current -= 1;
+    $('.logos').css("backgroundPosition", (direction == 'h') ? current+"px 0" : "0 " + current+"px");
+  }
+  setInterval("rolling()", scrollSpeed);
+
+  //보도자료
+  var swiperInner21 = new Swiper(".swiper-inner2-1", {
+    slidesPerView: 3,
+    spaceBetween: 29,
+    centeredSlides: true,
+    navigation: {
+      nextEl: ".inner21-next",
+      prevEl: ".inner21-prev",
+    },
+  });
+
+  //공지사항
   var swiperInner2 = new Swiper(".swiper-inner2", {
     slidesPerView: 1,
+    spaceBetween: 30,
     navigation: {
       nextEl: ".inner2-next",
       prevEl: ".inner2-prev",
     },
+  });
+
+
+  //유투브 영상 실행
+  let idAry = [], urlAry = [], objAry = [];
+  $(".youtube").each(function(i){
+    $(this).attr("id", "player"+i);
+    idAry.push("player"+i);
+    urlAry.push($(this).data("url"));
+  });
+  var player;
+  function onYouTubeIframeAPIReady() {
+    for (var i=0; i< $(".youtube").length; i++){
+      player;
+      var playerId = idAry[i];
+      player = new YT.Player(playerId, {
+        videoId: urlAry[i],
+        width : "100%",
+        height: "100%",
+        playerVars: {
+          rel : 0,
+        }
+      });
+      objAry.push(player);
+    }
+  }
+  let vidPlay = document.querySelectorAll('.vid-play');
+  Array.prototype.forEach.call(vidPlay, function(e,idx) {
+    e.addEventListener('click', function() {
+      e.parentNode.classList.add('played');
+      objAry[idx].playVideo();
+    })
+  });
+
+  let pagingName = document.querySelector('.paging-name');
+  var swiperInner4 = new Swiper(".swiper-inner4", {
+    speed: 500,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".inner4-next",
+      prevEl: ".inner4-prev",
+    },
+    on: {
+      slideChange: function() {
+        for (let k = 0; k < objAry.length; k++) {
+          objAry[k].stopVideo();
+        }
+      },
+      transitionEnd: function () {
+        if(swiperInner4.realIndex === 0) {
+          pagingName.innerHTML = '바이오메디컬아티스트';
+        } else if(swiperInner4.realIndex === 1) {
+          pagingName.innerHTML = '바이오빅데이터전문가';
+        } else {
+          pagingName.innerHTML = '바이오RA전문가';
+        }
+      }
+    }
+  });
+  var swiperInner51 = new Swiper(".swiper-inner5-1", {
+    speed: 500,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".inner51-next",
+      prevEl: ".inner51-prev",
+    },
+  });
+  var swiperInner52 = new Swiper(".swiper-inner5-2", {
+    speed: 500,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".inner52-next",
+      prevEl: ".inner52-prev",
+    },
+  });
+  var swiperInner6 = new Swiper(".swiper-inner6", {
+    speed: 500,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".inner6-next",
+      prevEl: ".inner6-prev",
+    },
+  });
+  var swiperInner8 = new Swiper(".slide8 .swiper-inner8", {
+    slidesPerView: 3,
+    spaceBetween: 15,
+    speed: 1000,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction:false,
+    },
+    navigation: {
+      nextEl: ".slide8 .inner8-next",
+      prevEl: ".slide8 .inner8-prev",
+    },
+  });
+  let slide5 = document.querySelector('.slide5');
+  let tabs = document.querySelectorAll('.tab-wrap .tab');
+  Array.prototype.forEach.call(tabs, function (e){
+    e.addEventListener('click', function() {
+      console.log(e)
+      let idx = e.getAttribute('data-tab');
+      slide5.setAttribute('data-step', idx);
+    })
+  });
+
+  let slide7 = document.querySelector('.slide7');
+  let faqTabs = document.querySelectorAll('.faq-tab .tab');
+  Array.prototype.forEach.call(faqTabs, function (e){
+    e.addEventListener('click', function() {
+      console.log(e)
+      let idx = e.getAttribute('data-tab');
+      slide7.setAttribute('data-faq', idx);
+    })
+  });
+
+  let link = document.querySelector('.link');
+  let linkWrap = document.querySelector('.link-wrap');
+  link.addEventListener('click', function() {
+    if(link.classList.contains('close')){
+      link.classList.remove('close');
+    } else {
+      link.classList.add('close');
+    }
+    if(linkWrap.classList.contains('open')){
+      linkWrap.classList.remove('open');
+    } else {
+      linkWrap.classList.add('open');
+    }
+  });
+
+  //planet popup content
+  let planetContent = [
+    { id:1, tit: '텔레프레즌스 강의실1', txt: '홀로그램 기반 텔레프레즌스 장비가 설비된 실감형 콘텐츠 강의실', area: '· 면적: 149.52m<sup>2</sup>/42-25py', person: '· 수용인원: 30명', map: true, vis: true },
+    { id:2, tit: '기자재실' }, //기사재실은 빈 데이터 사용하지 않음
+    { id:3, tit: '메이커스페이스', txt: '시제품 제작, 실습, 산학연계 프로젝트가 가능한 창작 공간', area: '· 면적: 82-64m<sup>2</sup>/25py', person: '· 수용인원: 30명', map: true, vis: true },
+    { id:4, tit: '모션캡쳐스튜디오', txt: '메타버스의 캐릭터를 모션캡처 촬영장비로 XR 제작 가능 스튜디오', area: '· 면적: 88.76m<sup>2</sup>/26.85py', person: '· 수용인원: 4~5명', map: true, vis: true },
+    { id:5, tit: 'LOBBY', txt: '디지털 영상을 활용한압도적인 디지털 체험이 가능한 환상적인 공간입니다.', area: '· 면적: 88.10m<sup>2</sup>/26.65py', person: '· 수용인원: 00명', map: true, vis: true },
+    { id:6, tit: '실감형 콘텐츠 실습실', txt: 'VR/AR 등 실감형 콘텐츠 체험환경이 구비된 강의실로 몰입도와 현장감을 높일 수 있는 실습실', area: '· 면적: 109.16m<sup>2</sup>/33.02py', person: '· 수용인원: 30명', map: true, vis: true },
+    { id:7, tit: '텔레프레즌스 강의실2', txt: '홀로그램 기반 텔레프레즌스 장비가 설비된 실감형 콘텐츠 강의실', area: '· 면적: 109.16m<sup>2</sup>/33.02py', person: '· 수용인원: 50명', map: true, vis: true },
+    { id:8, tit: '텔레프레즌스 스튜디오2', txt: '상반신 홀로그램용 실시간 강의와 비대면 수업 촬영이 가능한 첨단 스튜디오', area: '', person: '', map: false, vis: false },
+    { id:9, tit: '상담실/준비실', txt: '바이오 플래닛 인프라 담당 코디네이터 및 학생 지원 공간', area: '· 면적: 42-36m<sup>2</sup>12-81py', person: '· 수용인원: 12명', map: true, vis: true },
+    { id:10, tit: '텔레프레즌스 스튜디오1', txt: '전신 홀로그램용 실시간 강의와 비대면 수업 촬영이 가능한 첨단 스튜디오', area: '· 면적: 42-36<sup>2</sup>12-81py', person: '· 수용인원: 12명', map: true, vis: true }
+  ]
+
+
+  //biohealth palnet popop
+  let planetPopOpenBtns = document.querySelectorAll('.swiper-inner6 .btn');
+  let popup = document.querySelector('.popup');
+  let popupInner = document.querySelector('.popup .inner');
+  let popupClose = document.querySelector('.popup .close');
+  let popupTit = document.querySelector('.popup .tit');
+  let popupTxt = document.querySelector('.popup .txt');
+  let popupArea = document.querySelector('.popup .area');
+  let popupPerson = document.querySelector('.popup .person');
+  let popupMap = document.querySelector('.popup .map');
+  let popupVis = document.querySelector('.popup .vis');
+  Array.prototype.forEach.call(planetPopOpenBtns, function(e,idx) {
+    e.addEventListener('click', function() {
+      popupOpen('planet-inner');
+      popupTit.innerHTML = planetContent[idx].tit;
+      popupTxt.innerHTML = planetContent[idx].txt;
+      popupArea.innerHTML = planetContent[idx].area;
+      popupPerson.innerHTML = planetContent[idx].person;
+      popupMap.innerHTML ='';
+      popupVis.innerHTML ='';
+      if(planetContent[idx].map === true) {
+        if(window.innerWidth <= 768) {
+          popupMap.innerHTML = '<img src="images/mo/map'+(idx+1)+'.png" />';
+        } else {
+          popupMap.innerHTML = '<img src="images/pc/map'+(idx+1)+'.png" />';
+        }
+      }
+      if(planetContent[idx].vis === true) {
+        if(window.innerWidth <= 768) {
+          popupVis.innerHTML = '<img src="images/mo/pop-vis'+(idx+1)+'.png" />';
+        } else {
+          popupVis.innerHTML = '<img src="images/pc/pop-vis'+(idx+1)+'.png" />';
+        }
+      }
+    })
+  });
+  let faqPopOpenBtn = document.querySelector('.faq-btn');
+  let consortiumPopOpenBtn = document.querySelector('.consortium');
+  faqPopOpenBtn.addEventListener('click', function() {
+    popupOpen('faq-inner');
+  });
+  consortiumPopOpenBtn.addEventListener('click', function() {
+    popupOpen('consortium-inner');
+  });
+  function popupOpen(v) {
+    popup.classList.add('open');
+    popupInner.classList.add(v);
+  }
+  popupClose.addEventListener('click', function() {
+    popup.classList.remove('open');
+    popupInner.className = 'inner';
+  });
+
+  //파일 업로드
+  $('.input-file').on('change',function(){
+    var fileName = $('.input-file').val().split('\\')[this.value.split('\\').length-1];
+    $('.upload-name').html(fileName);
+    $('.del-btn').css('display','inline-block');
+  });
+  $('.del-btn').on('click', function() {
+    $('.upload-name').html('');
+    $('.del-btn').css('display','none');
+  });
+
+  // 맨위로 이동
+  let goTop = document.querySelector('.top');
+  goTop.addEventListener('click', function() {
+    wrapSwiper.slideTo(1);
   });
 </script>
 </body>
