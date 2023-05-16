@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>바이오헬스</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/style-mo.css">
+  <link rel="stylesheet" href="css/style-web.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+<body>
+<div class="container">
+  <div class="wrap">
+    <section class="vision int4-vision">
+      <div class="vis-top">
+        <div class="bread">
+          <a href="/" class="btn home">home</a>
+          <span></span>
+          <a href="" class="btn intro">사업소개</a>
+          <span></span>
+          <a class="btn intro">바이오플래닛</a>
+        </div>
+        <h2>사업소개</h2>
+        <p class="tit">새로운 미래 인재를 양성합니다.</p>
+      </div>
+
+      <div class="sub-tap-wrap">
+        <div class="sub-tab mo"><!--open 클래스 추가되면 오픈-->
+          <a href="" class="btn selected">사업소개</a>
+          <div class="list">
+            <a href="" class="btn">사업소개</a>
+            <a href="" class="btn">교육과정</a>
+            <a href="" class="btn">학생지원</a>
+            <a href="" class="btn">성과공유</a>
+            <a href="" class="btn">정보광장</a>
+          </div>
+        </div>
+        <div class="sub-tab"><!--open 클래스 추가되면 오픈-->
+          <a href="" class="btn selected">바이오플래닛</a>
+          <div class="list">
+            <!--on 클래스 추가되면 활성화-->
+            <a href="" class="btn">사업소개</a>
+            <a href="" class="btn">비전 및 목표</a>
+            <a href="" class="btn">핵심역량</a>
+            <a href="" class="btn on">바이오플래닛</a>
+            <a href="" class="btn">참여대학</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- data-view 값에 따라 화면 노출-->
+      <article class="intro4" data-view="1">
+        <div class="art-inner web">
+          <div class="art-top">
+            <h3>바이오플래닛</h3>
+          </div>
+        </div>
+
+        <div class="art-wrap">
+          <div class="art-inner menu-art">
+            <div class="menu-wrap">
+              <div class="select-menu">
+                <a class="btn line-box" data-btn="1">텔레프레즌스 강의실1</a>
+                <a class="btn line-box" data-btn="2">기자재실</a>
+                <a class="btn line-box" data-btn="3">메이커스페이스</a>
+                <a class="btn line-box" data-btn="4">모션캡쳐스튜디오</a>
+                <a class="btn line-box" data-btn="5">LOBBY</a>
+                <a class="btn line-box" data-btn="6">실감형 콘텐츠 실습실</a>
+                <a class="btn line-box" data-btn="7">텔레프레즌스 강의실2</a>
+                <a class="btn line-box" data-btn="8">텔레프레즌스 스튜디오2</a>
+                <a class="btn line-box" data-btn="9">상담실/준비실</a>
+                <a class="btn line-box" data-btn="10">텔레프레즌스 스튜디오1</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="art-inner view-art">
+            <div class="view-wrap">
+              <div class="view view1 rd-crop line-box">
+                <p class="tit">텔레프레즌스 강의실1</p>
+                <div class="img rd-crop">
+                  <img src="images/mo/intro/int4-1.png" alt="" class="mo">
+                  <img src="images/pc/intro/int4-1.png" alt="" class="web">
+                </div>
+                <div class="detail">
+                  <a class="btn" onclick="planetPopOpen(0)">상세보기</a>
+                </div>
+              </div>
+              <div class="view view2 rd-crop line-box">
+                <p class="tit">기자재실</p>
+                <div class="img rd-crop"></div>
+              </div>
+              <div class="view view3 rd-crop line-box">
+                <p class="tit">메이커스페이스</p>
+                <div class="img rd-crop">
+                  <img src="images/mo/intro/int4-3.png" alt="" class="mo">
+                  <img src="images/pc/intro/int4-3.png" alt="" class="web">
+                </div>
+                <div class="detail">
+                  <a class="btn" onclick="planetPopOpen(2)">상세보기</a>
+                </div>
+              </div>
+              <div class="view view4 rd-crop line-box">
+                <p class="tit">모션캡쳐스튜디오</p>
+                <div class="img rd-crop">
+                  <img src="images/mo/intro/int4-4.png" alt="" class="mo">
+                  <img src="images/pc/intro/int4-4.png" alt="" class="pc">
+                </div>
+                <div class="detail">
+                  <a class="btn" onclick="planetPopOpen(3)">상세보기</a>
+                </div>
+              </div>
+              <div class="view view5 rd-crop line-box">
+                <p class="tit">LOBBY</p>
+                <div class="img rd-crop">
+                  <img src="images/mo/intro/int4-5.png" alt="" class="mo">
+                  <img src="images/pc/intro/int4-5.png" alt="" class="pc">
+                </div>
+                <div class="detail">
+                  <a class="btn" onclick="planetPopOpen(4)">상세보기</a>
+                </div>
+              </div>
+              <div class="view view6 rd-crop line-box">
+                <p class="tit">실감형 콘텐츠 실습실</p>
+                <div class="img rd-crop">
+                  <img src="images/mo/intro/int4-6.png" alt="" class="mo">
+                  <img src="images/pc/intro/int4-6.png" alt="" class="web">
+                </div>
+                <div class="detail">
+                  <a class="btn" onclick="planetPopOpen(5)">상세보기</a>
+                </div>
+              </div>
+              <div class="view view7 rd-crop line-box">
+                <p class="tit">텔레프레즌스 강의실2</p>
+                <div class="img rd-crop">
+                  <img src="images/mo/intro/int4-7.png" alt="" class="mo">
+                  <img src="images/pc/intro/int4-7.png" alt="" class="web">
+                </div>
+                <div class="detail">
+                  <a class="btn" onclick="planetPopOpen(6)">상세보기</a>
+                </div>
+              </div>
+              <div class="view view8 rd-crop line-box">
+                <p class="tit">텔레프레즌스 스튜디오2</p>
+                <div class="img rd-crop"></div>
+                <div class="detail">
+                  <a class="btn" onclick="planetPopOpen(7)">상세보기</a>
+                </div>
+              </div>
+              <div class="view view9 rd-crop line-box">
+                <p class="tit">상담실/준비실</p>
+                <div class="img rd-crop">
+                  <img src="images/mo/intro/int4-9.png" alt="" class="mo">
+                  <img src="images/pc/intro/int4-9.png" alt="" class="web">
+                </div>
+                <div class="detail">
+                  <a class="btn" onclick="planetPopOpen(8)">상세보기</a>
+                </div>
+              </div>
+              <div class="view view10 rd-crop line-box">
+                <p class="tit">텔레프레즌스 스튜디오1</p>
+                <div class="img rd-crop">
+                  <img src="images/mo/intro/int4-10.png" alt="" class="mo">
+                </div>
+                <div class="detail">
+                  <a class="btn" onclick="planetPopOpen(9)">상세보기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="planet-wrap">
+          <div class="art-inner">
+            <div class="img">
+              <img src="images/mo/intro/int4-map.png" alt="" class="mo">
+              <img src="images/pc/home/area1.png" alt="" class="web area1">
+              <img src="images/pc/home/area2.png" alt="" class="web area2">
+              <img src="images/pc/home/area3.png" alt="" class="web area3">
+              <img src="images/pc/home/area4.png" alt="" class="web area4">
+              <img src="images/pc/home/area5.png" alt="" class="web area5">
+              <img src="images/pc/home/area6.png" alt="" class="web area6">
+              <img src="images/pc/home/area7.png" alt="" class="web area7">
+              <img src="images/pc/home/area8.png" alt="" class="web area8">
+              <img src="images/pc/home/area9.png" alt="" class="web area9">
+              <img src="images/pc/home/area10.png" alt="" class="web area10">
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+
+    <!-- open 클랙스 추가시 팝업 오픈 -->
+    <div class="popup">
+      <div class="dim"></div>
+
+
+      <!-- inner에 planet-inner 클래스 추가시 : biohealth palnet popop 오픈 -->
+      <!-- inner에 faq-inner 클래스 추가시 : 문의하기 오픈 -->
+      <div class="inner">
+        <span class="line"></span>
+
+        <!-- biohealth palnet popop -->
+        <div class="planet-pop">
+          <p class="tit"></p><!-- 텔레프레즌스 강의실1 -->
+          <p class="txt"></p><!-- 홀로그램 기반 텔레프레즌스 장비가 설비된 실감형 콘텐츠 강의실 -->
+          <div class="pl-info">
+            <p class="area"></p><!--· 면적: 149.52㎡/42-25py -->
+            <p class="person"></p><!--· 수용인원: 30명-->
+            <div class="map"></div>
+          </div>
+          <div class="vis"></div>
+        </div>
+
+        <a class="btn close">닫기</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script>
+  let intro4 = document.querySelector('.intro4');
+  let selectBtns = document.querySelectorAll('.select-menu .btn');
+  Array.prototype.forEach.call(selectBtns, function(e) {
+    e.addEventListener('click', function() {
+      let idx = e.getAttribute('data-btn');
+      intro04.setAttribute('data-view', idx);
+      if(window.innerWidth <= 1080) {
+        e.scrollIntoView({behavior:"smooth", block: "nearest", inline: "center"})
+      }
+    });
+  });
+
+  //상세보기 팝업 home.html //planet popup content 에 있는 팝업과 같은 내용입니다.
+  let planetContent = [
+    { id:1, tit: '텔레프레즌스 강의실1', txt: '홀로그램 기반 텔레프레즌스 장비가 설비된 실감형 콘텐츠 강의실', area: '· 면적: 149.52m<sup>2</sup>/42-25py', person: '· 수용인원: 30명', map: true, vis: true },
+    { id:2, tit: '기자재실' }, //기사재실은 빈 데이터 사용하지 않음
+    { id:3, tit: '메이커스페이스', txt: '시제품 제작, 실습, 산학연계 프로젝트가 가능한 창작 공간', area: '· 면적: 82-64m<sup>2</sup>/25py', person: '· 수용인원: 30명', map: true, vis: true },
+    { id:4, tit: '모션캡쳐스튜디오', txt: '메타버스의 캐릭터를 모션캡처 촬영장비로 XR 제작 가능 스튜디오', area: '· 면적: 88.76m<sup>2</sup>/26.85py', person: '· 수용인원: 4~5명', map: true, vis: true },
+    { id:5, tit: 'LOBBY', txt: '디지털 영상을 활용한압도적인 디지털 체험이 가능한 환상적인 공간입니다.', area: '· 면적: 88.10m<sup>2</sup>/26.65py', person: '· 수용인원: 00명', map: true, vis: true },
+    { id:6, tit: '실감형 콘텐츠 실습실', txt: 'VR/AR 등 실감형 콘텐츠 체험환경이 구비된 강의실로 몰입도와 현장감을 높일 수 있는 실습실', area: '· 면적: 109.16m<sup>2</sup>/33.02py', person: '· 수용인원: 30명', map: true, vis: true },
+    { id:7, tit: '텔레프레즌스 강의실2', txt: '홀로그램 기반 텔레프레즌스 장비가 설비된 실감형 콘텐츠 강의실', area: '· 면적: 109.16m<sup>2</sup>/33.02py', person: '· 수용인원: 50명', map: true, vis: true },
+    { id:8, tit: '텔레프레즌스 스튜디오2', txt: '상반신 홀로그램용 실시간 강의와 비대면 수업 촬영이 가능한 첨단 스튜디오', area: '', person: '', map: false, vis: false },
+    { id:9, tit: '상담실/준비실', txt: '바이오 플래닛 인프라 담당 코디네이터 및 학생 지원 공간', area: '· 면적: 42-36m<sup>2</sup>12-81py', person: '· 수용인원: 12명', map: true, vis: true },
+    { id:10, tit: '텔레프레즌스 스튜디오1', txt: '전신 홀로그램용 실시간 강의와 비대면 수업 촬영이 가능한 첨단 스튜디오', area: '· 면적: 42-36<sup>2</sup>12-81py', person: '· 수용인원: 12명', map: true, vis: true }
+  ]
+
+  //biohealth palnet popop
+  let popup = document.querySelector('.popup');
+  let popupInner = document.querySelector('.popup .inner');
+  let popupClose = document.querySelector('.popup .close');
+  let popupTit = document.querySelector('.popup .tit');
+  let popupTxt = document.querySelector('.popup .txt');
+  let popupArea = document.querySelector('.popup .area');
+  let popupPerson = document.querySelector('.popup .person');
+  let popupMap = document.querySelector('.popup .map');
+  let popupVis = document.querySelector('.popup .vis');
+  let popupPlInfo = document.querySelector('.popup .pl-info');
+  function planetPopOpen(v) {
+    popupOpen('planet-inner');
+    popupTit.innerHTML = planetContent[v].tit;
+    popupTxt.innerHTML = planetContent[v].txt;
+    popupArea.innerHTML = '';
+    popupPerson.innerHTML = '';
+    if(planetContent[v].area === '') {
+      popupPlInfo.classList.add('empty');
+    } else {
+      popupPlInfo.className = 'pl-info';
+      popupArea.innerHTML = planetContent[v].area;
+    }
+    if(planetContent[v].person === '') {
+      popupPlInfo.classList.add('empty');
+    } else {
+      popupPlInfo.className = 'pl-info';
+      popupPerson.innerHTML = planetContent[v].person;
+    }
+    popupMap.innerHTML ='';
+    popupVis.innerHTML ='';
+    if(planetContent[v].map === true) {
+      if(window.innerWidth <= 768) {
+        popupMap.innerHTML = '<img src="images/mo/home/map'+(v+1)+'.png" />';
+      } else {
+        popupMap.innerHTML = '<img src="images/pc/home/map'+(v+1)+'.png" />';
+      }
+    }
+    if(planetContent[v].vis === true) {
+      popupVis.className = 'vis';
+      if(window.innerWidth <= 768) {
+        popupVis.innerHTML = '<img src="images/mo/home/pop-vis'+(v+1)+'.png" />';
+      } else {
+        popupVis.innerHTML = '<img src="images/pc/home/pop-vis'+(v+1)+'.png" />';
+      }
+    } else {
+      popupVis.classList.add('empty');
+    }
+  }
+
+  function popupOpen(v) {
+    popup.classList.add('open');
+    popupInner.classList.add(v);
+  }
+  popupClose.addEventListener('click', function() {
+    popup.classList.remove('open');
+    popupInner.className = 'inner';
+  });
+
+</script>
+</body>
+</html>

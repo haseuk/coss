@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+    }
+
+    .ferris_wheel ,.wheel {
+      border: 6px solid #fff;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+
+    .ferris_wheel {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%) scale(1.4, 1.4);
+      border: 0;
+    }
+
+    .wheel_wrap {
+      position: absolute;
+      animation: wheel_rotate 40s infinite linear;
+    }
+
+    @keyframes wheel_rotate {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+
+    .buckets {
+      position: absolute;
+      border: 6px solid #fff;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .buckets div {
+      position: absolute;
+      animation: bucket_rotate 40s infinite linear;
+      top: 50%;
+      left: 50%;
+      margin-top: 0;
+      margin-left: -13px;
+    }
+
+    .buckets span {
+      display: inline-block;
+      border-top: 15px solid #A84172;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      height: 0;
+      width: 20px;
+      position: relative;
+    }
+
+    @keyframes bucket_rotate {
+      0% {
+        transform: rotate(0) translateX(75px) rotate(0);
+      }
+      100% {
+        transform: rotate(360deg) translateX(75px) rotate(-360deg);
+      }
+    }
+
+    .buckets div:nth-child(2) {
+      animation-delay: -5s;
+    }
+
+    .buckets div:nth-child(3) {
+      animation-delay: -10s;
+    }
+
+    .buckets div:nth-child(4) {
+      animation-delay: -15s;
+    }
+
+    .buckets div:nth-child(5) {
+      animation-delay: -20s;
+    }
+
+    .buckets div:nth-child(6) {
+      animation-delay: -25s;
+    }
+
+    .buckets div:nth-child(7) {
+      animation-delay: -30s;
+    }
+
+    .buckets div:nth-child(8) {
+      animation-delay: -35s;
+    }
+  </style>
+</head>
+<body>
+<div class="ferris_wheel">
+  <div class="wheel_wrap">
+    <div class="wheel">
+    </div>
+  </div>
+  <div class="buckets">
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+  </div>
+</div>
+</body>
+</html>

@@ -164,6 +164,10 @@
 .br-b(@v) { .sv(@v); border-radius: 0 0 @_sv @_sv; }
 .br-l(@v) { .sv(@v); border-radius: @_sv 0 0 @_sv; }
 .br-r(@v) { .sv(@v); border-radius: 0 @_sv @_sv 0; }
+.br-lt(@v) { .sv(@v); border-radius: @_sv 0 0 0; }
+.br-rt(@v) { .sv(@v); border-radius: 0 @_sv 0 0; }
+.br-rb(@v) { .sv(@v); border-radius: 0 0 @_sv 0; }
+.br-lb(@v) { .sv(@v); border-radius: 0 0 0 @_sv; }
 .ls(@v) { .sv(@v); letter-spacing: @_sv; }
 .va(@v) { .sv(@v); vertical-align: @_sv; }
 .ti(@v) { .sv(@v); text-indent: @_sv; }
