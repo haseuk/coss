@@ -1,0 +1,50 @@
+section {
+  &.square {
+    .vis-top { .cover('../images/mo/squ/squ-vis.png'); .bg-c; }
+
+    article {
+      .art-top { .-b; .pb(0); .mb(0);
+        h3 { .mb(50); }
+      }
+      .cnt-list {
+        li {
+          .origin { .fs(14,32); .c(#4D5054); .wh(114,32); .pl(20); .-box; .br(16); .bgc(#EEEEEE); .ib; .rel; .mt(20);
+            &:after { .cnt; .wh(22,22); .contain('../images/mo/squ/ico-origin.png'); .abs; .rt(20,5); pointer-events: none; }
+          }
+        }
+      }
+
+      &.squ03 {
+        .recruit { .wh(100%,440); .cover('../images/mo/squ/squ-img1.png'); .bg-c; .br(10); .pt(50); .-box; .tc;
+          p { .fs(16,25); .c(#282828);
+            &.tit { .bold; .mb(20); }
+            &.txt { .regular; .mb(20); }
+          }
+          .btn { .fs(16,25); .c(#04B0E2); .bold; .tc; .p(8,20); .-box; .br(21); .bgc(#fff); }
+        }
+      }
+      &.squ04 {
+        .qna { .-a(#04B0E2); .c(#04B0E2); .mb(50); }
+        .tab-wrap {
+          .tab {
+            &:nth-child(2) { .-t(#D9D9D9); .br-r(10); }
+          }
+        }
+        .view { .mt(50); .hide;
+          .faq-list { .-t(#CDD0D3,2); .tl;
+            li { .fs(16,25); .-b(#D9D9D9);
+              .btn { .f; .c(#282828); .p(20,70,20,20); .-box; .rel;
+                &:after { .cnt; .wh(30,30); .contain('../images/mo/squ/ico-arr-d.png'); .abs; .rt(20,50%); .mt(-15); }
+              }
+              .answer { .bgc(#F2FCFF); .p(20); .-box; .-v(#D9D9D9); .hide; }
+              &.open {
+                .btn:after { transform: rotate(180deg); }
+                .answer { .block; }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

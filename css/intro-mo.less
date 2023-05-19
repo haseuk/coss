@@ -425,7 +425,7 @@ section { .pb(210); .-box;
     &.intro4 {
       .menu-art { .wf; .p(0); }
       .menu-wrap { .crop; .mb(50);
-        .select-menu { .p(0,16); .-box; .flex; .space-between; .nowrap; .scroll; -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */
+        .select-menu { .p(0,16); .-box; .flex; .space-between; .nowrap; .scroll-x; -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */
           &::-webkit-scrollbar { .hide; }
           .btn { .fs(18,52); .c(#282828); .bold; .h(52); .p(0,25); .-box; .br(26); .mr(20);
             &:last-child { .mr(0); }
@@ -447,7 +447,7 @@ section { .pb(210); .-box;
         }
       }
       .planet-wrap { .wh(100%,439); .tc; .pt(50); .-box; .rel;
-        &:after { .cnt; .h(439); background: url('../images/mo/intro/int4-bg.png') center bottom; .cover; }
+        &:after { .cnt; .f; .cover('../images/mo/intro/int4-bg.png'); .abs; .lb; .z(-1); }
         .img { .wh(100%,179); .ib;
           img { .wf; object-fit: cover; }
         }
@@ -514,6 +514,7 @@ section { .pb(210); .-box;
   &.intro, &.vision {
     .vis-top { .cover('../images/mo/intro/intro-vis.png'); .bg-c; }
   }
+  &.int4-vision { .pb(0); }
 }
 
 .popup {

@@ -14,6 +14,363 @@
 <body>
 <div class="container">
   <div class="wrap">
+
+
+
+    <!-- ######## 헤더 -->
+    <!-- open 클래스 추가시 메뉴 열림-->
+    <header>
+      <div class="sns-dir web">
+        <ul>
+          <li class="sns1"><a href="https://lms.biocoss.ac.kr/" target="_blank">LMS</a></li>
+          <li class="sns2"><a href="https://blog.naver.com/dankookbiohealt" target="_blank">NAVER BLOG</a></li>
+          <li class="sns3"><a href="https://www.instagram.com/dankook_coss" target="_blank">INSTAGRAM</a></li>
+          <li class="sns4"><a href="https://www.youtube.com/channel/UCjFS4dof6TC16cVvyBXNfKw" target="_blank">YOUTUBE</a></li>
+        </ul>
+      </div>
+      <div class="h-inner">
+        <h1><a href="/" class="logo btn">COSS 바이오 헬스</a></h1>
+        <!--pc에서만 노출됨-->
+        <div class="menu-list web">
+          <!-- btn에 on 클래스 추가되면 활성화 -->
+          <a href="" class="btn" onmouseover="depth2GnbOpen('gnb1-open')" onmouseleave="depth2GnbClose('gnb1-open')">사업소개</a>
+          <a href="" class="btn" onmouseover="depth2GnbOpen('gnb2-open')" onmouseleave="depth2GnbClose('gnb2-open')">교육과정</a>
+          <a href="" class="btn" onmouseover="depth2GnbOpen('gnb3-open')" onmouseleave="depth2GnbClose('gnb3-open')">학생지원</a>
+          <a href="" class="btn" onmouseover="depth2GnbOpen('gnb4-open')" onmouseleave="depth2GnbClose('gnb4-open')">성과공유</a>
+          <a href="" class="btn" onmouseover="depth2GnbOpen('gnb5-open')" onmouseleave="depth2GnbClose('gnb5-open')">정보광장</a>
+        </div>
+        <!--pc에서만 노출됨-->
+        <a class="menu btn">메뉴</a>
+      </div>
+    </header>
+
+    <!-- open 클래스 추가시 메뉴 열림-->
+    <nav>
+      <div class="dim"></div>
+      <ul>
+        <li class="depth1">
+          <a class="btn dep1-btn">사업소개</a>
+          <div class="depth2"><!-- active 클래스 추가되면 오픈됨-->
+            <a href="" class="btn dep2-btn">사업소개</a>
+            <a href="" class="btn dep2-btn">비전 및 목표</a>
+            <a href="" class="btn dep2-btn">핵심역량</a>
+            <a href="" class="btn dep2-btn">바이오플래닛</a>
+            <a href="" class="btn dep2-btn">참여대학</a>
+          </div>
+        </li>
+
+        <li class="depth1">
+          <a class="btn dep1-btn">교육과정</a>
+          <div class="depth2">
+            <a href="" class="btn dep2-btn">교육과정 소개</a>
+            <a href="" class="btn dep2-btn">개설과목</a>
+            <a href="" class="btn dep2-btn">교육대상</a>
+            <a href="" class="btn dep2-btn">이수안내</a>
+          </div>
+        </li>
+        <li class="depth1">
+          <a class="btn dep1-btn">학생지원</a>
+          <div class="depth2">
+            <a href="" class="btn dep2-btn">지원 소개</a>
+            <a href="" class="btn dep2-btn">서포터즈</a>
+            <a href="" class="btn dep2-btn">비교과활동</a>
+          </div>
+        </li>
+        <li class="depth1">
+          <a class="btn dep1-btn">성과공유</a>
+          <div class="depth2">
+            <a href="" class="btn dep2-btn">우수성과</a>
+            <a href="" class="btn dep2-btn">K-MOOC</a>
+            <a href="" class="btn dep2-btn">자료실</a>
+          </div>
+        </li>
+        <li class="depth1">
+          <a class="btn dep1-btn">정보광장</a>
+          <div class="depth2">
+            <a href="" class="btn dep2-btn">자료실</a>
+            <a href="" class="btn dep2-btn">보도자료</a>
+            <a href="" class="btn dep2-btn">취업정보</a>
+            <a href="" class="btn dep2-btn">FAQ</a>
+          </div>
+        </li>
+      </ul>
+      <a class="btn gnb-close">닫기</a>
+    </nav>
+
+    <!--pc에서만 노출됨-->
+    <!-- gnb1~5-open 클래스 추가시 각 depth 메뉴 노출 -->
+    <div class="gnb-wrap web">
+      <!-- 사업소개 -->
+      <div class="gnb1 gnb-inner" onmouseover="depth2GnbOpen('gnb1-open')" onmouseleave="depth2GnbClose('gnb1-open')">
+        <div class="gnb-depth2">
+          <div class="dep-inner">
+            <a href="" class="btn">사업소개</a>
+            <a href="" class="btn">비전 및 목표</a>
+            <a href="" class="btn">핵심역량</a>
+            <a href="" class="btn">바이오플래닛</a>
+            <a href="" class="btn">참여대학</a>
+          </div>
+        </div>
+        <div class="depth2-preview">
+          <div class="dep-inner">
+            <div class="pre-cnt pre-cnt1">
+              <a href="" class="btn dir">사업소개</a>
+              <div class="r-box">
+                <iframe src="https://www.youtube.com/embed/jKRS8wQ5-4c?rel=0&playsinline" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="pre-cnt pre-cnt2">
+              <a href="" class="btn dir">비전 및 목표</a>
+              <div class="vision cnt2">
+                <img src="images/pc/home/ico-vision.png" alt="">
+                <p class="txt">
+                  <b>VISION</b>
+                  미래 바이오헬스 혁신인재 양성을 통한<br>
+                  국가 경쟁력 강화 및 청년실업 해소
+                </p>
+              </div>
+              <div class="edu cnt2">
+                <img src="images/pc/home/ico-edu.png" alt="">
+                <p class="txt">
+                  <b>교육목표</b>
+                  미래 바이오헬스 혁신인재 양성을 위한<br>
+                  통합플랫폼 구축·운영
+                </p>
+              </div>
+            </div>
+            <div class="pre-cnt pre-cnt3">
+              <a href="" class="btn dir">바이오 플래닛</a>
+              <div class="r-box">
+                <div class="swiper planet-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/pc/home/planet1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/pc/home/planet2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/pc/home/planet3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/pc/home/planet4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/pc/home/planet5.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/pc/home/planet6.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/pc/home/planet7.png" alt=""></div>
+                    <div class="swiper-slide"><img src="images/pc/home/planet8.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--교육과정 -->
+      <div class="gnb2 gnb-inner" onmouseover="depth2GnbOpen('gnb2-open')" onmouseleave="depth2GnbClose('gnb2-open')">
+        <div class="gnb-depth2">
+          <div class="dep-inner">
+            <a href="" class="btn">교육과정 소개</a>
+            <a href="" class="btn">개설과목</a>
+            <a href="" class="btn">교육대상</a>
+            <a href="" class="btn">이수안내</a>
+          </div>
+        </div>
+        <div class="depth2-preview">
+          <div class="dep-inner">
+            <div class="pre-cnt pre-cnt1">
+              <a href="" class="btn dir">교육과정 소개</a>
+              <div class="r-box">
+                <div class="intro int1">
+                  <p>집중이수제</p>
+                </div>
+                <div class="intro int2">
+                  <p>마이크로러닝</p>
+                </div>
+                <div class="intro int3">
+                  <p>현장 실무형 교육과정</p>
+                </div>
+              </div>
+            </div>
+            <div class="pre-cnt pre-cnt2">
+              <a href="" class="btn dir">개설과목</a>
+              <div class="depart cnt2">
+                <p>전공분야</p>
+                <div class="r-box">
+                  <span>디자인</span>
+                  <span>디바이스</span>
+                  <span>데이터</span>
+                </div>
+              </div>
+              <div class="detail cnt2">
+                <p>전공별 세부 과정</p>
+                <div class="r-box">
+                  <span>헬스케어 소프트웨어</span>
+                  <span>웨어러블 의료기기</span>
+                  <span>3D 융합미디어</span>
+                  <span>헬스케어 빅데이터</span>
+                  <span>2D 일러스터</span>
+                  <span>실감형기기</span>
+                  <span>휴먼헬스</span>
+                </div>
+              </div>
+            </div>
+            <div class="pre-cnt pre-cnt3">
+              <a href="" class="btn dir">교육대상</a>
+              <div class="r-box">
+                <p class="tit">누구나 참여할  수 있도록 열린 교육기회</p>
+                <div class="p-block">
+                  <div class="ed-box">
+                    <img src="images/pc/home/ico-ed1.png" alt="">
+                    <p>보·간호계열 학생</p>
+                  </div>
+                  <div class="ed-box">
+                    <img src="images/pc/home/ico-ed2.png" alt="">
+                    <p>인문사회, 예술계열 학생</p>
+                  </div>
+                  <div class="ed-box">
+                    <img src="images/pc/home/ico-ed3.png" alt="">
+                    <p>공학계열 학생</p>
+                  </div>
+                  <div class="ed-box">
+                    <img src="images/pc/home/ico-ed4.png" alt="">
+                    <p>세상을 바꿀 예비창업가</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--학생지원 -->
+      <div class="gnb3 gnb-inner" onmouseover="depth2GnbOpen('gnb3-open')" onmouseleave="depth2GnbClose('gnb3-open')">
+        <div class="gnb-depth2">
+          <div class="dep-inner">
+            <a href="" class="btn">지원 소개</a>
+            <a href="" class="btn">서포터즈</a>
+            <a href="" class="btn">비교과활동</a>
+          </div>
+        </div>
+        <div class="depth2-preview">
+          <div class="dep-inner">
+            <div class="pre-cnt pre-cnt1">
+              <a href="" class="btn dir">지원 소개</a>
+              <div class="r-box">
+                <ul>
+                  <li>
+                    <p class="tit">이수인증</p>
+                    <p class="txt">혁신융합대학 이수증, 비트쉐어/e-포트폴리오</p>
+                  </li>
+                  <li>
+                    <p class="tit">진로취창업 프로그램</p>
+                    <p class="txt">e-코칭 시스템, 바이오헬스 특성화 진로취업 교육 센터 구축, 학생동아리 활동 지원</p>
+                  </li>
+                  <li>
+                    <p class="tit">교육 기자재 지원</p>
+                    <p class="txt">텔레프레즌스 강의실 구축, 학습기자재</p>
+                  </li>
+                  <li>
+                    <p class="tit">현장실습 및 인턴십</p>
+                    <p class="txt">e-코칭 매칭 디지털 리빙랩 프로젝트, 캡스톤디자인, 자기설계현장 실습, 인턴십</p>
+                  </li>
+                  <li>
+                    <p class="tit">비교과 프로그램</p>
+                    <p class="txt">바이오헬스 특화 클라우드형 비교과 프로그램, 타대학 학생과의 팀 프로젝트 기회 제공</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="pre-cnt pre-cnt2">
+              <a href="" class="btn dir">서포터즈</a>
+              <div class="r-box">
+                <div class="char cnt2">
+                  <img src="images/pc/home/supporters.png" alt="">
+                  <img src="images/pc/home/supporters.png" alt="">
+                  <img src="images/pc/home/supporters.png" alt="">
+                </div>
+                <div class="sup-link cnt2">
+                  <a href="https://blog.naver.com/dankookbiohealth" target="_blank" class="btn link1">dndkookbiohealth</a>
+                  <a href="https://www.instagram.com/dankook_coss/" target="_blank" class="btn link2">dndkook_coss</a>
+                  <a href="https://www.youtube.com/channel/UCjFS4dof6TC16cVvyBXNfKw" target="_blank" class="btn link3">바이오헬스 혁신융합대학</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--성과공유 -->
+      <div class="gnb4 gnb-inner" onmouseover="depth2GnbOpen('gnb4-open')" onmouseleave="depth2GnbClose('gnb4-open')">
+        <div class="gnb-depth2">
+          <div class="dep-inner">
+            <a href="" class="btn">우수성과</a>
+            <a href="" class="btn">K-MOOC</a>
+            <a href="" class="btn">자료실</a>
+          </div>
+        </div>
+        <div class="depth2-preview">
+          <div class="dep-inner">
+            <div class="pre-cnt pre-cnt1">
+              <div class="r-box">
+                <img src="images/pc/home/result.png" alt="">
+                <span>우수성과</span>
+                <p class="tit">바이오헬스 혁신융합대학의<br> <b>우수성과</b>를 확인하세요.</p>
+                <a href="" class="btn">바로가기</a>
+              </div>
+            </div>
+            <div class="pre-cnt pre-cnt2">
+              <div class="r-box">
+                <img src="images/pc/home/mooc.png" alt="">
+                <p class="tit">K-MOOC 수업을 확인하세요.</p>
+                <p class="txt"><b>무크(MOOC)</b>란 Massive, Open,<br> Online, Course의 줄임말로<br> 오픈형 온라인 학습 과정입니다.</p>
+                <a href="" class="btn">바로가기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--정보광장 -->
+      <div class="gnb5 gnb-inner" onmouseover="depth2GnbOpen('gnb5-open')" onmouseleave="depth2GnbClose('gnb5-open')">
+        <div class="gnb-depth2">
+          <div class="dep-inner">
+            <a href="" class="btn">공지사항</a>
+            <a href="" class="btn">보도자료</a>
+            <a href="" class="btn">취업정보</a>
+            <a href="" class="btn">FAQ</a>
+          </div>
+        </div>
+        <div class="depth2-preview">
+          <div class="dep-inner">
+            <div class="pre-cnt pre-cnt1">
+              <a href="" class="btn dir">공지사항</a>
+              <div class="r-box">
+                <div class="banner">
+                  <img src="images/pc/home/banner1.png" alt="">
+                </div>
+                <p class="tit">우송대학교 바이오헬스 실감미디어 (VR/AR/MR) 교육실 홍보영상</p>
+              </div>
+            </div>
+            <div class="pre-cnt pre-cnt2">
+              <a href="" class="btn dir">보도자료</a>
+              <div class="r-box">
+                <div class="banner">
+                  <img src="images/pc/home/banner2.png" alt="">
+                </div>
+                <p class="tit">대전대-바이오헬스케어협회, 업무협약 체결</p>
+                <span>2022-02-09</span>
+              </div>
+            </div>
+            <div class="pre-cnt pre-cnt3">
+              <div class="r-box">
+                <img src="images/pc/home/ico-search.png" alt="">
+                <p>바이오헬스 융합대학의<br> 궁금한 점을 확인해 보세요.</p>
+                <a href="" class="btn">알아보기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--pc에서만 노출됨-->
+    <!-- ######## 헤더 -->
+
+
+
     <section class="curriculum">
       <div class="vis-top">
         <div class="bread">
@@ -69,8 +426,8 @@
                 </div>
                 <div class="l-cnt">
                   <p class="tit">집중이수제는 무엇일까요?</p>
-                  <p class="txt">혁신융합대학에서는 학생들의 학업 부담을 낮추고, 유연한 학습 참여를 지원하기 위해 온라인 수업에 기반을 둔 집중이수제를 도입했습니다.</p>
-                  <p class="txt"><b>본인이 원하는 시점에 교과목별 기준 (학점 15시간 이상) 범위 내에서 자유롭게</b> 수강할 수 있습니다.</p>
+                  <p class="txt">혁신융합대학에서는 학생들의 학업 부담을 낮추고, 유연한 학습 참여를<br class="web"> 지원하기 위해 온라인 수업에 기반을 둔 집중이수제를 도입했습니다.</p>
+                  <p class="txt"><b>본인이 원하는 시점에 교과목별 기준 (학점 15시간 이상)<br class="web"> 범위 내에서 자유롭게</b> 수강할 수 있습니다.</p>
                 </div>
               </li>
               <li class="rd-crop " mov>
@@ -80,8 +437,8 @@
                 </div>
                 <div class="l-cnt">
                   <p class="tit">마이크로러닝은 무엇일까요?</p>
-                  <p class="txt">마이크로러닝은 bite-sized contents 즉, <b>학습 부담은 낮추고 학습 효과는 최대화</b>하기 위해 콘텐츠를 매력 적이고 효율적으로 제작하였습니다.</p>
-                  <p class="txt">전문적인 교육이지만, 누구나 쉽게 따라올 수 있도록 반복 학습을 통해 충분히 전문 역량을 쌓을 수 있도록 교과목을 구성하였습니다.</p>
+                  <p class="txt">마이크로러닝은 bite-sized contents 즉, <b>학습 부담은 낮추고 학습 효과는<br class="web"> 최대화</b>하기 위해 콘텐츠를 매력 적이고 효율적으로 제작하였습니다.</p>
+                  <p class="txt">전문적인 교육이지만, 누구나 쉽게 따라올 수 있도록 반복 학습을 통해<br class="web"> 충분히 전문 역량을 쌓을 수 있도록 교과목을 구성하였습니다.</p>
                 </div>
               </li>
               <li class="rd-crop " mov>
@@ -91,8 +448,8 @@
                 </div>
                 <div class="l-cnt">
                   <p class="tit">현장 실무형 교육과정은 무엇일까요?</p>
-                  <p class="txt">혁신융합대학은 다양한 <b>병원, 산업체, 연구기관</b>과 함께하는 현장 실무형 교육과정을 개발 대부분의 수업은 원격으로 진행됩니다.</p>
-                  <p class="txt">실무역량 강화를 위한 실험· 실습, 프로젝트형 수업은 대면 수업, 현장 방문, 인턴십 등의 형태로 이루어질 예정입니다.</p>
+                  <p class="txt">혁신융합대학은 다양한 <b>병원, 산업체, 연구기관</b>과 함께하는 현장 실무형<br class="web"> 교육과정을 개발 대부분의 수업은 원격으로 진행됩니다.</p>
+                  <p class="txt">실무역량 강화를 위한 실험· 실습, 프로젝트형 수업은 대면 수업,<br class="web"> 현장 방문, 인턴십 등의 형태로 이루어질 예정입니다.</p>
                 </div>
               </li>
             </ul>
@@ -103,31 +460,27 @@
             <h4>바이오헬스 분야 주관기관 선정</h4>
 
             <ul class="card-ul">
-              <li>
+              <li mov>
                 <div class="img">
-                  <img src="images/mo/curr/curr1-img1.png" alt="" class="mo">
-                  <img src="images/pc/curr/curr1-img1.png" alt="" class="web">
+                  <img src="images/mo/curr/curr1-img1.png" alt="" class="">
                 </div>
                 <p class="tit">2026년까지 바이오헬스 분야<br> <b>실무인재 25,000명 양성</b></p>
                 <p class="txt">바이오헬스·디지털헬스 분야 산·학·연·병<br> 연계를 통한 디지털 바이오헬스<br> 융합 전문가 양성</p>
               </li>
-              <li>
+              <li mov>
                 <div class="img">
-                  <img src="images/mo/curr/curr1-img2.png" alt="" class="mo">
-                  <img src="images/pc/curr/curr1-img2.png" alt="" class="web">
+                  <img src="images/mo/curr/curr1-img2.png" alt="" class="">
                 </div>
                 <p class="tit">디노베이션, 디자인, 디바이스, 데이터,<br> 디지털리빙랩의 <b>융복합 교육과정 운영</b></p>
                 <p class="txt">디지털 바이오헬스 핵심 및 직무<br> 역량 기반 교육과정 개발, 운영</p>
               </li>
-              <li>
+              <li mov>
                 <div class="img">
-                  <img src="images/mo/curr/curr1-img3.png" alt="" class="mo">
-                  <img src="images/pc/curr/curr1-img3.png" alt="" class="web">
+                  <img src="images/mo/curr/curr1-img3.png" alt="" class="">
                 </div>
                 <p class="tit">디지털 공유 플랫폼 기반<br> <b>유연학기제 시행</b></p>
                 <p class="txt">혁신융합대학 통합플랫폼 운영을 통한<br> 온라인 이론 및 실습 강의 실시 및<br> 집중이수제를 통한 탄력적 학사 운영</p>
               </li>
-
             </ul>
           </div>
 
@@ -135,25 +488,25 @@
             <p class="sub-txt">바이오헬스 융합학부 설립</p>
             <p class="tit">3개의 전공 분야 및 7개의 전공별<br> 세부 전문가 과정 트랙 운영</p>
 
-            <ul class="card-ul">
+            <ul class="card-ul" fade>
               <li>
                 <p class="tit">3개의 전공 분야</p>
-                <div class="part-block">
+                <div class="part-block par-b1">
                   <div class="list">
                     <div class="img">
-                      <img src="images/mo/curr/curr1-img4.png" alt="" class="mo">
+                      <img src="images/mo/curr/curr1-img4.png" alt="" class="">
                     </div>
                     <p class="nm"><s>바이오헬스 디자인 전공</s></p>
                   </div>
                   <div class="list">
                     <div class="img">
-                      <img src="images/mo/curr/curr1-img5.png" alt="" class="mo">
+                      <img src="images/mo/curr/curr1-img5.png" alt="" class="">
                     </div>
-                    <p class="nm"><s>바이오헬스 디바이스 전공바이오헬스 디바이스 전공</s></p>
+                    <p class="nm"><s>바이오헬스 디바이스 전공</s></p>
                   </div>
                   <div class="list">
                     <div class="img">
-                      <img src="images/mo/curr/curr1-img6.png" alt="" class="mo">
+                      <img src="images/mo/curr/curr1-img6.png" alt="" class="">
                     </div>
                     <p class="nm">바이오헬스 데이터 전공</p>
                   </div>
@@ -161,55 +514,55 @@
               </li>
             </ul>
 
-            <ul class="card-ul">
+            <ul class="card-ul" fade>
               <li>
                 <p class="tit">7개의 전공별 세부 전문가 과정</p>
-                <div class="part-block">
+                <div class="part-block par-b2">
                   <div class="list">
                     <div class="img">
-                      <img src="images/mo/curr/curr1-img7.png" alt="" class="mo">
+                      <img src="images/mo/curr/curr1-img7.png" alt="" class="">
                     </div>
                     <p class="nm"><s>3D 바이오 융합미디어<br> 전문가 과정</s></p>
                   </div>
                   <div class="list">
                     <div class="img">
-                      <img src="images/mo/curr/curr1-img8.png" alt="" class="mo">
+                      <img src="images/mo/curr/curr1-img8.png" alt="" class="">
                     </div>
-                    <p class="nm"><s>2D 바이오 일러스터<br> 전문가 과정 (이상 바이오헬스 디자인 전공)</s></p>
+                    <p class="nm"><s>2D 바이오 일러스터<br class="mo"> 전문가 과정<br class="web"> <i>(이상 바이오헬스 디자인 전공)</i></s></p>
                   </div>
                 </div>
-                <div class="part-block">
+                <div class="part-block par-b3">
                   <div class="list">
                     <div class="img">
-                      <img src="images/mo/curr/curr1-img9.png" alt="" class="mo">
+                      <img src="images/mo/curr/curr1-img9.png" alt="" class="">
                     </div>
                     <p class="nm"><s>웨어러블 의료기기<br> 전문가 과정</s></p>
                   </div>
                   <div class="list">
                     <div class="img">
-                      <img src="images/mo/curr/curr1-img10.png" alt="" class="mo">
+                      <img src="images/mo/curr/curr1-img10.png" alt="" class="">
                     </div>
                     <p class="nm"><s>실감형기기 전문가 과정</s></p>
                   </div>
                   <div class="list">
                     <div class="img">
-                      <img src="images/mo/curr/curr1-img11.png" alt="" class="mo">
+                      <img src="images/mo/curr/curr1-img11.png" alt="" class="">
                     </div>
-                    <p class="nm"><s>휴먼헬스 전문가 과정<br> 이상 바이오헬스 디바이스 전공)</s></p>
+                    <p class="nm"><s>휴먼헬스 전문가 과정<br> <i>(이상 바이오헬스 디바이스 전공)</i></s></p>
                   </div>
                 </div>
-                <div class="part-block">
+                <div class="part-block par-b4">
                   <div class="list">
                     <div class="img">
-                      <img src="images/mo/curr/curr1-img12.png" alt="" class="mo">
+                      <img src="images/mo/curr/curr1-img12.png" alt="" class="">
                     </div>
                     <p class="nm"><s>헬스케어 빅데이터<br> 전문가 과정</s></p>
                   </div>
                   <div class="list">
                     <div class="img">
-                      <img src="images/mo/curr/curr1-img13.png" alt="" class="mo">
+                      <img src="images/mo/curr/curr1-img13.png" alt="" class="">
                     </div>
-                    <p class="nm"><s>헬스케어 소프트웨어<br> 전문가 과정 (이상 바이오헬스 데이터 전공)</s></p>
+                    <p class="nm"><s>헬스케어 소프트웨어<br class="mo"> 전문가 과정<br class="web"> <i>(이상 바이오헬스 데이터 전공)</i></s></p>
                   </div>
                 </div>
               </li>
@@ -219,62 +572,68 @@
           <div class="cont cont04">
             <p class="tit">바이오헬스 융합전공 운영</p>
             
-            <ul class="card-ul">
+            <ul class="card-ul" fade>
               <li>
-                <img src="images/mo/curr/curr1-pic4.png" alt="" class="mo">
+                <img src="images/mo/curr/curr1-pic4.png" alt="" class="">
                 <p class="txt">입학 계열 및 학과와 관계없이 바이오헬스<br> 융합학부 내 융합전공으로 학위 이수 가능</p>
               </li>
               <li>
-                <img src="images/mo/curr/curr1-pic5.png" alt="" class="mo">
+                <img src="images/mo/curr/curr1-pic5.png" alt="" class="">
                 <p class="txt">바이오헬스 융합학부에서 교과목 이수 시<br> 다전공 이수학점으로 인정</p>
               </li>
             </ul>
           </div>
 
           <div class="cont cont05">
-            <p class="tit">바이오헬스 분야 혁신인재 양성을 위한<br> 표준 교육과정: 5D 교육과정</p>
+            <p class="tit">바이오헬스 분야 혁신인재 양성을 위한<br class="mo"> 표준 교육과정: 5D 교육과정</p>
 
-            <ul class="card-ul">
+            <ul class="card-ul" fade>
               <li>
-                <p class="tit">기초소양 교육과정</p>
-                <div class="part-block">
-                  <div class="list">
-                    <div class="img">
-                      <img src="images/mo/curr/curr1-img14.png" alt="" class="mo">
+                <div class="li-inner">
+                  <p class="tit">기초소양 교육과정</p>
+                  <div class="part-block">
+                    <div class="list">
+                      <div class="img">
+                        <img src="images/mo/curr/curr1-img14.png" alt="" class="">
+                      </div>
+                      <p class="nm"><s>Denovation</s></p>
                     </div>
-                    <p class="nm"><s>Denovation</s></p>
                   </div>
                 </div>
 
-                <p class="tit blue-c">전문지식 교육과정</p>
-                <div class="part-block">
-                  <div class="list">
-                    <div class="img">
-                      <img src="images/mo/curr/curr1-img15.png" alt="" class="mo">
+                <div class="li-inner li-inr2">
+                  <p class="tit"><span>전문지식 교육과정</span></p>
+                  <div class="part-block">
+                    <div class="list">
+                      <div class="img">
+                        <img src="images/mo/curr/curr1-img15.png" alt="" class="">
+                      </div>
+                      <p class="nm"><s>Design</s></p>
                     </div>
-                    <p class="nm blue-c"><s>Design</s></p>
-                  </div>
-                  <div class="list">
-                    <div class="img">
-                      <img src="images/mo/curr/curr1-img16.png" alt="" class="mo">
+                    <div class="list">
+                      <div class="img">
+                        <img src="images/mo/curr/curr1-img16.png" alt="" class="">
+                      </div>
+                      <p class="nm">Device</p>
                     </div>
-                    <p class="nm blue-c">Device</p>
-                  </div>
-                  <div class="list">
-                    <div class="img">
-                      <img src="images/mo/curr/curr1-img17.png" alt="" class="mo">
+                    <div class="list">
+                      <div class="img">
+                        <img src="images/mo/curr/curr1-img17.png" alt="" class="">
+                      </div>
+                      <p class="nm">Data</p>
                     </div>
-                    <p class="nm blue-c">Data</p>
                   </div>
                 </div>
 
-                <p class="tit">현장실무 교육과정</p>
-                <div class="part-block">
-                  <div class="list">
-                    <div class="img">
-                      <img src="images/mo/curr/curr1-img18.png" alt="" class="mo">
+                <div class="li-inner">
+                  <p class="tit">현장실무 교육과정</p>
+                  <div class="part-block">
+                    <div class="list">
+                      <div class="img">
+                        <img src="images/mo/curr/curr1-img18.png" alt="" class="">
+                      </div>
+                      <p class="nm"><s>Digital living lab</s></p>
                     </div>
-                    <p class="nm"><s>Digital living lab</s></p>
                   </div>
                 </div>
               </li>
@@ -282,22 +641,22 @@
           </div>
 
 
-          <div class="cont cont06" data-curr01="1">
+          <div class="cont cont06 data-wrap" data-view="1">
             <p class="sub-tit rd-box">교육과정 단계</p>
 
             <div class="tab-wrap">
-              <a class="btn tab tab01" data-curr01-tab="1">
+              <a class="btn tab tab01" data-tab="1">
                 <span>STEP01</span>
                 기초소양 교육과정<br>
                 (Denovation)
               </a>
-              <a class="btn tab tab02" data-curr01-tab="2">
+              <a class="btn tab tab02" data-tab="2">
                 <span>STEP02</span>
                 전문지식 교육과정<br>
-                (Design/Device<br>
+                (Design/Device<br class="mo">
                 /Data)
               </a>
-              <a class="btn tab tab03" data-curr01-tab="3">
+              <a class="btn tab tab03" data-tab="3">
                 <span>STEP03</span>
                 현장실무 교육과정<br>
                 (Digital living lab)
@@ -308,22 +667,28 @@
             <div class="view view01">
               <div class="bnr">
                 <p class="tit">디노베이션 과정</p>
-                <p class="txt">첫발을 내딛는 학생들을 위한 <b>입문 과정</b>이며<br> 바이오헬스 분야 미래인재에게 요구되는<br> <b>기초소양을 함양하는 과정</b>입니다.</p>
+                <p class="txt">첫발을 내딛는 학생들을 위한 <b>입문 과정</b>이며<br> 바이오헬스 분야 미래인재에게 요구되는<br class="mo"> <b>기초소양을 함양하는 과정</b>입니다.</p>
               </div>
 
-              <div class="list">
+              <div class="list" fade>
                 <div class="img">
                   <img src="images/mo/curr/curr1-pic6.png" alt="" class="mo">
+                  <img src="images/pc/curr/curr1-pic6.png" alt="" class="web">
                 </div>
-                <p class="tit">Design + Innovation</p>
-                <p class="txt">디노베이션(Denovation)은 Design과 Innovation의 합성어로 바이오헬스 분야 혁신을 위하여 진로를 설계하고 준비할 수 있도록 기획된 초급과정을 의미합니다. 바이오헬스 진로설계와 초급과정으로 구성되어있습니다.</p>
+                <div class="t-box">
+                  <p class="tit">Design + Innovation</p>
+                  <p class="txt">디노베이션(Denovation)은 Design과 Innovation의 합성어로 바이오헬스 분야<br class="web"> 혁신을 위하여 진로를 설계하고 준비할 수 있도록 기획된 초급과정을 의미합니다.<br class="web"> 바이오헬스 진로설계와 초급과정으로 구성되어있습니다.</p>
+                </div>
               </div>
-              <div class="list">
+              <div class="list" fade>
                 <div class="img">
                   <img src="images/mo/curr/curr1-pic7.png" alt="" class="mo">
+                  <img src="images/pc/curr/curr1-pic7.png" alt="" class="web">
                 </div>
-                <p class="tit">바이오헬스 진로설계</p>
-                <p class="txt">바이오헬스 진로설계 과정은 마이크로러닝 형태의 콘텐츠를 자유롭게 수강하며 바이오헬스 신직업, 신산업, 트렌드에 대해 이해할 수 있는 교과목으로 구성되어 있습니다.</p>
+                <div class="t-box">
+                  <p class="tit">바이오헬스 진로설계</p>
+                  <p class="txt">바이오헬스 진로설계 과정은 마이크로러닝 형태의 콘텐츠를 자유롭게 수강하며<br class="web"> 바이오헬스 신직업, 신산업, 트렌드에 대해 이해할 수 있는 교과목으로 구성되어 있습니다.</p>
+                </div>
               </div>
             </div>
 
@@ -331,41 +696,41 @@
             <div class="view view02">
               <div class="bnr">
                 <p class="tit">3D 전문교육 과정</p>
-                <p class="txt">디노베이션과정을 모두 마친 학생들이 <b>3가지 전공 중 하나를 선택</b>하여 구체화된 진로 목표를 토대로 디자인, 디바이스, 데이터 중 자유롭게 <b>선택 및 심화 교과목 수강을 통해 전문성을 향상시키는 과정</b>입니다.</p>
+                <p class="txt">디노베이션과정을 모두 마친 학생들이 <b>3가지 전공 중 하나를 선택</b>하여 구체화된 진로 목표를 토대로<br class="web"> 디자인, 디바이스, 데이터 중 자유롭게 <b>선택 및 심화 교과목 수강을 통해 전문성을 향상시키는 과정</b>입니다.</p>
               </div>
 
-              <table cellpadding="0" cellspacing="0" border="0">
-                <tr>
+              <table cellpadding="0" cellspacing="0" border="0" class="tbl01" fade>
+                <tr class="tr1">
                   <th>세부분야</th>
                   <td class="th">세부 교육과정 내용</td>
                 </tr>
-                <tr>
+                <tr class="tr2">
                   <th>바이오헬스 디자인<br> (Design)</th>
                   <td>2D･3D 영상화, 모델링을 통해 <s>실감현실(VR/AR/MR) 상황에서 건강 관리, 의료영상 분석, 의학콘텐츠 제작, 영상화</s>를 통한 의학 생리/병리현상 예측화 등의 전문가를 양성하기 위한 교육과정</td>
                 </tr>
-                <tr>
+                <tr class="tr3">
                   <th>바이오헬스 디바이스<br> (Device)</th>
                   <td>웨어러블의료기기, 홈케어장비, 휴대형진단기기, 의료서비스 플랫폼 등 <s>의료기기의 설계･개발 전문가</s>를 양성하기 위한 교육과정</td>
                 </tr>
-                <tr>
+                <tr class="tr4">
                   <th>바이오헬스 데이터<br> (Data)</th>
                   <td>의료 빅데이터를 수집･조직화･관리하고, AI 기술에 기반을 둔 <s>개인 맞춤형 디지털 바이오헬스 소프트웨어 플랫폼을 구축</s>할 수 있는 전문가를 양성하기 위한 교육과정</td>
                 </tr>
               </table>
 
-              <table cellpadding="0" cellspacing="0" border="0">
-                <tr>
+              <table cellpadding="0" cellspacing="0" border="0" class="tbl02" fade>
+                <tr class="tr1">
                   <th>세부분야</th>
-                  <td class="th">세부 교육과정 내용</td>
+                  <td class="th">세부 트랙</td>
                 </tr>
-                <tr>
+                <tr class="tr2">
                   <th>바이오헬스 디자인<br> (Design)</th>
                   <td>
                     <p>3D 융합미디어 트랙</p>
                     <p>2D 일러스터 트랙</p>
                   </td>
                 </tr>
-                <tr>
+                <tr class="tr3">
                   <th>바이오헬스 디바이스<br> (Device)</th>
                   <td>
                     <p>웨어러블 의료기기 트랙</p>
@@ -373,7 +738,7 @@
                     <p>휴먼헬스 트랙</p>
                   </td>
                 </tr>
-                <tr>
+                <tr class="tr4">
                   <th>바이오헬스 데이터<br> (Data)</th>
                   <td>
                     <p>헬스케어 빅데이터 트랙</p>
@@ -385,24 +750,39 @@
 
             <!-- step01: data-curr01="1" -->
             <div class="view view03">
-              <p class="txt">다양한 병원, 산업체, 연구기관과 함께하는 현장실무 교육과정인 디지털 리빙랩 프로젝트, 인턴십 등에 참여하면서 실무 역량 강화를 위한 현장 밀착형 문제 해결형 프로그램도 포함하고 있습니다.</p>
-              <div class="prcs-wrap">
-                <img src="images/mo/curr/curr1-pic8.png" alt="" class="mo">
-                <p class="tit">디지털 리빙랩이 무엇인가요?</p>
-                <p class="txt">디지털 리빙랩은 기업에서 제안한 혹은 지역사회의 바이오헬스 분야 관련 문제, 혁신 등을 프로젝트를 통해 해결하는 현장 밀착형 문제 해결형 프로그램을 의미합니다.</p>
-
-                <div class="prcs">
-                  <p class="tit">디지털 리빙랩 프로세스</p>
-                  <img src="images/mo/curr/curr-prcs.png" alt="">
+              <p class="txt">다양한 병원, 산업체, 연구기관과 함께하는 현장실무 교육과정인 디지털 리빙랩 프로젝트, 인턴십 등에<br class="web"> 참여하면서 실무 역량 강화를 위한 현장 밀착형 문제 해결형 프로그램도 포함하고 있습니다.</p>
+              <div class="prcs-wrap" fade>
+                <div class="prcs-inner">
+                  <img src="images/mo/curr/curr1-pic8.png" alt="" class="">
+                  <div class="t-block">
+                    <p class="tit">디지털 리빙랩이 무엇인가요?</p>
+                    <p class="txt">디지털 리빙랩은 기업에서 제안한 혹은 지역사회의 바이오헬스 분야 관련 문제, 혁신 등을<br class="web"> 프로젝트를 통해 해결하는 현장 밀착형 문제 해결형 프로그램을 의미합니다.</p>
+                  </div>
                 </div>
 
-                <img src="images/mo/curr/curr1-pic9.png" alt="" class="mo">
-                <p class="tit">어떤 수업인가요?</p>
-                <p class="txt">바이오헬스 혁신융합대학의 고급 교육과정은 모두 실무형, 현장 연계형 수업으로 진행되어 리빙랩과정을 수강하는 모든 학생들은 병원, 헬스케어 유관 기관 및 기업에서 실무경험을 쌓을 수 있습니다.</p>
+                <div class="prcs-inner">
+                  <div class="prcs">
+                    <p class="tit">디지털 리빙랩 프로세스</p>
+                    <img src="images/mo/curr/curr-prcs.png" alt="" class="mo">
+                    <img src="images/pc/curr/curr-prcs.png" alt="" class="web">
+                  </div>
+                </div>
 
-                <img src="images/mo/curr/curr1-pic10.png" alt="" class="mo">
-                <p class="tit">교과목 수강을 통해 무엇을 얻을 수 있을까요?</p>
-                <p class="txt">디지털 바이오헬스분야 유망시장 현장 프로젝트, 리빙랩 프로젝트 등을 수행함으로써 사회적 가치를 실현, 지역 간 불균형 해소에 기여 및 팀 활동을 통한 상호소통역량 향상을 기대할 수 있을 것입니다.</p>
+                <div class="prcs-inner">
+                  <img src="images/mo/curr/curr1-pic9.png" alt="" class="">
+                  <div class="t-block">
+                    <p class="tit">어떤 수업인가요?</p>
+                    <p class="txt">바이오헬스 혁신융합대학의 고급 교육과정은 모두 실무형, 현장 연계형 수업으로 진행되어 리빙랩과정을<br class="web"> 수강하는 모든 학생들은 병원, 헬스케어 유관 기관 및 기업에서 실무경험을 쌓을 수 있습니다.</p>
+                  </div>
+                </div>
+
+                <div class="prcs-inner">
+                  <img src="images/mo/curr/curr1-pic10.png" alt="" class="">
+                  <div class="t-block">
+                    <p class="tit">교과목 수강을 통해 무엇을 얻을 수 있을까요?</p>
+                    <p class="txt">디지털 바이오헬스분야 유망시장 현장 프로젝트, 리빙랩 프로젝트 등을 수행함으로써 사회적 가치를 실현,<br class="web"> 지역 간 불균형 해소에 기여 및 팀 활동을 통한 상호소통역량 향상을 기대할 수 있을 것입니다.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -412,16 +792,85 @@
 
 
 
+
+
+    <!--footer-->
+    <footer>
+      <!--모바일에서만 노출-->
+      <div class="link-wrap mo"><!-- open 클래스 추가되면 열림 -->
+        <a class="btn link"></a>
+        <div class="link-list">
+          <a href="https://lms.biocoss.ac.kr/" target="_blank" class="btn txt on">바이오헬스 LMS <i></i></a>
+          <a href="" class="btn txt">페이지명 <i></i></a>
+          <a href="" class="btn txt">페이지명 <i></i></a>
+          <a href="" class="btn txt">페이지명 <i></i></a>
+        </div>
+      </div>
+      <!--모바일에서만 노출-->
+
+
+
+
+      <a class="btn top">맨위로 이동</a>
+      <a class="btn consortium">컨소시엄 리스트 <i></i></a>
+
+      <div class="sponsors">
+        <p class="txt">SPONSORS</p>
+        <div class="inner swiper swiper-inner8">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide inner8-slide1"></div>
+            <div class="swiper-slide inner8-slide2"></div>
+            <div class="swiper-slide inner8-slide3"></div>
+            <div class="swiper-slide inner8-slide4"></div>
+            <div class="swiper-slide inner8-slide5"></div>
+            <div class="swiper-slide inner8-slide6"></div>
+            <div class="swiper-slide inner8-slide7"></div>
+            <div class="swiper-slide inner8-slide8"></div>
+          </div>
+        </div>
+        <div class="swiper-btn swiper-btn-inner8 inner8-prev"></div>
+        <div class="swiper-btn swiper-btn-inner8 inner8-next"></div>
+      </div>
+      <div class="policy">
+        <div class="content-inner">
+          <a href="https://lms.biocoss.ac.kr/" target="_blank" class="btn">교육플랫폼</a>
+          <a href="" class="btn">개인정보처리방침</a>
+        </div>
+      </div>
+      <div class="ft-inner">
+        <div class="content-inner">
+          <h1><a href="/" class="btn">COSS 바이오 헬스</a></h1>
+          <div class="c-block">
+            <p>바이오헬스 혁신공유사업단</p>
+            <p>COPYRIGHT(c) BIOCOSS UNIVERSITY. ALL RIGHT RESERVED.</p>
+          </div>
+          <div class="ft-part">
+            <a href="https://www.moe.go.kr/main.do?s=moe" target="_blank" class="partner par1">한국연구재단</a>
+            <a href="https://www.nrf.re.kr/index" target="_blank" class="partner par2">교육부</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--footer-->
+
+
+
+
+
+
   </div>
 </div>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
 <script src="js/initMotion.js"></script><!--화면에 element 진입 감시역할-->
 <script>
-  let curr01Cont06 = document.querySelector('.curr01 .cont06');
+  let dataWrap = document.querySelector('.data-wrap');
   let tabs = document.querySelectorAll('.tab');
   Array.prototype.forEach.call(tabs, function(e) {
     e.addEventListener('click', function() {
-      let idx = e.getAttribute('data-curr01-tab');
-      curr01Cont06.setAttribute('data-curr01', idx);
+      let idx = e.getAttribute('data-tab');
+      dataWrap.setAttribute('data-view', idx);
     })
   });
 </script>

@@ -1,0 +1,80 @@
+section {
+  &.square {
+    .vis-top { .cover('../images/pc/squ/squ-vis.png'); .bg-c; }
+
+    article {
+      .art-top { .flex; .space-between; .mb(50);
+        h3 { .lh(65); .mb(0); }
+        .search-wrap { .mb(0); }
+      }
+      .cnt-list {
+        li {
+          .tag { .fs(16,35); .br(18); .c(#fff); .tc; .mb(0); .ib; .vam; .ml(30); .wh(68,35); .bgc(#00C6D2); }
+          .tit { .ib; .vam; .rel; }
+          &.emergency {
+            .tag { background: linear-gradient(90deg, #8F6CF4 1.64%, #04B0E2 100%); }
+            .tit { .pl(40); .-box; .ml(15);
+              &:after { .cnt; .wh(35,35); .contain('../images/pc/squ/ico-bell.png'); .abs; .lt(0,26); }
+            }
+          }
+        }
+      }
+      &.squ01 {
+        .cnt-list {
+          li {
+            &.list-head {
+              p:nth-child(1) { .w(980); .tl; .pl(320); }
+              p:nth-child(2) { .w(190); }
+            }
+          }
+        }
+      }
+      &.squ02 {
+        .cnt-list {
+          li { .rel;
+            .tit { .ellipsis; .w(675); }
+            .date, .publisher { .fs(0); .wh(165,88); .abs; .lt; .mt(0);
+              span { .fs(18,28); .c(#717377);
+                &:after { .hide; }
+              }
+            }
+            .origin{ .abs; .lt(704,27); .mt(0); }
+            .publisher { .l(840); }
+            .date { .rt; }
+            &.list-head {
+              p { .w(165); .tc;
+                &:nth-child(1) { .w(675); }
+              }
+            }
+          }
+        }
+      }
+      &.squ03 {
+        .recruit { .wh(100%,316); .cover('../images/pc/squ/squ-img1.png'); .p(76,60,60); .tl;
+          p { .fs(24,34);
+            &.tit { .mb(15); }
+            &.txt { .mb(12); }
+          }
+        }
+      }
+      &.squ04 {
+        .qna { .m(0); }
+        .tab-wrap { .mb(60);
+          .tab { .w(33.33%);
+            &:nth-child(2) { .br-r(0); }
+          }
+        }
+        .view {
+          .faq-list {
+            li { .fs(18,30);
+              .btn { .p(30);
+                &:after { .r(30); }
+              }
+              .answer { .p(30); }
+            }
+          }
+        }
+      }
+    }
+  }
+}

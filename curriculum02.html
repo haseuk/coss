@@ -50,7 +50,9 @@
         </div>
       </div>
 
-      <article class="curr02" data-curr02="1" data-type="list">
+
+      <!-- data-type="list"는 리스트 형식 card는 카드형식-->
+      <article class="curr02 data-wrap" data-view="all" data-type="card">
         <div class="art-inner">
           <div class="art-top">
             <h3>개설과목</h3>
@@ -59,11 +61,11 @@
           <div class="select-wrap">
             <a class="btn subject">학기 별 개설과목 보기</a>
             <div class="tab-wrap">
-              <a class="btn tab tab1" data-curr02-tab="1">전체</a>
-              <a class="btn tab tab2" data-curr02-tab="2">디노베이션</a>
-              <a class="btn tab tab3" data-curr02-tab="3">디자인</a>
-              <a class="btn tab tab4" data-curr02-tab="4">디바이스</a>
-              <a class="btn tab tab5" data-curr02-tab="5">데이터</a>
+              <a class="btn tab tab-all" data-tab="all">전체</a>
+              <a class="btn tab tab01" data-tab="1">디노베이션</a>
+              <a class="btn tab tab02" data-tab="2">디자인</a>
+              <a class="btn tab tab03" data-tab="3">디바이스</a>
+              <a class="btn tab tab04" data-tab="4">데이터</a>
             </div>
             <div class="type-wrap">
               <span>전공별 세부과정</span>
@@ -72,8 +74,8 @@
             </div>
           </div>
 
-          <!--전체 : data-curr02="1"-->
-          <div class="view view1">
+          <!--전체 : data-view="1"-->
+          <div class="view view01">
             <p class="v-tit">디노베이션</p>
 
             <ul>
@@ -83,9 +85,11 @@
                   <p class="level"><span>수준</span> <span>초급공통</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">공통</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>공통</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">바이오헬스 의학용어</p>
@@ -93,9 +97,11 @@
                   <p class="level"><span>수준</span> <span>초급공통</span></p>
                   <p class="grades"><span>학점</span> <span>초급공통</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">공통</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>공통</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">바이오헬스 기초의학</p>
@@ -103,9 +109,11 @@
                   <p class="level"><span>수준</span> <span>초급공통</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">공통</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>공통</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">바이오헬스 의료정보학</p>
@@ -113,9 +121,11 @@
                   <p class="level"><span>수준</span> <span>초급공통</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">공통</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>공통</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">바이오헬스 코딩수학</p>
@@ -123,9 +133,11 @@
                   <p class="level"><span>수준</span> <span>초급공통</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">공통</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>공통</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">의료정보 : 표준/보안/인증</p>
@@ -133,9 +145,11 @@
                   <p class="level"><span>수준</span> <span>초급공통</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">공통</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>공통</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">바이오헬스 약과 건강</p>
@@ -143,9 +157,11 @@
                   <p class="level"><span >수준</span> <span>초급공통</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">공통</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>공통</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">바이오헬스파이썬(Python)프로그래밍</p>
@@ -153,9 +169,11 @@
                   <p class="level"><span>수준</span> <span>초급공통</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">공통</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>공통</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">바이오헬스 한의학</p>
@@ -163,16 +181,18 @@
                   <p class="level"><span>수준</span> <span>초급공통</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">공통</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>공통</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
             </ul>
             <a class="btn more">더보기</a>
           </div>
 
-          <!--디자인 : data-curr02="2"-->
-          <div class="view view2">
+          <!--디자인 : data-view="2"-->
+          <div class="view view02">
             <p class="v-tit">디자인</p>
 
             <ul>
@@ -182,9 +202,11 @@
                   <p class="level"><span>수준</span> <span>초급이론</span></p>
                   <p class="grades"><span>학점</span> <span>3</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">2D 일러스트</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>2D 일러스트</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">바이오아트를 통한 생명과학의 이해</p>
@@ -192,9 +214,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">3D 융합미디어</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>3D 융합미디어</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">휴먼컴퓨터 인터렉션</p>
@@ -202,9 +226,11 @@
                   <p class="level"><span>수준</span> <span>초급이론</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">2D 일러스트</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>2D 일러스트</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">메타버스 디지털 헬스케어 포트폴리오 제작</p>
@@ -212,10 +238,12 @@
                   <p class="level"><span>수준</span> <span>초급이론</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">3D 융합미디어</span>
-                  <span class="tag tag-b">디지털 리빙랩 ㅣ AR</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>3D 융합미디어</span></p>
+                    <p class="tag tag-b"><span>디지털 리빙랩 ㅣ AR</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">3D 그래픽스 입문</p>
@@ -223,17 +251,19 @@
                   <p class="level"><span>수준</span> <span>초급이론</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">3D 융합미디어</span>
-                  <span class="tag tag-b">디지털 리빙랩 ㅣ AR</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>3D 융합미디어</span></p>
+                    <p class="tag tag-b"><span>디지털 리빙랩 ㅣ AR</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
             </ul>
             <a class="btn more">더보기</a>
           </div>
 
-          <!--디바이스 : data-curr02="3"-->
-          <div class="view view3">
+          <!--디바이스 : data-view="3"-->
+          <div class="view view03">
             <p class="v-tit">디바이스</p>
 
             <ul>
@@ -243,9 +273,11 @@
                   <p class="level"><span>수준</span> <span>초급공통</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">웨어러블 의료기기</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>웨어러블 의료기기</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">휴먼헬스 디지털 테크놀로지 개론 및 실습</p>
@@ -253,9 +285,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>3</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">휴먼헬스</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>휴먼헬스</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">바이오/의료 데이터 구조</p>
@@ -263,9 +297,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>3</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">웨어러블 의료기기</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>웨어러블 의료기기</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">XR개론</p>
@@ -273,9 +309,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>3</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">실감형 기기</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>실감형 기기</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">빅데이터로 보는 질환</p>
@@ -283,9 +321,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>3</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">휴먼헬스</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>휴먼헬스</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">스마트병원과 의료디지털</p>
@@ -293,9 +333,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>3</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">휴먼헬스</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>휴먼헬스</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">스마트병원과 의료디지털</p>
@@ -303,9 +345,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>3</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">휴먼헬스</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>휴먼헬스</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">디지털 웰니스 헬스케어</p>
@@ -313,9 +357,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>3</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">휴먼헬스</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>휴먼헬스</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">유전자와 디지털 맞춤헬스</p>
@@ -323,9 +369,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>3</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">휴먼헬스</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>휴먼헬스</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">헬스케어 데이터마케팅</p>
@@ -333,9 +381,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>3</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">공통</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>공통</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">XR 모바일 콘텐츠 개발</p>
@@ -343,10 +393,12 @@
                   <p class="level"><span>수준</span> <span>고급리빙랩</span></p>
                   <p class="grades"><span>학점</span> <span>3</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">실감형기기</span>
-                  <span class="tag tag-b">디지털리빙랩 ㅣ AR</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>실감형기기</span></p>
+                    <p class="tag tag-b"><span>디지털리빙랩 ㅣ AR</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">웨어러블 캡스톤 디자인</p>
@@ -354,17 +406,19 @@
                   <p class="level"><span>수준</span> <span>웨어러블 의료기기</span></p>
                   <p class="grades"><span>학점</span> <span>3</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">실감형기기</span>
-                  <span class="tag tag-b">디지털리빙랩 ㅣ AR</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>실감형기기</span></p>
+                    <p class="tag tag-b"><span>디지털리빙랩 ㅣ AR</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
             </ul>
             <a class="btn more">더보기</a>
           </div>
 
-          <!--데이터 : data-curr02="4"-->
-          <div class="view view4">
+          <!--데이터 : data-view="4"-->
+          <div class="view view04">
             <p class="v-tit">데이터</p>
 
             <ul>
@@ -374,9 +428,12 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">헬스케어 빅데이터</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>헬스케어 빅데이터</span></p>
+                  </div>
+
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">헬스케어 플랫폼 운영체제</p>
@@ -384,9 +441,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">헬스케어 소프트웨어</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>헬스케어 소프트웨어</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">바이오헬스 인공지능</p>
@@ -394,9 +453,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">헬스케어 빅데이터</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>헬스케어 빅데이터</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">바이오/보건의료 빅데이터 분석</p>
@@ -404,9 +465,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">헬스케어 소프트웨어</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>헬스케어 소프트웨어</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">디지털 헬스케어 IOT 시스템 프로그래밍</p>
@@ -414,9 +477,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">휴먼헬스</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>휴먼헬스</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">보건의료 데이터베이스</p>
@@ -424,9 +489,11 @@
                   <p class="level"><span>수준</span> <span>중급이론</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">헬스케어 소프트웨어</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>헬스케어 소프트웨어</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
               <li>
                 <p class="tit">보건의료 데이터베이스</p>
@@ -434,9 +501,11 @@
                   <p class="level"><span>수준</span> <span>초급공통</span></p>
                   <p class="grades"><span>학점</span> <span>2</span></p>
                   <p class="instructor"><span>교강사</span> <span>이름</span></p>
-                  <span class="tag tag-a">공통</span>
+                  <div class="tag-wrap">
+                    <p class="tag tag-a"><span>공통</span></p>
+                  </div>
                 </div>
-                <a class="btn detail">자세히 보기</a>
+                <a href="curriculum02Detail.html" class="btn detail">자세히 보기</a>
               </li>
             </ul>
             <a class="btn more">더보기</a>
@@ -447,7 +516,7 @@
     </section>
 
     <!-- 학기 선택 팝업 open 추가시 노출 됨 -->
-    <div class="popup" >
+    <div class="popup">
       <!--dim 처리가 없습니다.-->
       <div class="inner semester" style="display: block">
         <span class="line"></span>
@@ -509,19 +578,19 @@
 <script src="js/initMotion.js"></script><!--화면에 element 진입 감시역할-->
 <script src="js/select.js"></script><!--select custom -->
 <script>
-  let curr02 = document.querySelector('.curr02');
+  let dataWrap = document.querySelector('.data-wrap');
   let tabs = document.querySelectorAll('.tab');
   Array.prototype.forEach.call(tabs, function(e) {
     e.addEventListener('click', function() {
-      let idx = e.getAttribute('data-curr02-tab');
-      curr02.setAttribute('data-curr02', idx);
+      let idx = e.getAttribute('data-tab');
+      dataWrap.setAttribute('data-view', idx);
     })
   });
   let typeBtn = document.querySelectorAll('.type-wrap .btn');
   Array.prototype.forEach.call(typeBtn, function(e) {
     e.addEventListener('click', function() {
       let type = e.getAttribute('data-type-btn');
-      curr02.setAttribute('data-type', type);
+      dataWrap.setAttribute('data-type', type);
     })
   });
 
@@ -531,6 +600,11 @@
   subject.addEventListener('click', function() {
     popup.classList.add('open');
   });
+
+  let close = document.querySelector('.close');
+  close.addEventListener('click', function() {
+    popup.classList.remove('open')
+  })
 
 </script>
 </body>

@@ -889,6 +889,8 @@
 
       <!--pc에서만 노출-->
       <div class="swiper-pagination wrap-pagination web"></div>
+
+
       <!-- open 클래스 추가되면 열림 -->
       <div class="link-wrap web">
         <a class="btn link">바로가기</a>
@@ -1152,59 +1154,14 @@
     </div>
   </div>
 </div>
-
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
 <script src="js/innerHeight.js"></script><!--모바일에서 innerHeight 계산/적용 역할임-->
 <script src="js/jquery.min.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
 <script src="js/select.js"></script><!--select custom -->
 <script src="https://www.youtube.com/iframe_api"></script>
 <script>
-  let winW = window.innerWidth;
-  let winH = window.innerHeight;
-  function handleWinSize() {
-    winW = window.innerWidth;
-    winH = window.innerHeight;
-  }
-  window.addEventListener('resize', handleWinSize);
-
-  //gnb - mobile
-  let dep1Btn = document.querySelectorAll('.dep1-btn');
-  Array.prototype.forEach.call(dep1Btn, function(e) {
-    e.addEventListener('click', function() {
-      if(e.parentNode.classList.contains('active')) {
-        e.parentNode.classList.remove('active');
-      } else {
-        menuListClose();
-        e.parentNode.classList.add('active');
-      }
-    })
-  });
-  //열린 메뉴리스트 전체 닫기- 모바일
-  function menuListClose() {
-    for (let k = 0; k < dep1Btn.length; k++) {
-      dep1Btn[k].parentNode.classList.remove('active');
-    }
-  }
-  //메뉴 열고 닫기 - 공통
-  let menu = document.querySelector('.menu');
-  let nav = document.querySelector('nav');
-  menu.addEventListener('click', function() {
-    if(nav.classList.contains('open')) {
-      navClose();
-      swiperEnable();
-    } else {
-      navOpen();
-      swiperDisable();
-    }
-  });
-  //메뉴 닫기 - 모바일
-  let gnbClose = document.querySelector('.gnb-close');
-  gnbClose.addEventListener('click', function() {
-    navClose();
-    menuListClose();
-    swiperEnable();
-  });
-
   if(winW <= 1080) {
     //gnb 오픈시 스와이프 중지 - 모바일
     function swiperDisable() {
@@ -1219,54 +1176,6 @@
       wrapSwiper.params.noSwipingClass = '';
     }
   }
-
-  //해더 마우스 오버 - pc
-  let header = document.querySelector('header');
-  header.addEventListener('mouseover', headerOpen);
-  header.addEventListener('mouseleave', headerClose);
-  nav.addEventListener('mouseover', headerOpen);
-  nav.addEventListener('mouseleave', headerClose);
-  nav.addEventListener('mouseleave', navClose);
-
-  // 해더 메뉴 열기 - pc
-  function headerOpen() {
-    header.classList.add('open');
-  }
-  // 해더 메뉴 닫기 - pc
-  function headerClose() {
-    header.classList.remove('open');
-  }
-  // nav 메뉴 열기
-  function navOpen() {
-    nav.classList.add('open');
-  }
-  // nav 메뉴 닫기
-  function navClose() {
-    nav.classList.remove('open');
-  }
-
-  // 스크롤시 해더 오픈효과
-  function headerScrolled() {
-    header.classList.add('scroll');
-  }
-
-  // 스크롤시 해더 닫힘 효과
-  function headerScrollOff() {
-    header.classList.remove('scroll');
-  }
-
-  let gnbWrap = document.querySelector('.gnb-wrap');
-  // 각 메뉴 마우스 오버시 각 메뉴 리스트 열기
-  function depth2GnbOpen(v) {
-    navClose();
-    headerOpen();
-    gnbWrap.classList.add(v);
-  }
-  function depth2GnbClose(v) {
-    headerClose();
-    gnbWrap.classList.remove(v);
-  }
-
 
   //gnb - 바이오 플래닛
   var planetSwiper = new Swiper(".planet-swiper", {
@@ -1496,26 +1405,7 @@
     basicMapImg.src = 'images/pc/home/basic-map.png';
   }
 
-  var swiperInner8 = new Swiper(".slide8 .swiper-inner8", {
-    slidesPerView: 3,
-    spaceBetween: 15,
-    speed: 1000,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction:false,
-    },
-    breakpoints: {
-      1080: {
-        slidesPerView: 5,
-        spaceBetween: 19,
-      }
-    },
-    navigation: {
-      nextEl: ".slide8 .inner8-next",
-      prevEl: ".slide8 .inner8-prev",
-    },
-  });
+
   let slide5 = document.querySelector('.slide5');
   let tabs = document.querySelectorAll('.tab-wrap .tab');
   Array.prototype.forEach.call(tabs, function (e){
@@ -1529,20 +1419,8 @@
   let faqTabs = document.querySelectorAll('.faq-tab .tab');
   Array.prototype.forEach.call(faqTabs, function (e){
     e.addEventListener('click', function() {
-      console.log(e)
       let idx = e.getAttribute('data-tab');
       slide7.setAttribute('data-faq', idx);
-    })
-  });
-
-  let links = document.querySelectorAll('.link');
-  Array.prototype.forEach.call(links, function(e) {
-    e.addEventListener('click', function() {
-      if(e.parentNode.classList.contains('open')){
-        e.parentNode.classList.remove('open');
-      } else {
-        e.parentNode.classList.add('open');
-      }
     })
   });
 
@@ -1559,7 +1437,6 @@
     { id:9, tit: '상담실/준비실', txt: '바이오 플래닛 인프라 담당 코디네이터 및 학생 지원 공간', area: '· 면적: 42-36m<sup>2</sup>12-81py', person: '· 수용인원: 12명', map: true, vis: true },
     { id:10, tit: '텔레프레즌스 스튜디오1', txt: '전신 홀로그램용 실시간 강의와 비대면 수업 촬영이 가능한 첨단 스튜디오', area: '· 면적: 42-36<sup>2</sup>12-81py', person: '· 수용인원: 12명', map: true, vis: true }
   ]
-
 
   //biohealth palnet popop
   let popup = document.querySelector('.popup');
@@ -1641,7 +1518,7 @@
   // 맨위로 이동
   let goTop = document.querySelector('.top');
   goTop.addEventListener('click', function() {
-    wrapSwiper.slideTo(0);
+    wrapSwiper.slideTo(0); //home.html에서만 적용 되야함
   });
 </script>
 </body>

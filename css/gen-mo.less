@@ -1,0 +1,19 @@
+section {
+  &.general {
+    .vis-top { .cover('../images/mo/gen/gen-vis.png'); .bg-c; }
+
+    article {
+      .art-top { .-b; .pb(20); }
+
+      .policy { .fs(14,22);
+        .dv { .mt(44); .ib; }
+        i { .fs(18); .light; .ib; .vam; }
+        ul { .pl(5); .-box;
+          li { .pl(10); .-box; .rel;
+            &:after { .cnt; .wh(5,5); .br(50%); .abs; .lt(0,8); .bgc(#000); }
+          }
+        }
+      }
+    }
+  }
+}

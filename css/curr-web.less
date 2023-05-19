@@ -1,0 +1,391 @@
+section {
+  &.curriculum {
+    .vis-top { .cover('../images/mo/curr/curr-vis.png'); .bg-c; }
+    .sub-tap-wrap .sub-tab .btn { .w(283); }
+
+    article {
+      .sub-txt { .fs(18,28); }
+      .gray-bg { .bgc(#F4F4F4); }
+      .blue-bg { .bgc(#F2FCFF); }
+      .br-crop { .br(10); .crop; }
+      .blue-c { .c(#00C6D2)!important; }
+      .tit { .fs(24,34); .mb(30); }
+
+      &.curr01 {
+        .card-list li .l-cnt { .pt(43);
+          .tit { .mb(22); }
+        }
+
+        .cont { .mb(120);
+          &.cont01 {
+            .sub-tit { .mb(20); }
+            .sub-tit + .txt { .fs(24,34); }
+          }
+          &.cont02 {
+            .txt { .fs(24,34); }
+            h4 { .mt(12); }
+            .card-ul { .mt(30); .flex; .space-between;
+              li { .tc; .p(40,30); .mb(0); .wh(370,363);
+                .img { .h(90); .mb(30); }
+                p { .fs(18,28);
+                  &.tit { .fs(20,32); .mb(15); }
+                }
+              }
+            }
+          }
+          &.cont03, &.cont05 {
+            .card-ul { .mb(30);
+              li { .tl; .p(30,30,40);
+                .tit { .fs(18,28); .mb(30); }
+                .part-block { .mh-c; .mb(40); .flex; .space-between;
+                  &:after { .cnt; .wh(100%,2); .lt(50%,50); .m(-1,0,0,0); }
+                  .list { .tl; .mb(0); .rel; .z(1); .tc; .ib; .vat;
+                    .img { .wh(100,100); .block; .mh-c; .mb(10); }
+                    .nm { .fs(18,28); .pl(0); width:auto;
+                      s { .lh(28);
+                        i { .fs(16,28); }
+                      }
+                    }
+                  }
+                  &.par-b1 { .w(625);
+                    &:after { .w(380); .ml(-190); }
+                  }
+                  &.par-b2 { .w(442);
+                    &:after { .w(180); .ml(-100); }
+                  }
+                  &.par-b3 { .w(669);
+                    .list:first-child { .mr(50); }
+                    &:after { .w(420); .ml(-220); }
+                  }
+                  &.par-b4 { .w(430); .pl(40);
+                    &:after { .w(170); .ml(-95); }
+                  }
+                }
+              }
+            }
+          }
+          &.cont04 { .mb(60);
+            .card-ul { .flex; .space-between;
+              li { .wh(570,246); .p(40); .mb(0);
+                img { .mb(10); }
+              }
+            }
+          }
+          &.cont05 {
+            .card-ul { .mb(0);
+              li { .p(40); .tc; .rel;
+                &:after { .cnt; .wh(756,2); .bgc(#D9D9D9); .abs; .lt(50%,132); .m(-1,0,0,-380); }
+                .li-inner { .ib; .vat; .tc; .mr(60);
+                  &:last-child { .mr(0); }
+                  .tit { .fs(16,25); .h(25); .pl(0); .mb(17);
+                    &:after { .hide; }
+                  }
+                  .part-block { .ib;
+                    &:after { .hide; }
+                    .list { .mr(60); .rel;
+                      &:last-child { .mr(0); }
+                    }
+                  }
+                  &.li-inr2 .tit { .-a(#04B0E2,2); .-b; .m(10,0,7); .rel;
+                    span { .w(126); .bgc(#F4F4F4); .abs; .lt(50%,-10); .ml(-63); }
+                  }
+                }
+              }
+            }
+          }
+          &.cont06 {
+            .tab-wrap {
+              .tab { .wh(390,174);
+                span { .fs(16,41); .wh(102,41); .br(22); .mb(9); }
+                &:nth-child(2) { .br(0); }
+              }
+            }
+            .view {
+              .bnr { .wh(100%,225); .p(60); .cover('../images/pc/curr/curr1-bnr1.png'); .mb(60); .tl;
+                p {
+                  &.tit { .mb(15); }
+                }
+              }
+              &.view01 {
+                .list { .mb(60);
+                  .img { .wh(437,269); .mb(0); .ib; .vam; }
+                  .t-box { .ib; .vam; .ml(50);
+                    .tit { .fs(22,34); .mb(22); }
+                  }
+                }
+              }
+              &.view02 {
+                .bnr { .h(225); .cover('../images/pc/curr/curr1-bnr2.png'); }
+                table { .ib; .vat;
+                  tr { .h(130);
+                    &.tr1 { .h(88); }
+                  }
+                  &.tbl01 { .w(688); .-r(#D9D9D9); }
+                  &.tbl02 { .w(482);
+                    th { .hide; }
+                    td { .w(482); }
+                  }
+                }
+              }
+              &.view03 {
+                .txt { .mb(30); }
+                .prcs-wrap { .tl;
+                  .prcs-inner { .mb(40);
+                    &:last-child { .mb(0); }
+                  }
+                  img { .mb(0); .ib; .vam; .mr(20); }
+                  .t-block { .ib; .vam; }
+                  .tit { .fs(18,28); }
+                  .prcs { .wh(100%,245); .p(30,40); .mb(40); .tc;
+                    .tit { .fs(16,25); .tl; }
+                    img { .w(778); .ib; }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      table { .mb(0);
+        tr {
+          th { .w(205); }
+          th, td { .fs(16,25); .p(30,30,20); }
+        }
+      }
+      &.curr02 {
+        .art-top { .pb(0); .mb(30); }
+        .select-wrap { .mb(60); .tr;
+          .subject { .mb(60); }
+          .tab-wrap { .mb(65);
+            .tab { .w(234); }
+          }
+          .type-wrap {
+            span { .fs(16,25); .br(18); }
+            .btn { .wh(45,45); }
+          }
+        }
+        .view { .mb(120);
+          .v-tit { .fs(22,34); }
+          ul {
+            li { .wh(370,420); .p(30); .ib; .vat; .mr(30);
+              &:nth-child(3n) { .mr(0); }
+              .tit { .fs(20,32); .h(64); .mb(20); }
+              .info { .mb(20);
+                p { .fs(18,28); }
+                .tag-wrap { .h(80); .tl;
+                  p { .block; }
+                  .tag span { .fs(16,25); .p(5,20); .br(18); }
+                }
+              }
+            }
+          }
+          .more { .mt(20); }
+        }
+        &[data-type="card"] .view {
+          ul { .mt(30);
+            li { .br-crop; .-a(#D9D9D9); .mb(40);
+              &:last-child { .mb(40); }
+              .detail { .fs(16,58); .c(#4D5054); .bold; .bgc(#F1F1F1); .wf; .br(10); .tc;
+                &:hover { .c(#fff);  .bgc(#04B0E2); }
+              }
+              .info .tag-wrap .tag { .block;
+                &.tag-a { .mb(10); }
+              }
+            }
+          }
+        }
+        &[data-type="list"] .view {
+          ul {
+            li { .wf; height:auto; .pt(82); .rel;
+              .tit { .h(32); .mb(7); }
+              .info { .m(0); height:auto;
+                p { .mb(0); .ib; .vam; .mr(20);
+                  &.level { .mr(20); }
+                  &.instructor { .mb(0)!important; }
+                }
+                .tag-wrap { height:auto; }
+                .tag-a { .lt(30,30); }
+                .tag-b { .mt(10); }
+              }
+              .detail { .fs(18,28); .p(0,37,2,0); .abs; .rb(48,30);
+                &:after { .cnt; .wh(28,8); .contain('../images/pc/curr/ico-arr-r.png'); .rt(0,10); }
+              }
+            }
+          }
+          .more { .mt(60); }
+        }
+      }
+      &.curr03 {
+        .tit { .tc; }
+        .curr-ul { .mb(120); .flex; .space-between; .flex-wrap; align-content: space-between;
+          li { .wh(570,190); .p(48,30,48,230); .mb(30); .tl;
+            &:last-child { .mb(30); }
+            p { .fs(18,28);
+              &.tit { .mb(10); .tl; }
+            }
+            &.list1 { .cover('../images/pc/curr/curr3-pic1.png'); .bg-c; }
+            &.list2 { .cover('../images/pc/curr/curr3-pic2.png'); .bg-c; }
+            &.list3 { .cover('../images/pc/curr/curr3-pic3.png'); .bg-c; }
+            &.list4 { .cover('../images/pc/curr/curr3-pic4.png'); .bg-c; }
+          }
+        }
+        .search-result {
+          ul {
+            li { .tl;
+              > div { .p(30); }
+              .result-top {
+                .tag { .fs(16,40); .wh(123,40); .br(20); .mb(0); .ib; .vam; .mr(50); }
+                .btn { .fs(18,28); .ib; .vam; .w(937);
+                  &:after { .t(0); }
+                }
+              }
+              .result-content {
+                p { .fs(18,28); }
+              }
+            }
+          }
+        }
+      }
+      &.curr04 {
+        .art-top { .pb(0); .mb(30); }
+        .top-emph { .p(40,0); .mb(120);
+          &:after { .cnt; .wh(185,145); .contain('../images/pc/curr/curr4-mask.png'); .abs; .rb(-19,-60); }
+          .tit { .fs(22,34); }
+          .txt { .fs(18,28); .p(0); }
+        }
+        .scr-wrap { .w(1170); overflow-x: unset; .p(0); .mh-c; .mb(62);
+          &:last-child { .mb(0); }
+          table { .fs(18,28); .-t(#CDD0D3,2); .mb(0);
+            tr {
+              th, td { .p(30); }
+              td span { .fs(16,25); .c(#717377); .block; }
+            }
+          }
+        }
+      }
+
+      &.detail-page {
+        .top-emph { .p(60); .mb(60);
+          p { .fs(33,34); .mb(3); }
+          span { .fs(18,28); }
+        }
+        table { .mb(58);
+          tr {
+            th, td { .fs(18,28); .p(30); .c(#191919); }
+            th { .w(148); }
+
+          }
+        }
+        .plan { .tc; .mb(60);
+          li { .p(0);
+            p { .fs(18,28); .ib; .vat; .p(30); .-box; .-r(#D9D9D9);
+              &.week { .regular; .w(102); .mb(0); }
+              &.tit { .fs(18,28); .regular; .w(659); .mb(0); }
+              &.nm, &.comp { .c(#4D5054); .ib; .vam; }
+              &.nm { .mr(0); .w(150);
+                &:after { .hide; }
+              }
+              &.comp { .w(259); .-r; }
+            }
+            &.th { .bgc(#F1F1F1);
+              p { .bold; .c(#191919); }
+            }
+          }
+        }
+        .btns { .w(650); .clear; .mh-c;
+          .btn {
+            &.lms { .mb(0); .fr;
+              &:hover { .bgc(#F2FCFF); }
+            }
+            &.go-list { .fl;
+              &:hover { .bgc(#F1F1F1); }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.search-wrap { .tr;
+  .search { .w(450); .ib; }
+}
+
+.tab-wrap { .mb(120);
+  .tab { .fs(18,28); .wh(233,88); .p(30,0);
+    &:nth-child(1) { .br-l(10); }
+    &:nth-child(2) { .br(0); .-l; }
+    &:nth-child(3) { .-l; .-t(#D9D9D9); }
+    &:nth-child(4) { .-l; .-t(#D9D9D9); }
+    &:nth-child(5) { .-l; .-t(#D9D9D9); }
+    &:nth-last-child(2) { .br-rb(0); .-l; .-t(#D9D9D9); }
+    &:last-child { .br-r(10); .-t(#D9D9D9); .-l; }
+  }
+}
+
+.popup {
+  .inner {
+    &.semester { .w(610); .p(35);
+      .select { .mb(30);
+        .selected-value { .fs(18,69); .h(69); .pl(20);
+          &:after { .wh(30,30); .contain('../images/pc/curr/ico-drop-arrow.png'); .rt(30,20); }
+        }
+        .opt-grp { .t(69);
+          li { .fs(18,69); .h(69); .pl(20);
+            &:first-child { .br-t(3); }
+            &:last-child { .br-b(3); }
+          }
+        }
+      }
+      .chk-wrap { .pb(30);
+        label { .w(180);
+          span { .fs(18,28); }
+          &.lab2 s { .ml(-1); }
+          &.lab3 s { .mt(0); .ml(-2); }
+          &.lab4 s { .m(-1,0,0,0); }
+          &.lab5 s { .m(-1,0,0,-1); }
+        }
+      }
+      .submit-wrap { .pt(30);
+        .btn { .fs(16,56); .wh(129,56);
+          &.reset {
+            i { .mr(10); }
+            &:hover { .bgc(#F1F1F1); }
+          }
+          &.submit:hover { .bgc(#F2FCFF); }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,7 +9,7 @@ function initIntersectionObserver() {
   });
   const iof = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.intersectionRatio > 0.3) {
+      if (entry.intersectionRatio > 0.4) {
         entry.target.classList.add('fade-on');
       }
     })

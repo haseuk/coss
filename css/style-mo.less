@@ -11,6 +11,7 @@ h3 { .fs(18,28); .bold; .c(#191919); .mb(10);
 .txt { .fs(14,22); .c(#4D5054); .keep-all; }
 .ns { font-family: 'NanumSquareNeo', sans-serif; }
 input::-webkit-inner-spin-button { appearance: none; }
+input { .bgc(#fff); }
 .mo { .ib!important; }
 .web { .hide!important; }
 
@@ -23,7 +24,7 @@ input::-webkit-inner-spin-button { appearance: none; }
         }
         .menu { .wh(30,30); .contain('../images/mo/home/ico-menu.png'); .abs; .rt(18,16); }
       }
-      &.scroll { box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); .bgc(#fff);
+      &.scroll { .fix; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); .bgc(#fff);
         h1 .logo { .contain('../images/mo/home/LOGO_Color.png'); }
         .menu { .contain('../images/mo/home/ico-menu-black.png'); }
       }
@@ -47,6 +48,64 @@ input::-webkit-inner-spin-button { appearance: none; }
       }
       .gnb-close { .wh(35,35); .abs; .lt(255,20); .contain('../images/mo/home/ico-gnb-x.png'); .z(20); }
       &.open { .block; }
+    }
+
+
+
+    footer { .rel; .-t(#D9D9D9);
+      .link-wrap {
+        .link { .wh(52,52); .contain('../images/mo/home/ico-link.png'); .abs; .rt(16,-171); }
+        .link-list { .wh(165,188); .abs; .rt(16,-181); transform:translateY(-100%); .hide;
+          .btn { .lh(44); .c(#717377); .tl; .pl(19); .-box; .wh(165,44); .br(10); .bgc(#fff); box-shadow: 0 0 10px rgba(25, 58, 75, 0.1); .-a(#E8EBEE); .mb(3); .rel;
+            i { .wh(20,20); .abs; .rt(12,12); .contain('../images/mo/home/ico-link-arrow.png'); }
+            &.on { .c(#04B0E2);
+              i { .contain('../images/mo/home/ico-link-arrow-on.png'); }
+            }
+          }
+        }
+        &.open {
+          .link { .contain('../images/mo/home/ico-link-x.png'); }
+          .link-list { .block; }
+        }
+      }
+      .top { .wh(72,72); .contain('../images/mo/home/ico-top.png'); .abs; .rt(6,-114); }
+      .consortium { .fs(16,40); .c(#fff); .bold; .tc; .wh(179,40); background: linear-gradient(90deg, #8F6CF4 1.64%, #04B0E2 100%); .br-t(2); .abs; .rt(16,-40);
+        i { .wh(18,18); .ib; .vam; .ml(10); .contain('../images/mo/home/ico-consortium.png'); }
+      }
+      .sponsors { .p(20,16); .-box; .h(117); .rel;
+        .txt { .c(#000); .tl; }
+        .swiper-inner8 { .mt(19);
+          .swiper-slide { .wh(103,36);
+            &.inner8-slide1 { .contain('../images/mo/home/ft-spon1.png'); }
+            &.inner8-slide2 { .contain('../images/mo/home/ft-spon2.png'); }
+            &.inner8-slide3 { .contain('../images/mo/home/ft-spon3.png'); }
+            &.inner8-slide4 { .contain('../images/mo/home/ft-spon4.png'); }
+            &.inner8-slide5 { .contain('../images/mo/home/ft-spon5.png'); }
+            &.inner8-slide6 { .contain('../images/mo/home/ft-spon6.png'); }
+            &.inner8-slide7 { .contain('../images/mo/home/ft-spon7.png'); }
+            &.inner8-slide8 { .contain('../images/mo/home/ft-spon8.png'); }
+          }
+        }
+        .swiper-btn-inner8 { .wh(20,20); .abs; .lt(101,21); .z(2);
+          &.inner8-prev { .contain('../images/mo/home/ico-inner8-prev.png'); }
+          &.inner8-next { .contain('../images/mo/home/ico-inner8-next.png'); .l(129); }
+        }
+      }
+      .policy {.tl; .bgc(#E5E7EA); .p(20,16); .-box;
+        .btn { .fs(13,20); .c(#717377); .rel;
+          &:first-child { .mr(17);
+            &:after { .cnt; .wh(1,12); .bgc(#717377); .abs; .rt(-10,4); }
+          }
+        }
+      }
+      .ft-inner { .tl; .bgc(#F1F1F1); .p(20,16); .-box;
+        h1 { .wh(177,26); .contain('../images/mo/home/ft-logo.png'); .mb(15); }
+        p { .fs(12,18); .c(#6C7279); .mb(3); }
+        .partner { .wh(100,37.5); .ib; .vat; .mt(10);
+          &.par1 { .contain('../images/mo/home/ft-partner1.png'); }
+          &.par2 { .contain('../images/mo/home/ft-partner2.png'); }
+        }
+      }
     }
 
     //home
@@ -155,7 +214,7 @@ input::-webkit-inner-spin-button { appearance: none; }
             > .arrow { .mt(15); }
             .tab-wrap { .mt(43); .flex; .space-between;
               .tab-inner { .-a(#D9D9D9); .-box; .wh(47.8%,56); .ib; .vam; box-shadow: 0 2px 10px rgba(40, 40, 40, 0.15); .br(10); .crop; .rel;
-                .tab { .f; .abs; .lt; .z(1); }
+                .tab { .f; .abs; .lt; .z(1); .-a; }
                 .tit { .fs(16,54); .bold; .c(#04B0E2); }
               }
             }
@@ -199,7 +258,7 @@ input::-webkit-inner-spin-button { appearance: none; }
               }
             }
           }
-          &.slide7 { .p(0); .-b(#D9D9D9);
+          &.slide7 { .p(0);
             .faq-top { .pt(40); .-box; .bgc(#F5F5F5); .rel; .mt(65);
               .faq-btn { .lh(40); .wh(140,40); .m(15,0,40); .c(#fff); .bold; background: linear-gradient(90deg, #8F6CF4 1.64%, #04B0E2 100%); .br(21); }
               .character { .abs; .h(65); .b(10);
@@ -236,66 +295,23 @@ input::-webkit-inner-spin-button { appearance: none; }
             &[data-faq="3"] .list.list3 { .block; }
           }
           &.slide8 { .p(0); .tl; .rel; overflow: visible;
-            footer { .rel;
-              .link-wrap {
-                .link { .wh(52,52); .contain('../images/mo/home/ico-link.png'); .abs; .rt(16,-171); }
-                .link-list { .wh(165,188); .abs; .rt(16,-181); transform:translateY(-100%); .hide;
-                  .btn { .lh(44); .c(#717377); .tl; .pl(19); .-box; .wh(165,44); .br(10); .bgc(#fff); box-shadow: 0 0 10px rgba(25, 58, 75, 0.1); .-a(#E8EBEE); .mb(3); .rel;
-                    i { .wh(20,20); .abs; .rt(12,12); .contain('../images/mo/home/ico-link-arrow.png'); }
-                    &.on { .c(#04B0E2);
-                      i { .contain('../images/mo/home/ico-link-arrow-on.png'); }
-                    }
-                  }
-                }
-                &.open {
-                  .link { .contain('../images/mo/home/ico-link-x.png'); }
-                  .link-list { .block; }
-                }
-              }
-              .top { .wh(72,72); .contain('../images/mo/home/ico-top.png'); .abs; .rt(6,-114); }
-              .consortium { .fs(16,40); .c(#fff); .bold; .tc; .wh(179,40); background: linear-gradient(90deg, #8F6CF4 1.64%, #04B0E2 100%); .br-t(2); .abs; .rt(16,-40);
-                i { .wh(18,18); .ib; .vam; .ml(10); .contain('../images/mo/home/ico-consortium.png'); }
-              }
-              .sponsors { .p(20,16); .-box; .h(117); .rel;
-                .txt { .c(#000); }
-                .swiper-inner8 { .mt(19);
-                  .swiper-slide { .wh(103,36);
-                    &.inner8-slide1 { .contain('../images/mo/home/ft-spon1.png'); }
-                    &.inner8-slide2 { .contain('../images/mo/home/ft-spon2.png'); }
-                    &.inner8-slide3 { .contain('../images/mo/home/ft-spon3.png'); }
-                    &.inner8-slide4 { .contain('../images/mo/home/ft-spon4.png'); }
-                    &.inner8-slide5 { .contain('../images/mo/home/ft-spon5.png'); }
-                    &.inner8-slide6 { .contain('../images/mo/home/ft-spon6.png'); }
-                    &.inner8-slide7 { .contain('../images/mo/home/ft-spon7.png'); }
-                    &.inner8-slide8 { .contain('../images/mo/home/ft-spon8.png'); }
-                  }
-                }
-                .swiper-btn-inner8 { .wh(20,20); .abs; .lt(101,21); .z(2);
-                  &.inner8-prev { .contain('../images/mo/home/ico-inner8-prev.png'); }
-                  &.inner8-next { .contain('../images/mo/home/ico-inner8-next.png'); .l(129); }
-                }
-              }
-              .policy {.tl; .bgc(#E5E7EA); .p(20,16); .-box;
-                .btn { .fs(13,20); .c(#717377); .rel;
-                  &:first-child { .mr(17);
-                    &:after { .cnt; .wh(1,12); .bgc(#717377); .abs; .rt(-10,4); }
-                  }
-                }
-              }
-              .ft-inner { .tl; .bgc(#F1F1F1); .p(20,16); .-box;
-                h1 { .wh(177,26); .contain('../images/mo/home/ft-logo.png'); .mb(15); }
-                p { .fs(12,18); .c(#6C7279); .mb(3); }
-                .partner { .wh(100,37.5); .ib; .vat; .mt(10);
-                  &.par1 { .contain('../images/mo/home/ft-partner1.png'); }
-                  &.par2 { .contain('../images/mo/home/ft-partner2.png'); }
-                }
-              }
-            }
           }
         }
       }
     }
-    .more { .fs(18,68); .tc; .br(10); .bold; .c(#4D5054); .wh(310,68); .mh-c; .block; .-a(#D9D9D9); }
+
+
+    .file-box { .rel;
+      label { .fs(14,20); .p(10,17); .w(109); .br(3); .bgc(#F9F9F9); .-a(#D9D9D9); .-box; .tl; .rel; .ib; .vam;
+        &:after { .cnt; .wh(18,18); .contain('../images/mo/home/ico-fileupload.png'); .abs; .rt(17,11); }
+      }
+      input[type=file] { opacity: 0; .wh(0,0); .hide; }
+      .file-name { .ib; .vam; .rel; .pr(30); .-box;
+        .upload-name { .fs(16,30); .c(#6C7279); .underline; .-a; width:auto; .mb(0); }
+        .del-btn { .wh(20,20); .contain('../images/mo/home/ico-del.png'); .abs; .rt(0,5); .hide; }
+      }
+    }
+    .more { .fs(18,68); .tc; .br(10); .bold; .c(#4D5054); .max-w(310); .wh(100%,68); .mh-c; .block; .-a(#D9D9D9); }
     .swiper-btn { .wh(35,35); .abs; .o(1); .mt(0); .pointer;
       &.swiper-button-disabled { .o(0.5); }
       &:after { .hide; }
@@ -314,12 +330,12 @@ input::-webkit-inner-spin-button { appearance: none; }
       }
     }
     .paging-wrap { .tc; .mt(50);
-      .btn { .fs(16,35); .tc; .c(#282828); .wh(35,35); .ib; .vat; .-a(#D9D9D9); .-l; .rel;
+      .btn { .fs(16,35); .tc; .c(#282828); .wh(35,35); .ib; .vat; .-a(#D9D9D9); .-l; .bgc(#fff); .rel;
         &.on { .bgc(#D9D9D9); }
         &:first-child { .-l(#D9D9D9); }
         &.prev:after, &.next:after { .cnt; .wh(20,20); .abs; .lt(8,8);  }
-        &.prev:after { .contain('../images/mo/curriculum/ico-prev.png'); }
-        &.next:after { .contain('../images/mo/curriculum/ico-next.png'); }
+        &.prev:after { .contain('../images/mo/curr/ico-prev.png'); }
+        &.next:after { .contain('../images/mo/curr/ico-next.png'); }
       }
     }
     .popup { .abs; .lt; .f; .z(100); .hide;
@@ -344,7 +360,8 @@ input::-webkit-inner-spin-button { appearance: none; }
         }
 
         .faq-pop { .hide;
-          .txt { .fs(13,20); .regular; .h(110); .c(#191A1C); overflow-y: scroll; .mb(10);
+          .txt { .fs(13,20); .regular; .h(110); .c(#191A1C); overflow-y: scroll; .mb(10);-ms-overflow-style: none; scrollbar-width: none;
+            &::-webkit-scrollbar { .hide; }
             b { .semi-bold; }
             span { .c(#6C7279); .block; }
           }
@@ -364,16 +381,6 @@ input::-webkit-inner-spin-button { appearance: none; }
                 li { .m(0); }
               }
               textarea { .h(120); }
-              .file-box { .rel;
-                label { .fs(14,20); .p(10,17); .w(109); .br(3); .bgc(#F9F9F9); .-a(#D9D9D9); .-box; .tl; .rel; .ib; .vam;
-                  &:after { .cnt; .wh(18,18); .contain('../images/mo/home/ico-fileupload.png'); .abs; .rt(17,11); }
-                }
-                input[type=file] { opacity: 0; .wh(0,0); .hide; }
-                .file-name { .ib; .vam; .rel; .pr(30); .-box;
-                  .upload-name { .fs(16,30); .c(#6C7279); .underline; .-a; width:auto; .mb(0); }
-                  .del-btn { .wh(20,20); .contain('../images/mo/home/ico-del.png'); .abs; .rt(0,5); .hide; }
-                }
-              }
               &.email {
                 .form-inner {
                   input { .w(29%); .ib; .vam; }
@@ -441,13 +448,19 @@ input::-webkit-inner-spin-button { appearance: none; }
     ::placeholder { .fs(14,20); .c(#6C7279); }
 
 
-
+    //intro sub-page
+    @import "intro-mo";
+    @import "curr-mo";
+    @import "supp-mo";
+    @import "out-mo";
+    @import "squ-mo";
+    @import "gen-mo";
 
 
     //모션효과
     [mov] { transform: translateY(50px); transition: transform 1s; .ease-out; }
     [mov].mov-on { transform: translateY(0); }
-    [fade] { .o(0); transition: opacity 1s; .ease-out; }
+    [fade] { .o(0); transition: opacity 1s; .ease-linear; }
     [fade].fade-on { .o(1); }
     .uni [mov] { transition: transform 1.3s!important; }
     .operate [fade] { transition: opacity 1.3s!important; }
@@ -455,6 +468,3 @@ input::-webkit-inner-spin-button { appearance: none; }
 
   }
 }
-//intro sub-page
-@import "intro-mo";
-@import "curr-mo";

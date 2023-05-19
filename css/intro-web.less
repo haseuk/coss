@@ -13,7 +13,7 @@ section { .pb(120);
         &:last-child:after { .hide; }
         &.selected { .hide; }
       }
-      .list { .block; .flex; .space-around; }
+      .list { .block; .flex; .flex-center; }
     }
   }
   article { .pt(120);
@@ -23,7 +23,7 @@ section { .pb(120);
     h4 { .fs(32,42); }
     .rd-box { .fs(20,32); .p(15,25); }
     .art-top { .pb(20);
-      h3 { .fs(32,42); }
+      h3 { .fs(32,42); .semi-bold; }
       p { .fs(20,32); .mt(15); }
     }
 
@@ -513,7 +513,7 @@ section { .pb(120);
           }
         }
       }
-      .planet-wrap { .wh(962,660); .pt(50); .mh-c;
+      .planet-wrap { .wh(962,800); .pt(50); .mh-c;
         &:after { .hide; }
         .img { .wh(962,660);
           img { .hide!important; }

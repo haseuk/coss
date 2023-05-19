@@ -267,7 +267,8 @@
 .o(@t, @d, @v) { transition: opacity @t @d; opacity: @v; }
 
 .crop() { overflow: hidden; }
-.scroll() { overflow-y: scroll; }
+.scroll-y() { overflow-y: scroll; }
+.scroll-x() { overflow-x: scroll; }
 
 @hover: ~'.no-touch &:hover:not(.hover-disable)';
 @hover-press: ~'.no-touch &:hover:not(.hover-disable), &:active';
