@@ -1,3 +1,7 @@
+.table-fix {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
 @media screen and (min-width: 1080px) {
   html {
     font-size: 36px;
@@ -2171,6 +2175,12 @@
   }
   .container .wrap .popup .inner .faq-pop ul li.file .inp .file-box label {
     margin-right: 0.19444444rem;
+  }
+  .container .wrap .popup .inner .faq-pop ul li.file .inp .file-box .file-name .upload-name {
+    width: auto;
+  }
+  .container .wrap .popup .inner .faq-pop ul li.file .inp .file-box .file-name .del-btn {
+    top: 0rem;
   }
   .container .wrap .popup .inner .faq-pop .submit {
     font-size: 0.5rem;

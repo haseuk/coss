@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>바이오헬스 관리자화면</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/admin/admin-basic.css">
+  <link rel="stylesheet" href="../css/admin/jquery-ui.css">
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <header>
+        <div class="gnb">
+          <div class="gnb-l">
+            <a class="nav-btn btn">메뉴버튼</a>
+            <h1><span class="logo"> coss 바이오헬스</span></h1>
+          </div>
+
+          <div class="gnb-r">
+            <div class="acc">
+              <p>접속:</p>
+              <span>관리자</span>
+            </div>
+            <a class="login-btn btn">LogOut</a>
+            <a href="/" class="btn home">홈으로 가기</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="snb">
+        <ul>
+          <!--open 클래스 추가 메뉴 오픈-->
+          <li class="depth01">
+            <a class="btn dep01">사업소개</a>
+            <div class="depth02">
+              <a class="btn dep02">협력기관</a>
+            </div>
+          </li>
+          <li class="depth01 open">
+            <a class="btn dep01">교육과정</a>
+            <div class="depth02">
+              <a class="btn dep02">개설과목</a>
+              <a class="btn dep02">교육대상</a>
+              <a class="btn dep02">이수안내</a>
+            </div>
+          </li>
+          <li class="depth01">
+            <a class="btn dep01">학생지원</a>
+            <div class="depth02">
+              <a class="btn dep02">참여활동</a>
+              <a class="btn dep02">서포터즈</a>
+              <a class="btn dep02">비교과활동</a>
+            </div>
+          </li>
+          <li class="depth01">
+            <a class="btn dep01">성과공유</a>
+            <div class="depth02">
+              <a class="btn dep02">우수성과</a>
+              <a class="btn dep02">K-MOOC</a>
+              <a class="btn dep02">자료실</a>
+            </div>
+          </li>
+          <li class="depth01">
+            <a class="btn dep01">정보광장</a>
+            <div class="depth02">
+              <a class="btn dep02">공지사항</a>
+              <a class="btn dep02">보도자료</a>
+              <a class="btn dep02">FAQ</a>
+              <a class="btn dep02">문의하기</a>
+              <a class="btn dep02">담당자관리</a>
+            </div>
+          </li>
+          <li class="depth01">
+            <a class="btn dep01">홈페이지 관리</a>
+            <div class="depth02">
+              <a class="btn dep02">기본정보</a>
+              <a class="btn dep02">개인정보처리방침</a>
+              <a class="btn dep02">팝업관리</a>
+              <a class="btn dep02">바로가기관리</a>
+              <a class="btn dep02">메뉴관리</a>
+              <a class="btn dep02">메인관리</a>
+              <a class="btn dep02">게시판관리</a>
+              <a class="btn dep02">관리자</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <section class="curriculum">
+        <div class="top">
+          <h3>교육대상</h3>
+
+          <p class="tit">게시글 작성</p>
+        </div>
+
+        <div class="status-view">
+          <div class="form-table">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <colgroup>
+                <col width="17%">
+                <col width="83%">
+              </colgroup>
+              <tr>
+                <th>교육과정</th>
+                <td>
+                  <div class="select-wrap w-130">
+                    <!--open 클래스 추가시 옵션 노출됨-->
+                    <div class="select ">
+                      <a class="selected-value btn">카테고리</a>
+                      <ul class="opt-grp">
+                        <li class="option btn">교육대상</li>
+                        <li class="option btn">공동활용대학</li>
+                        <li class="option btn">컨소시엄</li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>option</th>
+                <td>
+                  <label>
+                    <input type="checkbox">
+                    <i></i>
+                    <s>메인노출</s>
+                  </label>
+                  <span class="slash">/</span>
+                  <label>
+                    <input type="radio" name="opt">
+                    <i></i>
+                    <s>출력</s>
+                  </label>
+                  <label>
+                    <input type="radio" name="opt">
+                    <i></i>
+                    <s>보류</s>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>제목</th>
+                <td>
+                  <input type="text" class="w-520">
+                </td>
+              </tr>
+              <tr>
+                <th>내용</th>
+                <td>
+                  <div class="txt-edit">
+                    <img src="../images/admin/text.png" alt="" style="width: 100%">
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="btns">
+            <a class="button line">리스트</a>
+            <a class="button blu">등록</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="../js/admin.js"></script>
+  <script src="../js/select.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+  </script>
+</body>
+</html>

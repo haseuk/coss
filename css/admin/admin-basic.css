@@ -1,0 +1,1302 @@
+.table-fix {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+html {
+  font-size: 16px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+.pre {
+  font-family: Pretendard, sans-serif;
+}
+.shadow {
+  box-shadow: 0 2px 10px rgba(40, 40, 40, 0.15);
+}
+.btn {
+  display: inline-block;
+  cursor: pointer;
+}
+.button {
+  font-size: 0.8125rem;
+  line-height: 1.875rem;
+  width: 4.375rem !important;
+  height: 2rem !important;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 0.1875rem;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+.button.yel {
+  background-color: #FFAC01;
+  border: 1px solid #FF8A01;
+}
+.button.blu {
+  background-color: #003595;
+  border: 1px solid #001A48;
+}
+.button.grn {
+  background-color: #00C6D2;
+  border: 1px solid #00939C;
+}
+.button.line {
+  color: #242424;
+  border: 1px solid #DEDEDE;
+}
+input {
+  font-family: "Nanum Gothic", sans-serif;
+  border: 0;
+}
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+.w-520 {
+  width: 32.5rem !important;
+}
+.w-400 {
+  width: 25rem !important;
+}
+.w-200 {
+  width: 12.5rem !important;
+}
+.w-160 {
+  width: 10rem !important;
+}
+.w-140 {
+  width: 8.75rem !important;
+}
+.w-130 {
+  width: 8.125rem !important;
+}
+.w-120 {
+  width: 7.5rem !important;
+}
+.w-50 {
+  width: 3.125rem !important;
+}
+.w-100per {
+  width: 100% !important;
+}
+.bl-c {
+  color: #04B0E2 !important;
+}
+.gray-c {
+  color: #777777 !important;
+}
+.tx-l {
+  text-align: left !important;
+}
+.container .wrap {
+  font-size: 0rem;
+  color: #242424;
+}
+.container .wrap header {
+  border-bottom: 1px solid #DDE1E1;
+  background-color: #fff;
+  position: fixed;
+  left: 0rem;
+  top: 0rem;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  z-index: 10;
+}
+.container .wrap header .gnb {
+  display: flex;
+  justify-content: space-between;
+}
+.container .wrap header .gnb .nav-btn {
+  width: 3.125rem;
+  height: 2.75rem;
+  background-image: url('/images/admin/ico-nav-btn.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: top;
+}
+.container .wrap header .gnb h1 {
+  padding-top: 0.9375rem;
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 1.3125rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.container .wrap header .gnb h1 span {
+  width: 6.875rem;
+  height: 1rem;
+  background-image: url('/images/admin/logo-sm.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+.container .wrap header .gnb .acc {
+  font-size: 0.6875rem;
+  line-height: 0.8125rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1.3125rem;
+  color: #4D4D4D;
+  padding-top: 0.9375rem;
+  padding-right: 0rem;
+  padding-bottom: 0.9375rem;
+  padding-left: 0rem;
+}
+.container .wrap header .gnb .acc p,
+.container .wrap header .gnb .acc span {
+  display: inline-block;
+  vertical-align: top;
+}
+.container .wrap header .gnb .acc span {
+  font-weight: 700;
+}
+.container .wrap header .gnb .login-btn {
+  font-size: 0.6875rem;
+  line-height: 1.375rem;
+  text-align: center;
+  color: #4D4D4D;
+  width: 4.5rem;
+  height: 1.375rem;
+  border-radius: 0.1875rem;
+  border: 1px solid #C5C5C5;
+  box-sizing: border-box;
+  margin-top: 0.6875rem;
+  margin-right: 1.25rem;
+  margin-bottom: 0rem;
+  margin-left: 0rem;
+}
+.container .wrap header .gnb .home {
+  width: 3.1875rem;
+  height: 2.75rem;
+  background-image: url('/images/admin/ico-home.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: top;
+}
+.container .wrap .snb {
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #848484;
+  width: 15rem;
+  height: 100vh;
+  background-color: #1A2227;
+  position: fixed;
+  left: 0rem;
+  top: 2.8125rem;
+  right: auto;
+  bottom: auto;
+  text-align: left;
+  z-index: 10;
+}
+.container .wrap .snb .btn {
+  display: block;
+  box-sizing: border-box;
+}
+.container .wrap .snb ul .depth01 .dep01 {
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-top: 0.75rem;
+  padding-right: 1rem;
+  padding-bottom: 0.6875rem;
+  padding-left: 1.25rem;
+  border-bottom: 1px solid #363D42;
+  position: relative;
+}
+.container .wrap .snb ul .depth01 .dep01:after {
+  content: '';
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url('/images/admin/ico-gt.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 1rem;
+  top: 0.8125rem;
+  left: auto;
+  bottom: auto;
+}
+.container .wrap .snb ul .depth01 .depth02 {
+  background-color: #fff;
+  display: none;
+}
+.container .wrap .snb ul .depth01 .depth02 .dep02 {
+  font-size: 0.8125rem;
+  line-height: 0.8125rem;
+  color: #242424;
+  padding-top: 0.8125rem;
+  padding-right: 0rem;
+  padding-bottom: 0.8125rem;
+  padding-left: 1.875rem;
+  border-bottom: 1px solid #E5E5E5;
+  border-right: 1px solid #E5E5E5;
+}
+.container .wrap .snb ul .depth01.open .dep01 {
+  color: #fff;
+}
+.container .wrap .snb ul .depth01.open .dep01:after {
+  background-image: url('/images/admin/ico-gt-on.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container .wrap .snb ul .depth01.open .depth02 {
+  display: block;
+}
+.container .wrap .log-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/images/admin/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.container .wrap .log-page .log-wrap {
+  width: 25.1875rem;
+  height: 28.75rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  margin-top: -14.375rem;
+  margin-right: 0rem;
+  margin-bottom: 0rem;
+  margin-left: -12.5625rem;
+}
+.container .wrap .log-page .log-wrap h1 {
+  width: 16.9375rem;
+  height: 2.4375rem;
+  background-image: url('/images/admin/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 1.875rem;
+  display: inline-block;
+}
+.container .wrap .log-page .log-wrap .log-box {
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+  box-shadow: 0 2px 10px rgba(40, 40, 40, 0.15);
+  border-radius: 0.625rem;
+  padding-top: 3.75rem;
+  padding-right: 1.875rem;
+  padding-bottom: 3.75rem;
+  padding-left: 1.875rem;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: #fff;
+}
+.container .wrap .log-page .log-wrap .log-box p {
+  margin-bottom: 0.625rem;
+}
+.container .wrap .log-page .log-wrap .log-box input {
+  width: 100%;
+  height: 3rem;
+  border: 1px solid #F1F1F1;
+  border-radius: 0.3125rem;
+  padding-top: 0rem;
+  padding-right: 0.9375rem;
+  padding-bottom: 0rem;
+  padding-left: 0.9375rem;
+  box-sizing: border-box;
+  margin-bottom: 0.9375rem;
+}
+.container .wrap .log-page .log-wrap .log-box .login {
+  font-family: Pretendard, sans-serif;
+  text-align: center;
+  font-weight: 600;
+  line-height: 3rem;
+  width: 100%;
+  height: 3rem;
+  color: #717377;
+  background-color: #CDD0D3;
+  border-radius: 0.3125rem;
+  margin-top: 2rem;
+}
+.container .wrap .log-page .log-wrap .log-box .login.on {
+  background-color: #04B0E2;
+  color: #fff;
+}
+.container .wrap ::placeholder {
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+  color: #717377;
+}
+.container .wrap section {
+  height: 100vh;
+  width: calc(100% - 15rem);
+  margin-top: 2.8125rem;
+  margin-right: 0rem;
+  margin-bottom: 0rem;
+  margin-left: 15rem;
+  box-sizing: border-box;
+  padding-top: 1.5625rem;
+  padding-right: 1.875rem;
+  padding-bottom: 1.5625rem;
+  padding-left: 1.875rem;
+  background-color: #fff;
+}
+.container .wrap section .top h3 {
+  margin-bottom: 1.25rem;
+}
+.container .wrap section .top .search-wrap {
+  width: 100%;
+  padding-top: 1.875rem;
+  padding-right: 1.25rem;
+  padding-bottom: 1.875rem;
+  padding-left: 1.25rem;
+  border: 1px solid #BBBBBB;
+  border-radius: 0.1875rem;
+  box-sizing: border-box;
+  margin-bottom: 1.25rem;
+}
+.container .wrap section .top .search-wrap .search-bar {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap section .top .search-wrap .search-bar .inp {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap section .top .search-wrap .search-bar .inp input {
+  width: 100%;
+  height: 100%;
+}
+.container .wrap section .top .search-wrap .search-bar .inp.search {
+  overflow: hidden;
+  width: 16.25rem;
+  height: 2rem;
+  margin-right: 0.625rem;
+  border: 1px solid #DDE1E1;
+  border-radius: 0.1875rem;
+  box-sizing: border-box;
+}
+.container .wrap section .top .search-wrap .search-bar .inp.search input {
+  background-color: #F7F7F7;
+  padding-left: 0.9375rem;
+  box-sizing: border-box;
+}
+.container .wrap section .top .search-wrap .search-bar .inp ::placeholder {
+  font-size: 0.8125rem;
+}
+.container .wrap section .top .tit {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+}
+.container .wrap section .select-wrap {
+  width: 7.5rem;
+  margin-right: 0.3125rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap section .select-wrap .select {
+  position: relative;
+}
+.container .wrap section .select-wrap .select .btn {
+  font-size: 0.8125rem;
+  line-height: 1.875rem;
+  width: 100%;
+  height: 2rem;
+  background-color: #F7F7F7;
+  border-radius: 0.1875rem;
+  padding-left: 0.9375rem;
+  box-sizing: border-box;
+  color: #242424;
+  display: block;
+}
+.container .wrap section .select-wrap .select .selected-value {
+  border: 1px solid #DDE1E1;
+  position: relative;
+}
+.container .wrap section .select-wrap .select .selected-value:after {
+  content: '';
+  display: block;
+  width: 0.875rem;
+  height: 0.875rem;
+  background-image: url('/images/admin/ico-drop.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 0.9375rem;
+  top: 0.5625rem;
+  left: auto;
+  bottom: auto;
+}
+.container .wrap section .select-wrap .select .opt-grp {
+  width: 100%;
+  position: absolute;
+  left: 0rem;
+  top: 2rem;
+  right: auto;
+  bottom: auto;
+  border: 1px solid #DDE1E1;
+  border-radius: 0.1875rem;
+  box-sizing: border-box;
+  display: none;
+}
+.container .wrap section .select-wrap .select .opt-grp .option {
+  border-bottom: 1px solid #DDE1E1;
+}
+.container .wrap section .select-wrap .select .opt-grp .option:last-child {
+  border-bottom: 0;
+}
+.container .wrap section .select-wrap .select.open .selected-value:after {
+  transform: rotate(180deg);
+}
+.container .wrap section .select-wrap .select.open .opt-grp {
+  display: block;
+  z-index: 2;
+}
+.container .wrap section .select-wrap .directly {
+  display: none;
+}
+.container .wrap section .select-wrap .directly.enable {
+  display: inline-block;
+}
+.container .wrap section .status-view {
+  padding-bottom: 5.625rem;
+  box-sizing: border-box;
+}
+.container .wrap section .status-view .edit-wrap {
+  text-align: left;
+  margin-bottom: 0.25rem;
+}
+.container .wrap section .status-view .edit-wrap .button {
+  margin-right: 0.625rem;
+}
+.container .wrap section .status-view table {
+  border-top: 1px solid #DDE1E1;
+}
+.container .wrap section .status-view table tr {
+  border-bottom: 1px solid #DDE1E1;
+}
+.container .wrap section .status-view table tr th,
+.container .wrap section .status-view table tr td {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  box-sizing: border-box;
+  padding-top: 0.75rem;
+  padding-right: 0.9375rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.9375rem;
+}
+.container .wrap section .status-view table tr th {
+  background-color: #FCFCFC;
+}
+.container .wrap section .status-view table tr td .txt-result {
+  line-height: 1.875rem;
+  border: 1px solid #DDE1E1;
+  background-color: #FCFCFC;
+  border-radius: 0.1875rem;
+  padding-top: 0.125rem;
+  padding-right: 0.9375rem;
+  padding-bottom: 0.125rem;
+  padding-left: 0.9375rem;
+  box-sizing: border-box;
+  min-height: 7.5rem;
+}
+.container .wrap section .status-view table tr td .hyphen {
+  color: #DDE1E1;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap section .status-view label input[type=checkbox] + i {
+  width: 1rem;
+  height: 1rem;
+  background-image: url('/images/admin/ico-chk.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap section .status-view label input[type=checkbox]:checked + i {
+  background-image: url('/images/admin/ico-chkd.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container .wrap section .status-view label input {
+  display: none;
+}
+.container .wrap section .status-view .edit-table table {
+  text-align: center;
+}
+.container .wrap section .status-view .edit-table table tr:nth-child(even) {
+  background-color: #F8F8F8;
+}
+.container .wrap section .status-view .edit-table table tr th {
+  font-weight: 700;
+  padding-top: 1.375rem;
+  padding-right: 0rem;
+  padding-bottom: 1.375rem;
+  padding-left: 0rem;
+  border-bottom: 0.125rem solid #DDE1E1;
+}
+.container .wrap section .status-view .edit-table table tr td {
+  padding-top: 0.9375rem;
+  padding-right: 0rem;
+  padding-bottom: 0.9375rem;
+  padding-left: 0rem;
+}
+.container .wrap section .status-view .edit-table table tr td.tit {
+  color: #04B0E2;
+}
+.container .wrap section .status-view .edit-table table tr td .btn {
+  color: #fff;
+  line-height: 1.875rem;
+  width: 4.5rem;
+  height: 1.875rem;
+  border-radius: 0.9375rem;
+  text-align: center;
+  background-color: #7A93C0;
+  position: relative;
+}
+.container .wrap section .status-view .edit-table table tr td .btn.line {
+  color: #242424;
+  border: 1px solid #DEDEDE;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.container .wrap section .status-view .edit-table table tr td .btn.active {
+  font-size: 0rem;
+  background-color: #B4B8B9;
+}
+.container .wrap section .status-view .edit-table table tr td .btn.active:after {
+  content: '비노출';
+  font-size: 0.8125rem;
+  line-height: 1.875rem;
+  text-align: center;
+  color: #fff;
+}
+.container .wrap section .status-view .edit-table table tr td span {
+  color: #00C6D2;
+}
+.container .wrap section .status-view .form-table table {
+  text-align: left;
+  border-top: 0.125rem solid #DDE1E1;
+}
+.container .wrap section .status-view .form-table table th {
+  padding-top: 1.125rem;
+  padding-right: 0.9375rem;
+  padding-bottom: 1.125rem;
+  padding-left: 0.9375rem;
+  font-weight: 700;
+  border-right: 1px solid #DDE1E1;
+  min-width: 17rem;
+}
+.container .wrap section .status-view .form-table table th s {
+  color: #04B0E2;
+}
+.container .wrap section .status-view .form-table table th span {
+  color: #2192FF;
+  display: block;
+  font-weight: 400;
+}
+.container .wrap section .status-view .form-table table td {
+  padding-left: 0.9375rem;
+  box-sizing: border-box;
+  color: #777777 !important;
+}
+.container .wrap section .status-view .form-table table td input {
+  border: 1px solid #DDE1E1;
+  border-radius: 0.1875rem;
+  height: 2.0625rem;
+  line-height: 1.9375rem;
+  padding-left: 0.9375rem;
+  box-sizing: border-box;
+  background-color: #FCFCFC;
+}
+.container .wrap section .status-view .form-table table td input[type=file] {
+  border: 0;
+  background-color: #fff;
+  padding-left: 0rem;
+  color: #242424;
+}
+.container .wrap section .status-view .form-table table td .date {
+  position: relative;
+  display: inline-block;
+}
+.container .wrap section .status-view .form-table table td .date input {
+  width: 10.375rem;
+}
+.container .wrap section .status-view .form-table table td .date:after {
+  content: '';
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url('/images/admin/ico-calendar.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 0.9375rem;
+  top: 0.5625rem;
+  left: auto;
+  bottom: auto;
+  pointer-events: none;
+}
+.container .wrap section .status-view .form-table table td.order input {
+  width: 8.25rem;
+}
+.container .wrap section .status-view .form-table table td label {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap section .status-view .form-table table td label input[type=radio] + i {
+  width: 1rem;
+  height: 1rem;
+  background-image: url('/images/admin/ico-radio-chk.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.3125rem;
+}
+.container .wrap section .status-view .form-table table td label input[type=radio]:checked + i {
+  background-image: url('/images/admin/ico-radio-chkd.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container .wrap section .status-view .form-table table td label input[type=radio] {
+  display: none;
+}
+.container .wrap section .status-view .form-table table td label s {
+  margin-right: 0.625rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap section .status-view .form-table table td .inp {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1.25rem;
+}
+.container .wrap section .status-view .form-table table td p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.625rem;
+}
+.container .wrap section .status-view .form-table table td .noti {
+  color: #2192FF;
+  display: block;
+}
+.container .wrap section .status-view .form-table table td .file-preview {
+  width: 5rem;
+  height: 5rem;
+  display: block;
+}
+.container .wrap section .status-view .form-table table td textarea {
+  width: 100%;
+  height: 24.25rem;
+  border: 1px solid #EAECEC;
+  border-radius: 0.1875rem;
+  background-color: #FCFCFC;
+  font-family: "Nanum Gothic", sans-serif;
+  padding: 0.9375rem;
+  box-sizing: border-box;
+}
+.container .wrap section .status-view .form-table table td .slash {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.625rem;
+}
+.container .wrap section .status-view .form-table table td .inner-table table tr th {
+  color: #242424;
+}
+.container .wrap section .status-view .form-table table td .btn.del {
+  width: 0.875rem;
+  height: 0.875rem;
+  background-image: url('/images/admin/ico-del.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap section .status-view .form-table table td .file-box {
+  position: relative;
+}
+.container .wrap section .status-view .form-table table td .file-box label {
+  font-size: 0.8125rem;
+  line-height: 1.4375rem;
+  width: 4.4375rem;
+  height: 1.4375rem;
+  border-radius: 0.1875rem;
+  background-color: #F0F0F0;
+  border: 1px solid #767676;
+  box-sizing: border-box;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: #242424;
+}
+.container .wrap section .status-view .form-table table td .file-box input[type=file] {
+  opacity: 0;
+  width: 0rem;
+  height: 0rem;
+  display: none;
+}
+.container .wrap section .status-view .form-table table td .file-box .file-name {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-right: 1.25rem;
+  box-sizing: border-box;
+}
+.container .wrap section .status-view .form-table table td .file-box .file-name .upload-name {
+  font-size: 0.8125rem;
+  line-height: 2rem;
+  color: #242424;
+  border: 0;
+  width: auto;
+  margin-bottom: 0rem;
+}
+.container .wrap section .status-view .form-table table td .file-box .file-name .upload-name.line {
+  text-decoration: underline;
+}
+.container .wrap section .status-view .form-table table td .file-box .file-name .del-btn {
+  width: 0.875rem;
+  height: 0.875rem;
+  background-image: url('/images/admin/ico-del.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 0rem;
+  top: 50%;
+  left: auto;
+  bottom: auto;
+  transform: translateY(-50%);
+  display: none;
+}
+.container .wrap section .status-view .inner-wrap {
+  text-align: center;
+}
+.container .wrap section .status-view .inner-wrap .inner-table {
+  width: 100%;
+  text-align: left;
+}
+.container .wrap section .status-view .inner-wrap .inner-table .tbl-cnt {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 91%;
+}
+.container .wrap section .status-view .inner-wrap .inner-table .tbl-cnt table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid #DDE1E1;
+  width: 100%;
+}
+.container .wrap section .status-view .inner-wrap .inner-table .tbl-cnt table th,
+.container .wrap section .status-view .inner-wrap .inner-table .tbl-cnt table td {
+  text-align: center;
+  background-color: #fff;
+}
+.container .wrap section .status-view .inner-wrap .inner-table .tbl-cnt table td {
+  border-right: 1px solid #DDE1E1;
+  padding-top: 0rem;
+  padding-right: 0.9375rem;
+  padding-bottom: 0rem;
+  padding-left: 0.9375rem;
+}
+.container .wrap section .status-view .inner-wrap .inner-table .tbl-cnt table td input {
+  width: 100%;
+}
+.container .wrap section .status-view .inner-wrap .inner-table .tbl-cnt table td .label-group {
+  padding-top: 0.625rem;
+  padding-right: 0rem;
+  padding-bottom: 0.625rem;
+  padding-left: 0rem;
+  box-sizing: border-box;
+}
+.container .wrap section .status-view .inner-wrap .inner-table .tbl-cnt table td .label-group label {
+  margin-bottom: 0.25rem;
+}
+.container .wrap section .status-view .inner-wrap .inner-table .tbl-cnt table td .label-group label:last-child {
+  margin-bottom: 0rem;
+}
+.container .wrap section .status-view .inner-wrap .inner-table .btns {
+  width: 8%;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 1.8125rem;
+}
+.container .wrap section .status-view .inner-wrap .inner-table .btns .button {
+  margin-right: 0rem;
+}
+.container .wrap section .status-view .inner-wrap .more {
+  font-size: 0rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url('/images/admin/ico-table-more.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 1.25rem;
+}
+.container .wrap section .status-view .result-table table th,
+.container .wrap section .status-view .post-cont table th {
+  border-left: 1px solid #DDE1E1;
+  border-right: 1px solid #DDE1E1;
+  font-weight: 700;
+}
+.container .wrap section .status-view .result-table table th:first-child,
+.container .wrap section .status-view .post-cont table th:first-child {
+  border-left: 0;
+}
+.container .wrap section .status-view .result-table table {
+  text-align: left;
+}
+.container .wrap section .status-view .result-table table tr td span {
+  color: #00C6D2;
+}
+.container .wrap section .status-view .result-cont {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  color: #777;
+  padding-top: 0.75rem;
+  padding-right: 0.9375rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.9375rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #DDE1E1;
+}
+.container .wrap section .status-view .post-cont table {
+  border: 1px solid #DDE1E1;
+}
+.container .wrap section .status-view .btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.25rem;
+  padding-right: 0rem;
+  padding-bottom: 1.25rem;
+  padding-left: 0rem;
+  box-sizing: border-box;
+}
+.container .wrap section .status-view .btn-wrap .btns {
+  margin: 0rem;
+}
+.container .wrap section .status-view .btns {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 1.25rem;
+}
+.container .wrap section .status-view .btns .button:first-child {
+  margin-right: 0.625rem;
+}
+.container .wrap section .status-view .btns .button:last-child {
+  margin-right: 0rem;
+}
+.container .wrap section .status-view .btns.save {
+  text-align: right;
+}
+.container .wrap section .status-view .btns.save .button {
+  margin: 0rem;
+}
+.container .wrap section .status-view .history-table table {
+  text-align: center;
+  border-top: 1px solid #DDE1E1;
+}
+.container .wrap section .status-view .history-table table tr:nth-child(even) {
+  background-color: #F8F8F8;
+}
+.container .wrap section .status-view .history-table table tr:first-child {
+  border-bottom: 0.125rem solid #DDE1E1;
+}
+.container .wrap section .status-view .history-table table tr th {
+  border-right: 0;
+  background-color: #fff;
+}
+.container .wrap section .status-view .paging-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+}
+.container .wrap section .status-view .paging-wrap .paging .btn {
+  font-size: 0.8125rem;
+  line-height: 1.4375rem;
+  text-align: center;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  border: 1px solid #DDE1E1;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0.3125rem;
+  position: relative;
+}
+.container .wrap section .status-view .paging-wrap .paging .btn.on {
+  color: #fff;
+  border: 1px solid #001A48;
+  background-color: #003595;
+}
+.container .wrap section .status-view .paging-wrap .paging .btn:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+}
+.container .wrap section .status-view .paging-wrap .paging .btn:last-child {
+  margin-right: 0rem;
+}
+.container .wrap section .status-view .paging-wrap .paging .btn.first:after {
+  width: 0.8125rem;
+  height: 0.875rem;
+  background-image: url('/images/admin/ico-dbl-arr.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container .wrap section .status-view .paging-wrap .paging .btn.last:after {
+  width: 0.8125rem;
+  height: 0.875rem;
+  background-image: url('/images/admin/ico-dbl-arr.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.container .wrap section .status-view .paging-wrap .paging .btn.prev:after {
+  width: 0.5rem;
+  height: 0.875rem;
+  background-image: url('/images/admin/ico-pag-arr.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container .wrap section .status-view .paging-wrap .paging .btn.next:after {
+  width: 0.5rem;
+  height: 0.875rem;
+  background-image: url('/images/admin/ico-pag-arr.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.container .wrap section .status-view .paging-wrap .page-status {
+  font-size: 0.8125rem;
+  line-height: 0.8125rem;
+  margin-top: 0.3125rem;
+}
+.container .wrap section .status-view .content {
+  margin-bottom: 3.75rem;
+}
+.container .wrap section .status-view .content:last-child {
+  margin-bottom: 0rem;
+}
+.container .wrap section .status-view .content .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.8125rem;
+}
+.container .wrap section .status-view .content .top p {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.container .wrap section .status-view .content .top .input-more {
+  width: 1.5625rem;
+  height: 1.5625rem;
+  background-image: url('/images/admin/ico-more-bl.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container .wrap section .status-view .content .cont-inner {
+  margin-bottom: 1.25rem;
+}
+.container .wrap section .status-view .content .cont-inner table {
+  border-top: 1px solid #DDE1E1;
+}
+.container .wrap section .status-view .content .cont-inner:last-child {
+  margin-bottom: 0rem;
+}
+.container .wrap section .status-view .content .btn-wrap {
+  justify-content: flex-end;
+  margin-top: 0.1875rem;
+  padding: 0rem;
+}
+.container .wrap section .status-view .content .btn-wrap .button:last-child {
+  margin-right: 0rem;
+}
+.container .wrap section .status-view.square-view .edit-table table tr {
+  background-color: #fff;
+}
+.container .wrap section .status-view.square-view .edit-table table tr.urgency,
+.container .wrap section .status-view.square-view .edit-table table tr.main-ex {
+  background-color: #FBFBFF;
+}
+.container .wrap section.curriculum.cur02 .status-view .form-table table tr td .inp p {
+  color: #242424;
+}
+.container .wrap section.setting .status-view .form-table table td .inp span {
+  display: inline-block;
+  width: 2.0625rem;
+}
+.container .wrap section.setting .status-view.main-vis .form-table table {
+  border: 1px solid #DDE1E1;
+}
+.container .wrap section.setting .status-view.main-vis .form-table table td {
+  padding: 0rem;
+  height: 28.125rem;
+  position: relative;
+}
+.container .wrap section.setting .status-view.main-vis .form-table table td .img {
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: 100%;
+}
+.container .wrap section.setting .status-view.main-vis .form-table table td .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+.container .wrap section.setting .status-view.main-vis .form-table table td .file-box {
+  position: absolute;
+  left: 50%;
+  top: 11.5625rem;
+  right: auto;
+  bottom: auto;
+  transform: translateX(-50%);
+}
+.container .wrap section.setting .status-view.main-vis .form-table table td .file-box label input[type=file] + i {
+  width: 3rem;
+  height: 3rem;
+  background-image: url('/images/admin/ico-file.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .wrap section.setting .status-view.main-vis .form-table table td .file-box label input {
+  display: none;
+}
+.container .wrap section.setting .status-view.main-vis .form-table table td .file-box label s {
+  font-size: 0.8125rem;
+  line-height: 1.875rem;
+  font-weight: 700;
+  color: #717377;
+  display: inline-block;
+  margin: 0rem;
+}
+.container .wrap section.setting .status-view.main-vis .form-table table td.over .img .dim {
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  z-index: 2;
+}
+.container .wrap section.setting .status-view.main-vis .form-table table td.over .file-box {
+  z-index: 2;
+}
+.container .wrap section.setting .status-view.main-vis .form-table table td.over .file-box label input[type=file] + i {
+  background-image: url('/images/admin/ico-file-w.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container .wrap section.setting .status-view.main-vis .form-table table td.over .file-box label s {
+  color: #fff;
+}
+.container .wrap section.setting.manage .status-view {
+  display: flex;
+  justify-content: space-between;
+}
+.container .wrap section.setting.manage .status-view .menu-wrap {
+  margin-right: 2.125rem;
+  width: 46%;
+  padding-top: 1.25rem;
+  padding-right: 0.5625rem;
+  padding-bottom: 0.9375rem;
+  padding-left: 0.5625rem;
+  box-sizing: border-box;
+  border: 1px solid #DDE1E0;
+}
+.container .wrap section.setting.manage .status-view .menu-wrap ul li .btn {
+  font-size: 0.875rem;
+  line-height: 2.625rem;
+  font-weight: 700;
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  border-top: 1px solid #DDE1E0;
+  padding-left: 0.9375rem;
+}
+.container .wrap section.setting.manage .status-view .menu-wrap ul li .btn span {
+  color: #FC2947;
+  display: inline-block;
+  margin-right: 0.625rem;
+  display: none;
+}
+.container .wrap section.setting.manage .status-view .menu-wrap ul li .btn:after {
+  content: '';
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url('/images/admin/ico-edit.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 1.25rem;
+  top: 0.6875rem;
+  left: auto;
+  bottom: auto;
+  pointer-events: none;
+}
+.container .wrap section.setting.manage .status-view .menu-wrap ul li .btn.hidden span {
+  display: inline-block;
+}
+.container .wrap section.setting.manage .status-view .menu-wrap ul li.depth01 .dep01 {
+  background-color: #FEFAEC;
+}
+.container .wrap section.setting.manage .status-view .menu-wrap ul li.depth01 .depth02 {
+  display: none;
+}
+.container .wrap section.setting.manage .status-view .menu-wrap ul li.depth01 .depth02 .dep02 {
+  background-color: #F8F8F8;
+  padding-left: 1.5625rem;
+}
+.container .wrap section.setting.manage .status-view .menu-wrap ul li.depth01.open .depth02 {
+  display: block;
+}
+.container .wrap section.setting.manage .status-view .menu-wrap ul li:last-child {
+  border-bottom: 1px solid #DDE1E0;
+}
+.container .wrap section.setting.manage .status-view .menu-view {
+  width: 50%;
+  padding-top: 1.25rem;
+  padding-right: 0.5625rem;
+  padding-bottom: 0.9375rem;
+  padding-left: 0.5625rem;
+  box-sizing: border-box;
+  border: 1px solid #DDE1E0;
+}
+.container .wrap section.setting.manage .status-view .menu-view .form-table table {
+  border-top: 1px solid #DDE1E1;
+}
+.container .wrap section.setting.manage .status-view .menu-view .form-table table tr th {
+  width: 24%;
+  min-width: auto;
+}
+.container .wrap section.setting.manage .status-view .menu-view .form-table table tr td label input[type=radio]:disabled + i {
+  background-image: url('/images/admin/ico-radio-dis.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container .wrap section.setting.set08 .status-view .content .cont-inner,
+.container .wrap section.setting.set09 .status-view .content .cont-inner {
+  margin-bottom: 0rem;
+}
+.container .wrap section.setting.set09 .status-view .form-table table td .file-box label {
+  border: 0;
+  background: none;
+  width: auto;
+  max-width: none;
+  height: auto;
+  max-height: none;
+}
+.container .wrap section.setting.set14 .status-view .form-table tr td .inner-table table {
+  border: 1px solid #DDE1E1;
+  text-align: center;
+}
+.container .wrap section.setting.set14 .status-view .form-table tr td .inner-table table tr th {
+  min-width: auto;
+}
+.container .wrap section.setting.set14 .status-view .form-table tr td .inner-table table tr td {
+  border-right: 1px solid #DDE1E1;
+}
+.container .wrap section.setting.set14 .status-view .form-table tr td .inner-table table tr td label input[type=checkbox] + i {
+  width: 1.5625rem;
+  height: 1.5625rem;
+  background-image: url('/images/admin/ico-chk-xl.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+.container .wrap section.setting.set14 .status-view .form-table tr td .inner-table table tr td label input[type=checkbox]:checked + i {
+  background-image: url('/images/admin/ico-chkd-xl.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container .wrap section.setting.set16 .top .search-wrap p {
+  font-size: 0.8125rem;
+  line-height: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.3125rem;
+}
+.container .wrap section.setting.set16 .top .search-wrap input {
+  font-size: 0.8125rem;
+  line-height: 1.875rem;
+  height: 2rem;
+  background-color: #F7F7F7;
+  border: 1px solid #DDE1E1;
+  box-sizing: border-box;
+  margin-right: 0.625rem;
+  display: inline-block;
+  border-radius: 0.1875rem;
+  padding-left: 0.9375rem;
+}
+.container .wrap section.setting.set16 .top .search-wrap .button {
+  margin-right: 0.625rem;
+}
+.container .wrap section.setting.set16 .status-view .edit-table table {
+  text-align: center;
+}
+.container .wrap section.setting.set16 .status-view .edit-table table tr {
+  background-color: #fff;
+}
+.container .wrap section.setting.set16 .status-view .edit-table table tr:nth-child(odd) {
+  background-color: #F8F8F8;
+}
+.container .wrap section.setting.set16 .status-view .edit-table table tr td {
+  padding-top: 1.25rem;
+  padding-right: 0.875rem;
+  padding-bottom: 1.25rem;
+  padding-left: 0.875rem;
+  box-sizing: border-box;
+}
+.container .wrap section.setting.set16 .status-view .edit-table table tr td input {
+  font-size: 0.8125rem;
+  line-height: 1.875rem;
+  height: 2rem;
+  background-color: #F7F7F7;
+  border: 1px solid #DDE1E1;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 0.1875rem;
+  padding-left: 0.9375rem;
+}
+.container .wrap section.setting.set16 .status-view .edit-table table tr td .button:nth-child(1) {
+  margin-right: 0.625rem;
+}
+.container .wrap section.setting.set18 .status-view .form-table table tr td .button {
+  margin-left: 0.3125rem;
+}
+.container .wrap section.setting.set18 .status-view .form-table table tr td .chk-wrap {
+  margin-top: 0.625rem;
+}
+.container .wrap section.setting.set18 .status-view .form-table table tr td .noti {
+  color: #FC2947;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .wrap section.introduction .status-view .edit-table table tr td {
+  height: 6.875rem;
+}
+/*# sourceMappingURL=admin-basic.css.map */

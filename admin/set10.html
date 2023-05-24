@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>바이오헬스 관리자화면</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/admin/admin-basic.css">
+  <link rel="stylesheet" href="../css/admin/jquery-ui.css">
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <header>
+        <div class="gnb">
+          <div class="gnb-l">
+            <a class="nav-btn btn">메뉴버튼</a>
+            <h1><span class="logo"> coss 바이오헬스</span></h1>
+          </div>
+
+          <div class="gnb-r">
+            <div class="acc">
+              <p>접속:</p>
+              <span>관리자</span>
+            </div>
+            <a class="login-btn btn">LogOut</a>
+            <a href="/" class="btn home">홈으로 가기</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="snb">
+        <ul>
+          <!--open 클래스 추가 메뉴 오픈-->
+          <li class="depth01">
+            <a class="btn dep01">사업소개</a>
+            <div class="depth02">
+              <a class="btn dep02">협력기관</a>
+            </div>
+          </li>
+          <li class="depth01">
+            <a class="btn dep01">교육과정</a>
+            <div class="depth02">
+              <a class="btn dep02">개설과목</a>
+              <a class="btn dep02">교육대상</a>
+              <a class="btn dep02">이수안내</a>
+            </div>
+          </li>
+          <li class="depth01 ">
+            <a class="btn dep01">학생지원</a>
+            <div class="depth02">
+              <a class="btn dep02">참여활동</a>
+              <a class="btn dep02">서포터즈</a>
+              <a class="btn dep02">비교과활동</a>
+            </div>
+          </li>
+          <li class="depth01">
+            <a class="btn dep01">성과공유</a>
+            <div class="depth02">
+              <a class="btn dep02">우수성과</a>
+              <a class="btn dep02">K-MOOC</a>
+              <a class="btn dep02">자료실</a>
+            </div>
+          </li>
+          <li class="depth01">
+            <a class="btn dep01">정보광장</a>
+            <div class="depth02">
+              <a class="btn dep02">공지사항</a>
+              <a class="btn dep02">보도자료</a>
+              <a class="btn dep02">FAQ</a>
+              <a class="btn dep02">문의하기</a>
+              <a class="btn dep02">담당자관리</a>
+            </div>
+          </li>
+          <li class="depth01 open">
+            <a class="btn dep01">홈페이지 관리</a>
+            <div class="depth02">
+              <a class="btn dep02">기본정보</a>
+              <a class="btn dep02">개인정보처리방침</a>
+              <a class="btn dep02">팝업관리</a>
+              <a class="btn dep02">바로가기관리</a>
+              <a class="btn dep02">메뉴관리</a>
+              <a class="btn dep02">메인관리</a>
+              <a class="btn dep02">게시판관리</a>
+              <a class="btn dep02">관리자</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <section class="setting manage">
+        <div class="top">
+          <h3>메뉴관리</h3>
+        </div>
+
+        <div class="status-view">
+          <div class="menu-wrap">
+            <ul>
+              <!--depth01에 open 클래스 추가되면 depth02 노출-->
+              <li class="depth01">
+                <!-- 각 btn에 hidden 클래스 추가되면 숨김 문구 노출-->
+                <a class="btn dep01 hidden"><span>숨김</span> 사업소개</a>
+                <div class="depth02">
+                  <a class="btn dep02 "><span>숨김</span> 사업소개</a>
+                  <a class="btn dep02"><span>숨김</span> 비전및목표</a>
+                  <a class="btn dep02"><span>숨김</span> 핵심역량</a>
+                  <a class="btn dep02"><span>숨김</span> 바이오플래닛</a>
+                  <a class="btn dep02"><span>숨김</span> 참여대학</a>
+                </div>
+              </li>
+              <li class="depth01">
+                <a class="btn dep01"><span>숨김</span> 교육과정</a>
+                <div class="depth02">
+                  <a class="btn dep02"><span>숨김</span> 교육과정 소개</a>
+                  <a class="btn dep02"><span>숨김</span> 개설과목</a>
+                  <a class="btn dep02"><span>숨김</span> 교육대상</a>
+                  <a class="btn dep02"><span>숨김</span> 이수안내</a>
+                </div>
+              </li>
+              <li class="depth01">
+                <a class="btn dep01"><span>숨김</span> 학생지원</a>
+                <div class="depth02">
+                  <a class="btn dep02"><span>숨김</span> 지원 소개</a>
+                  <a class="btn dep02"><span>숨김</span> 서포터즈</a>
+                  <a class="btn dep02"><span>숨김</span> 비교과 활동</a>
+                </div>
+              </li>
+              <li class="depth01">
+                <a class="btn dep01"><span>숨김</span> 성과공유</a>
+                <div class="depth02">
+                  <a class="btn dep02"><span>숨김</span> 우수성과</a>
+                  <a class="btn dep02"><span>숨김</span> K-MOOC</a>
+                  <a class="btn dep02"><span>숨김</span> 자료실</a>
+                </div>
+              </li>
+              <li class="depth01">
+                <a class="btn dep01"><span>숨김</span> 정보광장</a>
+                <div class="depth02">
+                  <a class="btn dep02"><span>숨김</span> 공지사항</a>
+                  <a class="btn dep02"><span>숨김</span> 보도자료</a>
+                  <a class="btn dep02"><span>숨김</span> 취업정보</a>
+                  <a class="btn dep02"><span>숨김</span> FAQ</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-view">
+            <div class="form-table">
+              <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <th>1차메뉴</th>
+                  <td>사업소개</td>
+                </tr>
+                <tr>
+                  <th>메뉴</th>
+                  <td>
+                    <label>
+                      <input type="radio" name="hide1">
+                      <i></i>
+                      <s>노출</s>
+                    </label>
+                    <label>
+                      <input type="radio" name="hide1">
+                      <i></i>
+                      <s>숨김</s>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <th>관리자 메뉴</th>
+                  <td>
+                    <label>
+                      <input type="radio" name="hide2">
+                      <i></i>
+                      <s>노출</s>
+                    </label>
+                    <label>
+                      <input type="radio" name="hide2">
+                      <i></i>
+                      <s>숨김</s>
+                    </label>
+                  </td>
+                </tr>
+              </table>
+              <div class="btns">
+                <a class="button grn">수정</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="../js/admin.js"></script>
+  <script src="../js/select.js"></script>
+  <script>
+    function over(el) {
+      el.parentNode.classList.add('over');
+    }
+    function leave(el) {
+      console.log(el)
+      el.classList.remove('over');
+    }
+
+    //메뉴관리
+    let manageDepth01 = document.querySelectorAll('.menu-wrap .depth01 .dep01');
+    Array.prototype.forEach.call(manageDepth01, function(e) {
+      e.addEventListener('click', function() {
+        manageDepth01.forEach(function(el) {
+          el.parentNode.classList.remove('open')
+        });
+        if(e.parentNode.classList.contains('open')) e.parentNode.classList.remove('open');
+        else e.parentNode.classList.add('open');
+      })
+    });
+  </script>
+</body>
+</html>

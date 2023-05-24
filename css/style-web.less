@@ -585,7 +585,13 @@
                 &.file {
                   > p { .mt(10); .vat; }
                   .inp { .vat;
-                    .file-box label { .mr(7); }
+                    .file-box {
+                      label { .mr(7); }
+                      .file-name {
+                        .upload-name { width: auto; }
+                        .del-btn { .t(0); }
+                      }
+                    }
                   }
                 }
               }

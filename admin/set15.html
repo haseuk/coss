@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>바이오헬스 관리자화면</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/admin/admin-basic.css">
+  <link rel="stylesheet" href="../css/admin/jquery-ui.css">
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <header>
+        <div class="gnb">
+          <div class="gnb-l">
+            <a class="nav-btn btn">메뉴버튼</a>
+            <h1><span class="logo"> coss 바이오헬스</span></h1>
+          </div>
+
+          <div class="gnb-r">
+            <div class="acc">
+              <p>접속:</p>
+              <span>관리자</span>
+            </div>
+            <a class="login-btn btn">LogOut</a>
+            <a href="/" class="btn home">홈으로 가기</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="snb">
+        <ul>
+          <!--open 클래스 추가 메뉴 오픈-->
+          <li class="depth01">
+            <a class="btn dep01">사업소개</a>
+            <div class="depth02">
+              <a class="btn dep02">협력기관</a>
+            </div>
+          </li>
+          <li class="depth01 ">
+            <a class="btn dep01">교육과정</a>
+            <div class="depth02">
+              <a class="btn dep02">개설과목</a>
+              <a class="btn dep02">교육대상</a>
+              <a class="btn dep02">이수안내</a>
+            </div>
+          </li>
+          <li class="depth01 ">
+            <a class="btn dep01">학생지원</a>
+            <div class="depth02">
+              <a class="btn dep02">참여활동</a>
+              <a class="btn dep02">서포터즈</a>
+              <a class="btn dep02">비교과활동</a>
+            </div>
+          </li>
+          <li class="depth01">
+            <a class="btn dep01">성과공유</a>
+            <div class="depth02">
+              <a class="btn dep02">우수성과</a>
+              <a class="btn dep02">K-MOOC</a>
+              <a class="btn dep02">자료실</a>
+            </div>
+          </li>
+          <li class="depth01 ">
+            <a class="btn dep01">정보광장</a>
+            <div class="depth02">
+              <a class="btn dep02">공지사항</a>
+              <a class="btn dep02">보도자료</a>
+              <a class="btn dep02">FAQ</a>
+              <a class="btn dep02">문의하기</a>
+              <a class="btn dep02">담당자관리</a>
+            </div>
+          </li>
+          <li class="depth01 open">
+            <a class="btn dep01">홈페이지 관리</a>
+            <div class="depth02">
+              <a class="btn dep02">기본정보</a>
+              <a class="btn dep02">개인정보처리방침</a>
+              <a class="btn dep02">팝업관리</a>
+              <a class="btn dep02">바로가기관리</a>
+              <a class="btn dep02">메뉴관리</a>
+              <a class="btn dep02">메인관리</a>
+              <a class="btn dep02">게시판관리</a>
+              <a class="btn dep02">관리자</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <section class="setting set14">
+        <div class="top">
+          <h3>게시판수정</h3>
+        </div>
+
+        <div class="status-view">
+          <div class="form-table">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <colgroup>
+                <col width="17%">
+                <col width="83%">
+              </colgroup>
+              <tr>
+                <th>게시판 이름</th>
+                <td>
+                  <input type="text">
+                </td>
+              </tr>
+              <tr>
+                <th>카테고리</th>
+                <td class="gray-c">
+                  <label>
+                    <input type="checkbox">
+                    <i></i>
+                    <s>사용</s>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>날짜사용여부</th>
+                <td class="gray-c">
+                  <label>
+                    <input type="checkbox">
+                    <i></i>
+                    <s>사용</s>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>리스트 목록 수</th>
+                <td>
+                  <input type="number" class="w-50"> 개
+                </td>
+              </tr>
+              <tr>
+                <th>제목/내용길이</th>
+                <td class="gray-c">
+                  <input type="number" class="w-50"> 자 &nbsp; / &nbsp;
+                  <input type="number" class="w-50"> 자
+                </td>
+              </tr>
+              <tr>
+                <th>페이지 목록 수</th>
+                <td class="gray-c">
+                  <input type="number" class="w-50"> 개
+                </td>
+              </tr>
+              <tr>
+                <th>첨부파일 수</th>
+                <td class="gray-c">
+                  <input type="number" class="w-50"> 개 &nbsp;
+                  <label>
+                    <input type="checkbox">
+                    <i></i>
+                    <s>순서 밀리지 않게</s>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>업로드 용량</th>
+                <td class="gray-c">
+                  <input type="number" class="w-50"> MB (20MB 이하)
+                </td>
+              </tr>
+              <tr>
+                <th>썸네일</th>
+                <td class="gray-c">
+                  <label>
+                    <input type="checkbox">
+                    <i></i>
+                    <s>사용</s>
+                  </label>
+                  (썸네일 가로: <input type="number" class="w-50"> px &nbsp; / &nbsp; 썸네일 세로: <input type="number" class="w-50"> px)
+                </td>
+              </tr>
+              <tr>
+                <th>권한</th>
+                <td>
+                  <div class="inner-table">
+                    <table cellspacing="0" cellpadding="0" border="0">
+                      <colgroup>
+                        <col width="24%">
+                        <col width="13%">
+                        <col width="21%">
+                        <col width="21%">
+                        <col width="21%">
+                      </colgroup>
+                      <tr>
+                        <th>회원구분</th>
+                        <th></th>
+                        <th>목록보기</th>
+                        <th>글읽기</th>
+                        <th>글쓰기</th>
+                      </tr>
+                      <tr>
+                        <th>최고관리자</th>
+                        <td>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>운영관리자</th>
+                        <td>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>방문자</th>
+                        <td>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                          </label>
+                        </td>
+                        <td>
+                          <label>
+                            <input type="checkbox">
+                            <i></i>
+                          </label>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="btns">
+            <a class="button line">리스트</a>
+            <a class="button grn">수정</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="../js/admin.js"></script>
+  <script src="../js/select.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <script>
+    $( function() {
+      $( "#datepicker1" ).datepicker();
+      $( "#datepicker2" ).datepicker();
+    } );
+  </script>
+</body>
+</html>

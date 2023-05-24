@@ -1,3 +1,7 @@
+.table-fix {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
 html {
   font-size: 36px;
   font-family: Pretendard, sans-serif;
@@ -4590,9 +4594,6 @@ input {
   font-weight: 400;
   word-break: keep-all;
 }
-.container .wrap section.curriculum article.curr01 .cont.cont06 .view.view03 .prcs-wrap .txt:last-of-type {
-  margin-bottom: 0rem;
-}
 .container .wrap section.curriculum article.curr01 .cont.cont06 .view.view03 .prcs-wrap .prcs {
   width: 7.88888889rem;
   padding: 0.55555556rem;
@@ -4609,6 +4610,9 @@ input {
 }
 .container .wrap section.curriculum article.curr01 .cont.cont06 .view.view03 .prcs-wrap .prcs img {
   width: 4.30555556rem;
+}
+.container .wrap section.curriculum article.curr01 .cont.cont06 .view.view03 .prcs-wrap .prcs-inner:last-child .txt {
+  margin-bottom: 0rem;
 }
 .container .wrap section.curriculum article.curr01 .cont.cont06[data-view="1"] .tab-wrap .tab01 span,
 .container .wrap section.curriculum article.curr01 .cont.cont06[data-view="2"] .tab-wrap .tab02 span,
