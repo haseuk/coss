@@ -4,6 +4,15 @@ function handleWinSize() {
   winW = window.innerWidth;
   winH = window.innerHeight;
 }
+
+
+//05.26추가
+let linkWrap = document.querySelector('.link-wrap');
+let goTop = document.querySelector('.top');
+
+
+
+
 window.addEventListener('resize', handleWinSize);
 window.addEventListener('scroll', pageScroll);
 //스크롤 반응에 따른 해더 배경 변경
@@ -12,6 +21,24 @@ function pageScroll() {
   scrollY = window.pageYOffset || document.documentElement.scrollTop;
   if(scrollY > 10) headerScrolled();
   else headerScrollOff();
+
+
+
+
+
+
+  //05.26추가
+  if((scrollY + winH) >= document.documentElement.scrollHeight) {
+    linkWrap.classList.add('btt');
+    goTop.classList.add('btt');
+  } else {
+    linkWrap.classList.remove('btt');
+    goTop.classList.remove('btt');
+  }
+  //05.26추가
+
+
+
 }
 
 //gnb - mobile

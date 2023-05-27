@@ -66,7 +66,18 @@
 
           <!--data-view=1-->
           <div class="view view01">
-            <ul class="faq-list">
+
+
+            <!--05.27추가-->
+            <!--개설과목 없을 경우 empty-->
+            <div class="empty">
+              <p class="empty-txt">작성된 게시글이 없습니다.</p>
+            </div>
+            <!--05.27추가-->
+
+
+
+            <ul class="faq-list" style="display: none;">
               <!--클래스 open 추가시 answer 노출-->
               <li class="open">
                 <a class="btn">Q. 혁신융합대학이란?</a>
@@ -125,7 +136,7 @@
             </ul>
           </div>
 
-          <div class="paging-wrap">
+          <div class="paging-wrap" style="display: none">
             <a class="btn prev"></a>
             <!--현재페이지에 on -->
             <a class="btn on">1</a>

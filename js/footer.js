@@ -29,8 +29,3 @@ Array.prototype.forEach.call(links, function(e) {
     }
   })
 });
-
-// let goTop = document.querySelector('.top');
-// goTop.addEventListener('click', function() {
-//   window.scroll(0,0)
-// });

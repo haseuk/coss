@@ -7,7 +7,9 @@ section {
       &.out01 {
         .review-list {
           li {
-            .btn { .fs(18,28); .p(36,30); }
+            .btn { .fs(18,28); .p(36,30);
+              &:after { .t(50%); .mt(-15); }
+            }
             .li-cont {
               p { .fs(18,28); .p(30); }
             }
@@ -51,18 +53,20 @@ section {
       }
     }
   }
-  .cnt-list { .mt(50);
-    li { .p(0); .flex; .space-between;
-      p { .fs(18,28); .p(30); .-box;
-        &.tit { .mb(0); }
-        &.date { .fs(0); .wh(190,88); .tc;
-          span { .fs(18,28); .ml(0);
-            &:after { .hide; }
+  .cnt-list-wrap {
+    .cnt-list {
+      li { .p(0); .flex; .space-between;
+        p { .fs(18,28); .p(30); .-box;
+          &.tit { .mb(0); }
+          &.date { .fs(0); .wh(190,88); .tc;
+            span { .fs(18,28); .ml(0);
+              &:after { .hide; }
+            }
           }
         }
-      }
-      &.list-head { .wf;
-        p { .p(30); .-box; .ib; .vam; .tc; }
+        &.list-head { .wf;
+          p { .p(30); .-box; .ib; .vam; .tc; }
+        }
       }
     }
   }

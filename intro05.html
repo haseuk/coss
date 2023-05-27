@@ -889,22 +889,29 @@
 <script src="js/footer.js"></script>
 <script src="js/initMotion.js"></script><!--화면에 element 진입 감시역할-->
 <script>
+  //5.26수정
   //깜빡임 효과
-  let posItem = document.querySelectorAll('.map-wrap .pos');
+  let blinkWrap = document.querySelector('.blink-wrap');
   let posItemStatus = 0;
   function blinker() {
     if(posItemStatus === 4) {
       posItemStatus = 0;
     }
-    posItem[posItemStatus].classList.add('blink');
+    blinkWrap.classList.add('blink'+posItemStatus);
     setTimeout(function() {
-      posItem[posItemStatus].classList.remove('blink');
+      blinkWrap.classList.remove('blink'+posItemStatus);
       posItemStatus += 1;
     }, 1000);
   }
+
   setInterval(function() {
     blinker();
-  }, 3000);
+  }, 2000);
+  //5.26수정
+
+
+
+
 
   let popup = document.querySelector('.popup');
   let popupClose = document.querySelector('.popup .close');

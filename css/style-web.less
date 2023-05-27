@@ -33,14 +33,16 @@
           h1 { .pt(0); .lh(90);
             .logo { .wh(270,39); .contain('../images/pc/home/LOGO_White.png'); .ib; .vam; }
           }
-          .menu-list { .wh(600,90); .ml(265);
-            .btn { .fs(23,90); .medium; .c(#fff); .pr(40); .-box; .ib; .vam;
-              &.on, &:hover { .c(#04B0E2)!important; }
+          .menu-list { .wh(600,90); .ml(245);
+            .btn { .fs(23,90); .medium; .c(#fff); .p(0,20); .-box; .ib; .vam;
+              &.on, &:hover { .c(#04B0E2)!important; .rel;
+                &:after { .cnt; width:calc(100% - 40px); .h(3); .bgc(#04B0E2); .abs; .lb(20,0); }
+              }
             }
           }
           .menu { .wh(45,45); .contain('../images/pc/home/ico-menu-w.png'); .rt(0,23); }
         }
-        &.open, &.scroll { .bgc(#fff); box-shadow: 0px 4px 15px rgba(84, 107, 129, 0.1);
+        &.open { .bgc(#fff); box-shadow: 0 4px 15px rgba(84, 107, 129, 0.1);
           .sns-dir { background: linear-gradient(90deg, #04B0E2 1.64%, #00C6D2 100%); }
           .h-inner {
             h1 .logo { .contain('../images/pc/home/LOGO_color.png'); }
@@ -67,19 +69,21 @@
       }
 
 
-      .gnb-wrap { .wf; .abs; .lt(0,140); .tc; .bgc(#fff); .z(10);
-        .gnb-inner { .hide;
+      .gnb-wrap { .wf; .fix; .lt(0,140); .tc; .bgc(#fff); .z(10);
+        .gnb-inner { visibility: hidden; .abs; .lt; .wf; box-shadow: 0 2px 10px rgba(40, 40, 40, 0.15);
           .gnb-depth2 { .bgc(#F1F1F1);
             .dep-inner { .w(1170); .mh-c; .tl;
               .btn { .fs(20,82); .c(#282828); .bold; .mr(37); .rel;
                 &:after { .cnt; .wh(1,15); .bgc(#D9D9D9); .abs; .rt(-18,33); }
                 &:last-child:after { .hide; }
+                &:hover { .c(#04B0E2); }
               }
             }
           }
-          .depth2-preview { .wf; .bgc(#fff);
-            .dep-inner { .w(1170); .mh-c; .tl; .flex; .space-between;
-              .pre-cnt { .ib; .vat; .p(27,0,30); .-box; .min-w(350);
+          .depth2-preview { .wf; .bgc(#fff); .crop;
+            .dep-inner { .w(1170); .mh-c; .tl; .flex; .space-between; transform:translateY(-100px); .o(0); transition: transform 0.4s, opacity 0.7s; .ease-out;
+              .pre-cnt { .ib; .vat; .p(27,0,30); .-box; .min-w(350); .rel;
+                .dir-btn { .abs; .lt; .f; .z(2); }
                 .dir { .fs(20,32); .ns; .c(#04B0E2); .extra-bold; .block; .tl; .rel; .mb(20);
                   &:after { .cnt; .wh(30,30); .contain('../images/pc/home/ico-dir-arrow.png'); .abs; .rt(0,1); }
                 }
@@ -209,14 +213,15 @@
             }
           }
         }
-        &.gnb1-open .gnb1,&.gnb2-open .gnb2, &.gnb3-open .gnb3, &.gnb4-open .gnb4, &.gnb5-open .gnb5 { .block; }
+        &.gnb1-open .gnb1,&.gnb2-open .gnb2, &.gnb3-open .gnb3, &.gnb4-open .gnb4, &.gnb5-open .gnb5 { visibility: visible;
+          .depth2-preview .dep-inner { transform: translateY(0); .o(1); }
+        }
       }
 
 
       footer {
-        .link, .link-wrap { .hide; }
         .content-inner { .w(1170); .mh-c; .rel; }
-        .consortium { .fs(18,40); .lt(50%,-41); .ml(620);
+        .consortium { .fs(18,40); .lt(50%,65); .ml(620);
           i { .ml(7); }
         }
         .sponsors { .p(20,0); .wh(1170,105); .mh-c; .tl;
@@ -257,6 +262,32 @@
             }
           }
         }
+      }
+
+
+      .link-wrap { .lt(40,634); .tl;
+        .link { .fs(16,44); .wh(119,44); .tl; .c(#fff); .pl(17); .rel; .-box; background: linear-gradient(90deg, #8F6CF4 1.64%, #04B0E2 100%); .br(23); transition: width 0.1s; .ease-out;
+          &:after { .cnt; .wh(20,20); .contain('../images/pc/home/ico-link-arrow.png'); .abs; .rt(9,12); }
+        }
+        .link-list { .w(165); .abs; .lb(0,-20); transform:translateY(100%); .hide;
+          .btn { .fs(14,44); .c(#717377); .tl; .pl(19); .-box; .wh(165,44); .br(10); .bgc(#fff); box-shadow: 0 0 10px rgba(25, 58, 75, 0.1); .-a(#E8EBEE); .mb(3); .rel;
+            i { .wh(20,20); .abs; .rt(12,12); .contain('../images/mo/home/ico-link-arrow.png'); }
+            &.on { .c(#04B0E2);
+              i { .contain('../images/mo/home/ico-link-arrow-on.png'); }
+            }
+          }
+        }
+        &.open {
+          .link { .fs(0); .w(57); background: linear-gradient(90deg, #8F6CF4 1.64%, #04B0E2 100%);
+            &:after { .cnt; .wh(20,20); .contain('../images/pc/home/ico-link-x.png'); .abs; .lt(19,12); }
+          }
+          .link-list { .block; }
+        }
+        &.btt { .t(634); }
+      }
+
+      .top { .b(34);
+        &.btt { .b(330); }
       }
 
 
@@ -514,25 +545,7 @@
         }
       }
       .more:hover { .bgc(#F1F1F1); }
-      .link-wrap { .fix; .lt(40,634); .tl; .z(1);
-        .link { .fs(16,44); .wh(119,44); .tl; .c(#fff); .pl(17); .rel; .-box; background: linear-gradient(90deg, #8F6CF4 1.64%, #04B0E2 100%); .br(23); transition: width 0.1s; .ease-out;
-          &:after { .cnt; .wh(20,20); .contain('../images/pc/home/ico-link-arrow.png'); .abs; .rt(9,12); }
-        }
-        .link-list { .w(165); .abs; .lb(0,-20); transform:translateY(100%); .hide;
-          .btn { .fs(14,44); .c(#717377); .tl; .pl(19); .-box; .wh(165,44); .br(10); .bgc(#fff); box-shadow: 0 0 10px rgba(25, 58, 75, 0.1); .-a(#E8EBEE); .mb(3); .rel;
-            i { .wh(20,20); .abs; .rt(12,12); .contain('../images/mo/home/ico-link-arrow.png'); }
-            &.on { .c(#04B0E2);
-              i { .contain('../images/mo/home/ico-link-arrow-on.png'); }
-            }
-          }
-        }
-        &.open {
-          .link { .fs(0); .w(57);
-            &:after { .cnt; .wh(20,20); .contain('../images/pc/home/ico-link-x.png'); .abs; .lt(19,12); }
-          }
-          .link-list { .block; }
-        }
-      }
+
 
       .popup {
         .inner { width:auto; max-width:none; .p(32,30,30); .lt(50%,150);

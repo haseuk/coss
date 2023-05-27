@@ -16,7 +16,7 @@ input { .bgc(#fff); }
 .web { .hide!important; }
 
 .container { .fs(0); .tc;
-  .wrap { height: calc(var(--vh, 1vh) * 100);
+  .wrap { height: calc(var(--vh, 1vh) * 100); .rel;
     header { .wh(100%,65); .lh(65); .abs; .lt; .z(10);
       .h-inner { .hf;
         h1 { .hf; .ib; .pt(20); .-box;
@@ -24,10 +24,10 @@ input { .bgc(#fff); }
         }
         .menu { .wh(30,30); .contain('../images/mo/home/ico-menu.png'); .abs; .rt(18,16); }
       }
-      &.scroll { .fix; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); .bgc(#fff);
-        h1 .logo { .contain('../images/mo/home/LOGO_Color.png'); }
-        .menu { .contain('../images/mo/home/ico-menu-black.png'); }
-      }
+      //&.scroll { .fix; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); .bgc(#fff);
+      //  h1 .logo { .contain('../images/mo/home/LOGO_Color.png'); }
+      //  .menu { .contain('../images/mo/home/ico-menu-black.png'); }
+      //}
     }
     nav { .fix; .f; .lt; .z(50); .hide;
       .dim { .abs; .lt; .f; .z(10); background: rgba(40, 40, 40, 0.5); backdrop-filter: blur(6px); }
@@ -53,22 +53,6 @@ input { .bgc(#fff); }
 
 
     footer { .rel; .-t(#D9D9D9);
-      .link-wrap {
-        .link { .wh(52,52); .contain('../images/mo/home/ico-link.png'); .abs; .rt(16,-171); }
-        .link-list { .wh(165,188); .abs; .rt(16,-181); transform:translateY(-100%); .hide;
-          .btn { .lh(44); .c(#717377); .tl; .pl(19); .-box; .wh(165,44); .br(10); .bgc(#fff); box-shadow: 0 0 10px rgba(25, 58, 75, 0.1); .-a(#E8EBEE); .mb(3); .rel;
-            i { .wh(20,20); .abs; .rt(12,12); .contain('../images/mo/home/ico-link-arrow.png'); }
-            &.on { .c(#04B0E2);
-              i { .contain('../images/mo/home/ico-link-arrow-on.png'); }
-            }
-          }
-        }
-        &.open {
-          .link { .contain('../images/mo/home/ico-link-x.png'); }
-          .link-list { .block; }
-        }
-      }
-      .top { .wh(72,72); .contain('../images/mo/home/ico-top.png'); .abs; .rt(6,-114); }
       .consortium { .fs(16,40); .c(#fff); .bold; .tc; .wh(179,40); background: linear-gradient(90deg, #8F6CF4 1.64%, #04B0E2 100%); .br-t(2); .abs; .rt(16,-40);
         i { .wh(18,18); .ib; .vam; .ml(10); .contain('../images/mo/home/ico-consortium.png'); }
       }
@@ -106,6 +90,28 @@ input { .bgc(#fff); }
           &.par2 { .contain('../images/mo/home/ft-partner2.png'); }
         }
       }
+    }
+
+
+
+    .link-wrap { .fix; .rb(16,119); .z(5); transition: bottom 0.5s; .ease-out;
+      .link { .wh(52,52); .contain('../images/mo/home/ico-link.png');}
+      .link-list { .wh(165,188); .abs; .rb(0,62);.hide;
+        .btn { .lh(44); .c(#717377); .tl; .pl(19); .-box; .wh(165,44); .br(10); .bgc(#fff); box-shadow: 0 0 10px rgba(25, 58, 75, 0.1); .-a(#E8EBEE); .mb(3); .rel;
+          i { .wh(20,20); .abs; .rt(12,12); .contain('../images/mo/home/ico-link-arrow.png'); }
+          &.on { .c(#04B0E2);
+            i { .contain('../images/mo/home/ico-link-arrow-on.png'); }
+          }
+        }
+      }
+      &.open {
+        .link { .contain('../images/mo/home/ico-link-x.png'); }
+        .link-list { .block; }
+      }
+      &.btt { .b(467); }
+    }
+    .top { .wh(72,72); .contain('../images/mo/home/ico-top.png'); .fix; .rb(6,40); .z(5); transition: bottom 0.5s; .ease-out;
+      &.btt { .b(388); }
     }
 
     //home

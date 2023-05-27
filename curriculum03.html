@@ -86,7 +86,26 @@
             </div>
           </div>
           <div class="search-result">
-            <ul>
+
+
+
+
+
+            <!--05.27추가-->
+            <!--개설과목 없을 경우 empty-->
+            <div class="empty">
+              <p class="empty-txt">검색결과가 없습니다.</p>
+              <p class="empty-txt">작성된 게시글이 없습니다.</p>
+            </div>
+            <!--05.27추가-->
+
+
+
+
+
+
+
+            <ul style="display: none">
               <!--open 클래스 추가되면 result-content 노출-->
               <li class="open">
                 <div class="result-top">
@@ -114,7 +133,7 @@
             </ul>
           </div>
 
-          <div class="paging-wrap">
+          <div class="paging-wrap" style="display: none">
             <a class="btn prev"></a>
             <!--현재페이지에 on -->
             <a class="btn on">1</a>

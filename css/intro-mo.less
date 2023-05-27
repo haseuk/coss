@@ -396,27 +396,32 @@ section { .pb(210); .-box;
       }
     }
     .sub-tit { .tl; .mb(30); }
-    .map-wrap { .wh(298,385); .contain('../images/mo/intro/position.png'); .mh-c; .rel;
-      .pos { .wh(76,76); .abs;
-        span { .fs(16,40); .tc; .c(#fff); .bold; .wh(40,40); .bgc(#8F6CF4); .br(50%); .abs; .lt(18,18); .z(1); }
-        i { .wh(76,76); .abs; .lt; background: rgba(143, 108, 244, 0.15); .br(50%); }
-        &.pos1 { .lt(117,53); }
-        &.pos2 { .lt(73,121); }
-        &.pos3 { .lt(144,198); }
-        &.pos4 { .lt(230,210); }
-        &.blink i { animation: blink 0.5s step-end infinite; }
-        @keyframes blink {
-          50% { opacity: 0; }
+    .blink-wrap {
+      .map-wrap { .wh(298,385); .contain('../images/mo/intro/position.png'); .mh-c; .rel;
+        .pos { .wh(76,76); .abs;
+          span { .fs(16,40); .tc; .c(#fff); .bold; .wh(40,40); .br(50%); .abs; .lt(18,18); .z(1);
+            &:after { .cnt; .f; .abs; .lt; .br(50%); .bgc(#8F6CF4); .z(-1); }
+          }
+          i { .wh(76,76); .abs; .lt; background: rgba(143, 108, 244, 0.15); .br(50%); }
+          &.pos1 { .lt(117,53); }
+          &.pos2 { .lt(73,121); }
+          &.pos3 { .lt(144,198); }
+          &.pos4 { .lt(230,210); }
         }
       }
-    }
-    .list {
-      span { .fs(18,38); .c(#fff); .bold; .ib; .tr; .wh(89,38); .pr(20); .br(19); .-box; .rel; .bgc(#8F6CF4); .m(-19,0,0,20);
-        &:after { .cnt; .wh(25,25); .contain('../images/mo/intro/ico-cap.png'); .abs; .lt(20,6); }
+      .list {
+        span { .fs(18,38); .c(#fff); .bold; .ib; .tr; .wh(89,38); .pr(20); .br(19); .-box; .rel; .bgc(#8F6CF4); .m(-19,0,0,20);
+          &:after { .cnt; .wh(25,25); .contain('../images/mo/intro/ico-cap.png'); .abs; .lt(20,6); }
+        }
+        .l-inner { box-shadow: 0 2px 10px rgba(40, 40, 40, 0.15); overflow: visible; .p(22,20,20); .mt(-19); .-box;
+          p { .c(#282828); .tl;
+            &.l-tit { .mt(20); }
+          }
+        }
       }
-      .l-inner { box-shadow: 0 2px 10px rgba(40, 40, 40, 0.15); overflow: visible; .p(22,20,20); .mt(-19); .-box;
-        p { .c(#282828); .tl;
-          &.l-tit { .mt(20); }
+      &.blink0 .pos1 span:after, &.blink1 .pos2 span:after, &.blink2 .pos3 span:after, &.blink3 .pos4 span:after { animation: blink 0.5s step-end infinite;
+        @keyframes blink {
+          50% { opacity: 0.5; transform: scale(0.9); }
         }
       }
     }
