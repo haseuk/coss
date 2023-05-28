@@ -888,6 +888,20 @@
 <script src="js/header.js"></script>
 <script src="js/footer.js"></script>
 <script src="js/initMotion.js"></script><!--화면에 element 진입 감시역할-->
+
+
+
+
+<!--05.28 추가-->
+<script src="js/popup.js"></script>
+<!--05.28 추가-->
+
+
+
+
+
+
+
 <script>
   //5.26수정
   //깜빡임 효과
@@ -917,10 +931,21 @@
   let popupClose = document.querySelector('.popup .close');
   let popupInner = document.querySelector('.popup .inner');
 
+
+
+  //05.28수정
   function popupOpen(v) {
     popup.classList.add('open');
     popupInner.classList.add(v+'-pop');
+    popupPos(v+'-pop')
   }
+  //05.28수정
+
+
+
+
+
+
   popupClose.addEventListener('click', function() {
     popup.classList.remove('open');
     popupInner.className = 'inner';

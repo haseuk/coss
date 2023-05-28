@@ -597,6 +597,24 @@
 </div>
 <script src="js/initMotion.js"></script><!--화면에 element 진입 감시역할-->
 <script src="js/select.js"></script><!--select custom -->
+
+
+
+
+<!--05.28 추가-->
+<script src="js/popup.js"></script>
+<!--05.28 추가-->
+
+
+
+
+
+
+
+
+
+
+
 <script>
   let dataWrap = document.querySelector('.data-wrap');
   let tabs = document.querySelectorAll('.tab');
@@ -614,12 +632,30 @@
     })
   });
 
+
+
+
+
+
+
+  //05.28수정
   //학기선택 팝업
   let subject = document.querySelector('.subject');
   let popup = document.querySelector('.popup');
   subject.addEventListener('click', function() {
     popup.classList.add('open');
+    popupPos('semester');
   });
+  //05.28수정
+
+
+
+
+
+
+
+
+
 
   let close = document.querySelector('.close');
   close.addEventListener('click', function() {
