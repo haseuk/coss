@@ -679,6 +679,9 @@ input {
   padding-left: 0rem;
   box-sizing: border-box;
 }
+.container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide1 .noti .noti-wrap .swiper-inner2 .swiper-slide ul li:nth-last-child(2) {
+  border-bottom: 0;
+}
 .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide1 .noti .noti-wrap .swiper-inner2 .swiper-slide ul li:last-child {
   border-bottom: 0;
 }

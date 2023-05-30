@@ -1369,6 +1369,9 @@
   .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide1 .content-inner .noti .noti-wrap .swiper-inner2 .swiper-slide ul {
     margin-top: 0.08333333rem;
   }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide1 .content-inner .noti .noti-wrap .swiper-inner2 .swiper-slide ul li:nth-last-child(2) {
+    border-bottom: 1px solid #D9D9D9;
+  }
   .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide1 .content-inner .noti .noti-wrap .swiper-inner2 .swiper-slide ul li:first-child p:first-child {
     font-weight: 700;
     color: #8F6CF4;
