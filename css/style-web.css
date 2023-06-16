@@ -29,15 +29,23 @@
   .container .wrap {
     min-width: 32.5rem;
   }
+  .container .wrap.header-open .wrap-swiper .wrap-pagination,
+  .container .wrap.header-open .link-wrap,
+  .container .wrap.header-open .top {
+    z-index: 0;
+  }
   .container .wrap header {
     width: 100%;
     height: 3.88888889rem;
     line-height: normal;
+    overflow: hidden;
   }
   .container .wrap header .sns-dir {
     width: 100%;
     height: 1.38888889rem;
     text-align: center;
+    position: relative;
+    z-index: 6;
   }
   .container .wrap header .sns-dir ul {
     text-align: right;
@@ -112,10 +120,13 @@
     margin-right: auto;
     text-align: left;
     position: relative;
+    z-index: 6;
   }
   .container .wrap header .h-inner h1 {
     padding-top: 0rem;
     line-height: 2.5rem;
+    position: relative;
+    z-index: 1;
   }
   .container .wrap header .h-inner h1 .logo {
     width: 7.5rem;
@@ -130,6 +141,8 @@
     width: 16.66666667rem;
     height: 2.5rem;
     margin-left: 6.80555556rem;
+    position: relative;
+    z-index: 1;
   }
   .container .wrap header .h-inner .menu-list .btn {
     font-size: 0.63888889rem;
@@ -172,6 +185,21 @@
     top: 0.63888889rem;
     left: auto;
     bottom: auto;
+    z-index: 1;
+  }
+  .container .wrap header .dim {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+    background: rgba(40, 40, 40, 0.3);
+    backdrop-filter: blur(6px);
+    z-index: 5;
+    pointer-events: none;
+    display: none;
   }
   .container .wrap header.open {
     background-color: #fff;
@@ -179,6 +207,22 @@
   }
   .container .wrap header.open .sns-dir {
     background: linear-gradient(90deg, #04B0E2 1.64%, #00C6D2 100%);
+  }
+  .container .wrap header.open .h-inner {
+    background-color: #fff;
+  }
+  .container .wrap header.open .h-inner:after {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+    margin-left: -50vw;
+    background-color: #fff;
   }
   .container .wrap header.open .h-inner h1 .logo {
     background-image: url('../images/pc/home/LOGO_color.png');
@@ -192,6 +236,9 @@
     background-image: url('../images/pc/home/ico-menu.png');
     background-repeat: no-repeat;
     background-size: contain;
+  }
+  .container .wrap header.open .dim {
+    display: block;
   }
   .container .wrap nav {
     position: absolute;
@@ -265,7 +312,7 @@
   }
   .container .wrap .gnb-wrap {
     width: 100%;
-    position: fixed;
+    position: absolute;
     left: 0rem;
     top: 3.88888889rem;
     right: auto;
@@ -321,7 +368,7 @@
   }
   .container .wrap .gnb-wrap .gnb-inner .depth2-preview {
     width: 100%;
-    background-color: #fff;
+    background-color: #fafafa;
     overflow: hidden;
   }
   .container .wrap .gnb-wrap .gnb-inner .depth2-preview .dep-inner {
@@ -828,6 +875,7 @@
     right: auto;
     bottom: auto;
     margin-left: 17.22222222rem;
+    z-index: 2;
   }
   .container .wrap footer .consortium i {
     margin-left: 0.19444444rem;
@@ -907,7 +955,6 @@
     top: 1.11111111rem;
     right: auto;
     bottom: auto;
-    width: 32.5rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1467,12 +1514,113 @@
     margin-top: 0rem;
     width: 13.94444444rem;
     height: 13.41666667rem;
-    background-image: url('../images/pc/home/talent.png');
-    background-repeat: no-repeat;
-    background-size: contain;
     display: inline-block;
     vertical-align: middle;
     margin-left: 4.11111111rem;
+    background: none;
+  }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide3 .content-inner .talent .ferris {
+    width: 100%;
+    height: 100%;
+    padding-top: 1.61111111rem;
+    box-sizing: border-box;
+  }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide3 .content-inner .talent .ferris .ferris-inner {
+    width: 10.22222222rem;
+    height: 10.22222222rem;
+    border: 1px solid rgba(4, 176, 226, 0.5);
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block !important;
+    position: relative;
+  }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide3 .content-inner .talent .ferris .ferris-inner .wheel-wrap {
+    width: 10.22222222rem;
+    height: 10.22222222rem;
+    background: none;
+    position: absolute;
+  }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide3 .content-inner .talent .ferris .ferris-inner .wheel-wrap .wheel {
+    width: 10.22222222rem;
+    height: 10.22222222rem;
+    border-radius: 50%;
+  }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide3 .content-inner .talent .ferris .ferris-inner .circle {
+    width: 7.33333333rem;
+    height: 7.72222222rem;
+    position: absolute;
+    left: 1.44444444rem;
+    top: 1.25rem;
+    right: auto;
+    bottom: auto;
+    text-align: center;
+    background-image: url('../images/pc/home/main-frr-cir.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 2.83333333rem;
+    box-sizing: border-box;
+  }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide3 .content-inner .talent .ferris .ferris-inner .circle span {
+    font-size: 0.72222222rem;
+    line-height: 1rem;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+  }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide3 .content-inner .talent .ferris .ferris-inner .objs {
+    width: 10.22222222rem;
+    height: 10.22222222rem;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide3 .content-inner .talent .ferris .ferris-inner .objs div {
+    font-size: 0.55555556rem;
+    line-height: 3.11111111rem;
+    text-align: center;
+    color: #04B0E2;
+    font-weight: 700;
+    border: 4px solid #fff;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #F1F1F1;
+    width: 3.33333333rem;
+    height: 3.33333333rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    margin-top: -1.66666667rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+    margin-left: -1.66666667rem;
+    animation: ferri-rotate 25s infinite linear;
+  }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide3 .content-inner .talent .ferris .ferris-inner .objs div.obj1 {
+    animation-delay: 0s;
+  }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide3 .content-inner .talent .ferris .ferris-inner .objs div.obj2 {
+    animation-delay: -5s;
+  }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide3 .content-inner .talent .ferris .ferris-inner .objs div.obj3 {
+    animation-delay: -10s;
+  }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide3 .content-inner .talent .ferris .ferris-inner .objs div.obj4 {
+    animation-delay: -15s;
+  }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide3 .content-inner .talent .ferris .ferris-inner .objs div.obj5 {
+    animation-delay: -20s;
+  }
+  @keyframes ferri-rotate {
+    0% {
+      transform: rotate(-10deg) translateX(5.5rem) rotate(10deg);
+    }
+    100% {
+      transform: rotate(350deg) translateX(5.5rem) rotate(-350deg);
+    }
   }
   .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide3 .content-inner .partners {
     padding-top: 1.11111111rem;
@@ -1682,13 +1830,28 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide4 .content-inner .bio-selects .selected.sel1.active:after {
+    background-image: url('../images/pc/home/bio1-on.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
   .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide4 .content-inner .bio-selects .selected.sel2:after {
     background-image: url('../images/pc/home/bio2.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide4 .content-inner .bio-selects .selected.sel2.active:after {
+    background-image: url('../images/pc/home/bio2-on.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
   .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide4 .content-inner .bio-selects .selected.sel3:after {
     background-image: url('../images/pc/home/bio3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide4 .content-inner .bio-selects .selected.sel3.active:after {
+    background-image: url('../images/pc/home/bio3-on.png');
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -2021,6 +2184,7 @@
     height: 0.69444444rem;
     background: transparent;
     opacity: 1;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
   }
   .container .wrap .wrap-swiper .wrap-pagination .swiper-pagination-bullet:last-child {
     display: none;
@@ -2037,6 +2201,7 @@
   .container .wrap .wrap-swiper .wrap-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     color: #00E8F6 !important;
     font-weight: 700;
+    text-shadow: 0 2px 3px rgba(167, 182, 183, 0.5);
   }
   .container .wrap .wrap-swiper .wrap-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active i {
     background-color: #00E8F6 !important;
@@ -3253,10 +3418,10 @@
   }
   @keyframes obj-rotate {
     0% {
-      transform: rotate(-10deg) translateX(200px) rotate(10deg);
+      transform: rotate(-10deg) translateX(5.4rem) rotate(10deg);
     }
     100% {
-      transform: rotate(350deg) translateX(200px) rotate(-350deg);
+      transform: rotate(350deg) translateX(5.4rem) rotate(-350deg);
     }
   }
   .container .wrap section article.task .cont.cont5 .ferris .ferris-list {
@@ -6276,7 +6441,8 @@
   }
 }
 @media (max-width: 1600px) and (hover: hover) {
-  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide8 footer .consortium {
+  .container .wrap .wrap-swiper .swiper-wrapper .wrap-slide.slide8 footer .consortium,
+  .container .wrap footer .consortium {
     left: auto;
     right: 0rem;
   }

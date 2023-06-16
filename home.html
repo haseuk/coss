@@ -15,22 +15,10 @@
 <body>
 <div class="container">
   <div class="wrap">
-
     <!-- 05.26 해더 위치 변경 : 34번줄 -->
-
-
     <div class="swiper wrap-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide wrap-slide slide1">
-
-
-
-
-
-
-
-
-
           <!-- 05.26 해더 위치 변경 -->
           <!-- open 클래스 추가시 메뉴 열림-->
           <header>
@@ -56,6 +44,16 @@
               <!--pc에서만 노출됨-->
               <a class="menu btn">메뉴</a>
             </div>
+
+
+
+
+
+            <!-- 06.16 dim 추가-->
+            <div class="dim"></div>
+            <!-- 06.16 dim 추가-->
+
+
           </header>
 
           <!-- open 클래스 추가시 메뉴 열림-->
@@ -200,20 +198,8 @@
                     </div>
                   </div>
                   <div class="pre-cnt pre-cnt2">
-
-
-
-
-
-                    <!--5.26 수정및 추가-->
                     <a href="" class="btn dir-btn"></a>
                     <p class="dir">개설과목</p>
-                    <!--5.26 수정및 추가-->
-
-
-
-
-
                     <div class="depart cnt2">
                       <p>전공분야</p>
                       <div class="r-box">
@@ -394,22 +380,6 @@
             </div>
           </div>
           <!--pc에서만 노출됨-->
-          <!-- 05.26 해더 위치 변경 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
           <!-- s: 메인 -->
           <div class="inner swiper swiper-inner1">
@@ -550,7 +520,35 @@
                     새로운 미래 인재를 양성합니다.
                   </p>
                 </div>
-                <div class="talent"></div>
+
+
+
+
+                <!--06.16 수정-->
+                <div class="talent">
+                  <div class="ferris">
+                    <div class="ferris-inner">
+                      <div class="wheel-wrap">
+                        <div class="wheel"></div>
+                      </div>
+                      <div class="circle"><span>바이오 헬스 <br> 신인재 양성</span></div>
+                      <div class="objs">
+                        <div class="obj1">대학</div>
+                        <div class="obj2">민간기관</div>
+                        <div class="obj3">학회</div>
+                        <div class="obj4">연구기관</div>
+                        <div class="obj5">산업체</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--06.16 수정-->
+
+
+
+
+
+
                 <div class="partners">
                   <p class="txt">바이오헬스 혁신융합대학 파트너사</p>
                   <div class="logo-wrap">
@@ -865,14 +863,7 @@
         <!-- s: footer -->
         <div class="swiper-slide wrap-slide slide8">
           <footer>
-
-
-            <!-- 05.26 바로가기 링크 위치 변경 :926번줄-->
-            <!-- 05.26 top 맨위로 이동버튼 위치 변경 :937번줄-->
-
-
             <a class="btn consortium">컨소시엄 리스트 <i></i></a>
-
             <div class="sponsors">
               <p class="txt">SPONSORS</p>
               <div class="inner swiper swiper-inner8">
@@ -918,11 +909,6 @@
       <div class="swiper-pagination wrap-pagination web"></div>
     </div>
 
-
-
-
-    <!-- 05.26 바로가기 버튼 모바일/피씨 하나로 통합 -->
-    <!-- 05.26 바로가기 버튼 위치 변경 -->
     <div class="link-wrap"><!-- open 클래스 추가되면 열림 -->
       <a class="btn link">바로가기</a>
       <div class="link-list">
@@ -932,18 +918,11 @@
         <a href="" class="btn txt">페이지명 <i></i></a>
       </div>
     </div>
-
-    <!-- 05.26 맨위로 이동 버튼 위치 변경 -->
     <a class="btn top">맨위로 이동</a>
-
-
-
-
 
     <!-- open 클랙스 추가시 팝업 오픈 -->
     <div class="popup" >
       <div class="dim"></div>
-
 
       <!-- inner에 planet-inner 클래스 추가시 : biohealth palnet popop 오픈 -->
       <!-- inner에 faq-inner 클래스 추가시 : 문의하기 오픈 -->
@@ -1255,22 +1234,12 @@
           let y = (winH * 5) + footerH; //푸터 슬라이드 제외된 전체 높이 + 푸터 높이
           document.querySelector('.wrap-swiper .swiper-wrapper').style.transform = 'translate3d(0,-'+ y +'px,0)';
           wrapPagination.classList.add('last');
-
-
-          //05.26추가
           goTop.classList.add('btt');
           linkWrap.classList.add('btt');
-
-
         } else {
           wrapPagination.classList.remove('last');
-
-
-          //05.26추가
           goTop.classList.remove('btt');
           linkWrap.classList.remove('btt');
-
-
         }
       },
       transitionEnd: function() {
@@ -1374,12 +1343,27 @@
       }
     }
   });
+
+
+
+
+
+  //06.16 수정
   let vidSelect = document.querySelectorAll('.vid-select');
   Array.prototype.forEach.call(vidSelect, function(e,idx) {
     e.addEventListener('click', function() {
+      for (let i = 0; i < vidSelect.length; i++) {
+        vidSelect[i].parentNode.classList.remove('active');
+      }
+      e.parentNode.classList.add('active');
       swiperInner4.slideTo(idx,0)
     })
   });
+  //06.16 수정
+
+
+
+
 
   //유투브 영상 실행
   let player0,player1,player2,player3;
@@ -1559,10 +1543,6 @@
     $('.del-btn').css('display','none');
   });
 
-
-
-
-  //05.26수정
   // 맨위로 이동
   // let goTop = document.querySelector('.top'); <-- header.js로 이동
   goTop.addEventListener('click', function() {

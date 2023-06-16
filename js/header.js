@@ -5,13 +5,8 @@ function handleWinSize() {
   winH = window.innerHeight;
 }
 
-
-//05.26추가
 let linkWrap = document.querySelector('.link-wrap');
 let goTop = document.querySelector('.top');
-
-
-
 
 window.addEventListener('resize', handleWinSize);
 window.addEventListener('scroll', pageScroll);
@@ -21,13 +16,6 @@ function pageScroll() {
   scrollY = window.pageYOffset || document.documentElement.scrollTop;
   if(scrollY > 10) headerScrolled();
   else headerScrollOff();
-
-
-
-
-
-
-  //05.26추가
   if((scrollY + winH) >= document.documentElement.scrollHeight) {
     linkWrap.classList.add('btt');
     goTop.classList.add('btt');
@@ -35,10 +23,6 @@ function pageScroll() {
     linkWrap.classList.remove('btt');
     goTop.classList.remove('btt');
   }
-  //05.26추가
-
-
-
 }
 
 //gnb - mobile
@@ -88,14 +72,32 @@ nav.addEventListener('mouseover', headerOpen);
 nav.addEventListener('mouseleave', headerClose);
 nav.addEventListener('mouseleave', navClose);
 
+
+
+
+
+
+
+//06.16 추가
+let wrap = document.querySelector('.wrap');
+
 // 해더 메뉴 열기 - pc
 function headerOpen() {
   header.classList.add('open');
+  wrap.classList.add('header-open');//06.16 추가
 }
 // 해더 메뉴 닫기 - pc
 function headerClose() {
   header.classList.remove('open');
+  wrap.classList.remove('header-open');//06.16 추가
 }
+
+
+
+
+
+
+
 // nav 메뉴 열기
 function navOpen() {
   nav.classList.add('open');
